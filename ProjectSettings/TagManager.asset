@@ -4,17 +4,19 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Enemy
+  - Objeto
+  - Superficie
+  - Enemigo
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Objeto
+  - Enemigo
+  - 'Superficie '
   - 
   - 
   - 
