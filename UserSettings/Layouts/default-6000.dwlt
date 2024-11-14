@@ -484,7 +484,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Animaciones
+    - Assets
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1284,7 +1284,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 0.503259, y: -0.331437, z: -1.2872101}
+    m_Target: {x: 102.20959, y: 7.81067, z: 94.556885}
     speed: 2
     m_Value: {x: 0.503259, y: -0.331437, z: -1.2872101}
   m_RenderMode: 0
@@ -1332,11 +1332,11 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.33611202, y: 0.3783871, z: -0.14973465, w: -0.8493719}
+    m_Target: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
     speed: 2
     m_Value: {x: -0.33611202, y: 0.37838706, z: -0.14973465, w: -0.8493719}
   m_Size:
-    m_Target: 1.5028989
+    m_Target: 8.815359
     speed: 2
     m_Value: 1.5028989
   m_Ortho:
