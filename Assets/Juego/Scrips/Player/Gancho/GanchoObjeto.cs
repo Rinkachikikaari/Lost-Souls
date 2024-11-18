@@ -2,59 +2,58 @@ using UnityEngine;
 
 public class GanchoObjeto : MonoBehaviour
 {
-    public float velocidadGancho = 15f;          // Velocidad del gancho
-    public float distanciaMaxima = 10f;          // Distancia máxima que el gancho puede alcanzar
-    private Vector3 direccionGancho;
+    public float velocidadGancho = 20f;
+    public float distanciaMaxima = 15f;
+
+    private Vector3 direccion;
     private Transform jugador;
     private Gancho ganchoScript;
 
-    private Vector3 puntoInicio;
-
-    private void Start()
-    {
-        puntoInicio = transform.position;
-    }
-
-    public void ConfigurarGancho(Vector3 direccion, Transform jugadorTransform, Gancho gancho)
-    {
-        direccionGancho = direccion.normalized;
-        jugador = jugadorTransform;
-        ganchoScript = gancho;
-    }
-
     private void Update()
     {
-        // Mover el gancho en la dirección especificada
-        transform.position += direccionGancho * velocidadGancho * Time.deltaTime;
+        transform.position += direccion * velocidadGancho * Time.deltaTime;
 
-        // Verificar si se ha alcanzado la distancia máxima
-        if (Vector3.Distance(transform.position, puntoInicio) >= distanciaMaxima)
+        if (Vector3.Distance(transform.position, jugador.position) > distanciaMaxima)
         {
-            RetornarGancho();
+            Debug.Log("Gancho alcanzó su distancia máxima.");
+            ganchoScript.FinGancho();
+            Destroy(gameObject);
         }
+    }
+
+    public void ConfigurarGancho(Vector3 dir, Transform jugadorRef, Gancho gancho)
+    {
+        direccion = dir.normalized;
+        jugador = jugadorRef;
+        ganchoScript = gancho;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Enemigo") || other.CompareTag("Objeto"))
+        Enemy enemigo = other.GetComponent<Enemy>();
+        if (enemigo != null && enemigo.puedeSerAtraido)
         {
-            // Atraer el enemigo o el objeto hacia el jugador
             ganchoScript.AtraerObjetivo(other.transform);
+            Destroy(gameObject);
+            return;
         }
-        else if (other.CompareTag("Superficie"))
+
+        GanchoInteractivo objetoInteractivo = other.GetComponent<GanchoInteractivo>();
+        if (objetoInteractivo != null && objetoInteractivo.puedeSerAtraido)
         {
-            // Mover al jugador hacia la superficie
-            ganchoScript.MoverHaciaSuperficie(other.transform.position);
+            ganchoScript.AtraerObjetivo(other.transform);
+            Destroy(gameObject);
+            return;
         }
 
-        // Destruir el gancho después de la colisión
-        Destroy(gameObject);
-    }
+        if (other.CompareTag("Superficie"))
+        {
+            ganchoScript.MoverHaciaSuperficie(other.transform.position);
+            Destroy(gameObject);
+            return;
+        }
 
-    private void RetornarGancho()
-    {
-        // Destruir el gancho si no ha colisionado y alcanza la distancia máxima
+        Debug.Log($"{other.name} no es un objetivo válido para el gancho.");
         Destroy(gameObject);
-        ganchoScript.FinGancho();
     }
 }

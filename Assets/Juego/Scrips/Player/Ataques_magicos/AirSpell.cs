@@ -1,0 +1,49 @@
+using UnityEngine;
+
+public class AirSpell : MonoBehaviour
+{
+    public float costoMana = 25f;
+    public float radio = 8f;
+    public float fuerzaEmpuje = 10f;
+    public LayerMask enemigosLayer;
+
+    private Magia manaSystem;
+
+    private void Start()
+    {
+        manaSystem = GetComponent<Magia>();
+    }
+
+    private void Update()
+    {
+
+    }
+
+    public void LanzarAire()
+    {
+        if (!manaSystem.UsarMana(costoMana)) return; // Verificar si hay suficiente maná
+
+        // Crear una onda expansiva que empuja a los enemigos
+        Collider[] enemigos = Physics.OverlapSphere(transform.position, radio, enemigosLayer);
+        foreach (Collider enemigo in enemigos)
+        {
+            Enemy enemyScript = enemigo.GetComponent<Enemy>();
+            if (enemyScript != null && enemyScript.puedeSerEmpujado)
+            {
+                Rigidbody rb = enemigo.GetComponent<Rigidbody>();
+                if (rb != null)
+                {
+                    Vector3 direccionEmpuje = (enemigo.transform.position - transform.position).normalized;
+                    rb.AddForce(direccionEmpuje * fuerzaEmpuje, ForceMode.Impulse);
+                    Debug.Log($"{enemigo.name} ha sido empujado.");
+                }
+            }
+            else
+            {
+                Debug.Log($"{enemigo.name} no puede ser empujado.");
+            }
+        }
+
+        Debug.Log("Lanzando aire!");
+    }
+}

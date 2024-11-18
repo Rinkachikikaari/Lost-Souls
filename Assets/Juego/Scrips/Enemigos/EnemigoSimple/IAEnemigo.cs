@@ -93,7 +93,7 @@ public class IAEnemigo : MonoBehaviour
         persiguiendo = true;
         destinoActual = jugador.position;
 
-        if (Vector3.Distance(transform.position, puntoInicioCelda) >= distanciaCelda)
+        if (Vector3.Distance(transform.position, destinoActual) >= distanciaCelda)
         {
             CalcularDireccionMovimiento(destinoActual);
             puntoInicioCelda = transform.position;

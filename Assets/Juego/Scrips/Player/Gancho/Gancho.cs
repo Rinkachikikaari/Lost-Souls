@@ -4,33 +4,29 @@ using UnityEngine;
 public class Gancho : MonoBehaviour
 {
     public GameObject prefabGancho;           // Prefab del objeto gancho
-    public Transform puntoDisparo;            // Punto desde el cual se dispara el gancho
+    public Transform puntoDisparo;           // Punto desde el cual se dispara el gancho
     public float ganchoVelocidad = 15f;
 
-    private Rigidbody rb;
-    private Movimiento movimientoScript;      // Referencia al script de movimiento
-    private Ataque ataqueScript;              // Referencia al script de ataque
-    private DisparoFlecha ArcoScript;         // Referencia al script del arco
+    private Movimiento movimientoScript;
+    private Ataque ataqueScript;
+    private DisparoFlecha arcoScript;
     private bool ganchoActivo = false;
     private Vector3 ultimaDireccion;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
         movimientoScript = GetComponent<Movimiento>();
         ataqueScript = GetComponent<Ataque>();
-        ArcoScript = GetComponent<DisparoFlecha>();
+        arcoScript = GetComponent<DisparoFlecha>();
     }
 
     private void Update()
     {
-        // Guardar la última dirección de movimiento si el jugador se está moviendo
         if (movimientoScript.movement != Vector3.zero)
         {
             ultimaDireccion = movimientoScript.movement;
         }
 
-        // Lanzar el gancho en la última dirección de movimiento si el jugador presiona la tecla G
         if (Input.GetKeyDown(KeyCode.Q) && !ganchoActivo)
         {
             LanzarGancho();
@@ -39,38 +35,45 @@ public class Gancho : MonoBehaviour
 
     private void LanzarGancho()
     {
-        // Asegurarse de que el prefab esté asignado y de que exista una dirección válida
         if (prefabGancho != null && ultimaDireccion != Vector3.zero)
         {
-            // Instanciar el objeto gancho en el punto de disparo
             GameObject ganchoInstancia = Instantiate(prefabGancho, puntoDisparo.position, Quaternion.identity);
             if (ganchoInstancia != null)
             {
-                // Configurar la dirección y los valores del objeto gancho
                 GanchoObjeto ganchoScript = ganchoInstancia.GetComponent<GanchoObjeto>();
                 ganchoScript.ConfigurarGancho(ultimaDireccion, transform, this);
 
-                // Bloquear el movimiento y ataque del jugador
                 movimientoScript.enabled = false;
-                ataqueScript.enabled = false; // Desactivar ataque
-                ArcoScript.enabled = false;
+                ataqueScript.enabled = false;
+                arcoScript.enabled = false;
                 ganchoActivo = true;
             }
-            else
-            {
-                Debug.LogError("El gancho no se pudo instanciar.");
-            }
-        }
-        else
-        {
-            Debug.LogWarning("Prefab de gancho no asignado o no hay dirección de movimiento.");
         }
     }
 
-    // Método llamado por GanchoObjeto para atraer el objetivo hacia el jugador
     public void AtraerObjetivo(Transform objetivo)
     {
-        StartCoroutine(AtraerObjetoHaciaJugador(objetivo));
+        Enemy enemigo = objetivo.GetComponent<Enemy>();
+        if (enemigo != null)
+        {
+            Debug.Log($"{objetivo.name} es un enemigo y está siendo atraído.");
+            StartCoroutine(AtraerObjetoHaciaJugador(objetivo));
+            return;
+        }
+
+        GanchoInteractivo interactivo = objetivo.GetComponent<GanchoInteractivo>();
+        if (interactivo != null)
+        {
+            Debug.Log($"{objetivo.name} es un objeto interactivo y está siendo atraído.");
+            StartCoroutine(AtraerObjetoHaciaJugador(objetivo));
+            return;
+        }
+    }
+
+    public void MoverHaciaSuperficie(Vector3 posicionSuperficie)
+    {
+        Debug.Log("El jugador se está moviendo hacia la superficie.");
+        StartCoroutine(MoverJugadorHaciaSuperficie(posicionSuperficie));
     }
 
     private IEnumerator AtraerObjetoHaciaJugador(Transform objetivo)
@@ -83,12 +86,6 @@ public class Gancho : MonoBehaviour
         FinGancho();
     }
 
-    // Método llamado por GanchoObjeto para mover al jugador hacia la superficie
-    public void MoverHaciaSuperficie(Vector3 posicionSuperficie)
-    {
-        StartCoroutine(MoverJugadorHaciaSuperficie(posicionSuperficie));
-    }
-
     private IEnumerator MoverJugadorHaciaSuperficie(Vector3 posicionObjetivo)
     {
         while (Vector3.Distance(transform.position, posicionObjetivo) > 1f)
@@ -99,12 +96,11 @@ public class Gancho : MonoBehaviour
         FinGancho();
     }
 
-    // Método para reactivar el movimiento y ataque del jugador y reiniciar el gancho
     public void FinGancho()
     {
         ganchoActivo = false;
-        movimientoScript.enabled = true; // Reactivar movimiento
-        ataqueScript.enabled = true;     // Reactivar ataque
-        ArcoScript.enabled = true;
+        movimientoScript.enabled = true;
+        ataqueScript.enabled = true;
+        arcoScript.enabled = true;
     }
 }

@@ -649,8 +649,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lluviaParticulas: {fileID: 1782858533}
-  intervaloLluviaMin: 10
-  intervaloLluviaMax: 10
+  intervaloLluviaMin: 210
+  intervaloLluviaMax: 420
   duracionLluvia: 420
   prefabCharcoLodo: {fileID: 7943349260407917063, guid: 9928f53c68f8be441b6332626f92681e, type: 3}
 --- !u!4 &756278666
@@ -855,6 +855,7 @@ GameObject:
   - component: {fileID: 1152734285}
   - component: {fileID: 1152734284}
   - component: {fileID: 1152734283}
+  - component: {fileID: 1152734286}
   - component: {fileID: 1152734282}
   - component: {fileID: 1152734281}
   - component: {fileID: 1152734280}
@@ -1002,6 +1003,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1152734286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152734279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c6a648aa313d1d44b31aa1c02aedee2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidaMaxima: 100
+  puedeSerAturdido: 1
+  puedeSerAtraido: 1
+  puedeSerEmpujado: 1
 --- !u!1 &1187310220
 GameObject:
   m_ObjectHideFlags: 0
@@ -1075,6 +1092,7 @@ GameObject:
   - component: {fileID: 1332467750}
   - component: {fileID: 1332467749}
   - component: {fileID: 1332467754}
+  - component: {fileID: 1332467756}
   - component: {fileID: 1332467755}
   - component: {fileID: 1332467753}
   - component: {fileID: 1332467752}
@@ -1084,7 +1102,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1332467749
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1251,6 +1269,22 @@ MonoBehaviour:
   velocidadPersecucion: 2
   cooldownAtaque: 3
   distanciaCelda: 1
+--- !u!114 &1332467756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332467748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c6a648aa313d1d44b31aa1c02aedee2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidaMaxima: 100
+  puedeSerAturdido: 1
+  puedeSerAtraido: 1
+  puedeSerEmpujado: 1
 --- !u!1 &1580357319
 GameObject:
   m_ObjectHideFlags: 0
@@ -1530,7 +1564,12 @@ GameObject:
   - component: {fileID: 2128803924}
   - component: {fileID: 2128803928}
   - component: {fileID: 2128803923}
+  - component: {fileID: 2128803937}
   - component: {fileID: 2128803931}
+  - component: {fileID: 2128803936}
+  - component: {fileID: 2128803935}
+  - component: {fileID: 2128803934}
+  - component: {fileID: 2128803933}
   - component: {fileID: 2128803927}
   - component: {fileID: 2128803929}
   - component: {fileID: 2128803930}
@@ -1790,6 +1829,87 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 0.2}
   m_Center: {x: 0, y: 0.21133333, z: 0}
+--- !u!114 &2128803933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128803919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dea231cd86d95e43af10da9c9985f7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  costoMana: 25
+  radio: 8
+  fuerzaEmpuje: 10
+  enemigosLayer:
+    serializedVersion: 2
+    m_Bits: 128
+--- !u!114 &2128803934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128803919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd9bf93b7173718499fcc4e83b7156f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  costoMana: 30
+  radio: 5
+  dano: 50
+  enemigosLayer:
+    serializedVersion: 2
+    m_Bits: 128
+--- !u!114 &2128803935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128803919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c38c48ad7fda32b4398b7e7f24d29e6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  costoMana: 20
+  duracionAturdimiento: 2
+  rango: 10
+  enemigosLayer:
+    serializedVersion: 2
+    m_Bits: 128
+--- !u!114 &2128803936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128803919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46cfedce0603b0246b8bdd7e425ad08e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2128803937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128803919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69c25e5d06b96f64584de35f2f1ac315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manaMaxima: 100
+  regeneracionPorSegundo: 6
+  tiempoEsperaRegeneracion: 10
 --- !u!1 &2136116939
 GameObject:
   m_ObjectHideFlags: 0
