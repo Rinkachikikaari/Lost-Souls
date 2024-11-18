@@ -56,12 +56,12 @@ public class CicloLluvia : MonoBehaviour
     private void GenerarCharcosDeLodo()
     {
         // Crear algunos charcos en posiciones aleatorias
-        for (int i = 0; i < 10; i++) // Por ejemplo, generar 5 charcos
+        for (int i = 0; i < 20; i++) // Por ejemplo, generar 5 charcos
         {
             Vector3 posicionAleatoria = new Vector3(
-                Random.Range(-10f, 10f),
+                Random.Range(-20f, 20f),
                 -0.994f,  // Ajusta la altura si es necesario
-                Random.Range(-10f, 10f)
+                Random.Range(-20f, 20f)
             );
 
             // Instanciar el charco con una rotación de 90 grados en el eje X
