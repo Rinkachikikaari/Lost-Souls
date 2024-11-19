@@ -102,5 +102,6 @@ public class Gancho : MonoBehaviour
         movimientoScript.enabled = true;
         ataqueScript.enabled = true;
         arcoScript.enabled = true;
+        Debug.Log("El gancho ha finalizado su acción.");
     }
 }

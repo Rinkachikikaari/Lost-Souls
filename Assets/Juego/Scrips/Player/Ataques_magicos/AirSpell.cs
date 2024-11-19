@@ -23,7 +23,6 @@ public class AirSpell : MonoBehaviour
     {
         if (!manaSystem.UsarMana(costoMana)) return; // Verificar si hay suficiente maná
 
-        // Crear una onda expansiva que empuja a los enemigos
         Collider[] enemigos = Physics.OverlapSphere(transform.position, radio, enemigosLayer);
         foreach (Collider enemigo in enemigos)
         {
@@ -35,15 +34,16 @@ public class AirSpell : MonoBehaviour
                 {
                     Vector3 direccionEmpuje = (enemigo.transform.position - transform.position).normalized;
                     rb.AddForce(direccionEmpuje * fuerzaEmpuje, ForceMode.Impulse);
-                    Debug.Log($"{enemigo.name} ha sido empujado.");
                 }
-            }
-            else
-            {
-                Debug.Log($"{enemigo.name} no puede ser empujado.");
             }
         }
 
         Debug.Log("Lanzando aire!");
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(transform.position, radio);
     }
 }

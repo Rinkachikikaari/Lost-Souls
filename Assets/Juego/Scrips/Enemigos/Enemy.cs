@@ -11,11 +11,13 @@ public class Enemy : MonoBehaviour
     private float vidaActual;
     private bool estaAturdido = false;
     private Rigidbody rb;
+    private IAEnemigo iaScript; // Referencia al script de IA del enemigo
 
     private void Start()
     {
         vidaActual = vidaMaxima;
         rb = GetComponent<Rigidbody>();
+        iaScript = GetComponent<IAEnemigo>();
     }
 
     // Método para recibir daño
@@ -35,20 +37,28 @@ public class Enemy : MonoBehaviour
     // Método para manejar el aturdimiento
     public void Aturdir(float duracion)
     {
-        if (!puedeSerAturdido) return;
+        if (!puedeSerAturdido || estaAturdido) return;
 
-        if (!estaAturdido)
+        estaAturdido = true;
+        Debug.Log($"{gameObject.name} ha sido aturdido por {duracion} segundos.");
+
+        if (iaScript != null)
         {
-            estaAturdido = true;
-            Debug.Log($"{gameObject.name} ha sido aturdido por {duracion} segundos.");
-            Invoke(nameof(FinAturdimiento), duracion);
+            iaScript.enabled = false; // Desactivar IA
         }
+
+        Invoke(nameof(FinAturdimiento), duracion);
     }
 
     private void FinAturdimiento()
     {
         estaAturdido = false;
         Debug.Log($"{gameObject.name} ya no está aturdido.");
+
+        if (iaScript != null)
+        {
+            iaScript.enabled = true; // Reactivar IA
+        }
     }
 
     // Método para ser atraído por el gancho

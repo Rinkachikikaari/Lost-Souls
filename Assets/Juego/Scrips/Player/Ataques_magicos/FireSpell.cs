@@ -16,14 +16,12 @@ public class FireSpell : MonoBehaviour
 
     private void Update()
     {
-
     }
 
     public void LanzarFuego()
     {
         if (!manaSystem.UsarMana(costoMana)) return; // Verificar si hay suficiente maná
 
-        // Crear una onda expansiva alrededor del jugador
         Collider[] enemigos = Physics.OverlapSphere(transform.position, radio, enemigosLayer);
         foreach (Collider enemigo in enemigos)
         {
@@ -36,5 +34,11 @@ public class FireSpell : MonoBehaviour
         }
 
         Debug.Log("Lanzando fuego!");
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, radio);
     }
 }
