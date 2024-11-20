@@ -10,6 +10,9 @@ public class Gancho : MonoBehaviour
     private Movimiento movimientoScript;
     private Ataque ataqueScript;
     private DisparoFlecha arcoScript;
+    private SelectorDeMagia SelectorDeMagia;
+
+
     private bool ganchoActivo = false;
     private Vector3 ultimaDireccion;
 
@@ -18,6 +21,7 @@ public class Gancho : MonoBehaviour
         movimientoScript = GetComponent<Movimiento>();
         ataqueScript = GetComponent<Ataque>();
         arcoScript = GetComponent<DisparoFlecha>();
+        SelectorDeMagia = GetComponent<SelectorDeMagia>();
     }
 
     private void Update()
@@ -27,7 +31,7 @@ public class Gancho : MonoBehaviour
             ultimaDireccion = movimientoScript.movement;
         }
 
-        if (Input.GetKeyDown(KeyCode.Q) && !ganchoActivo)
+        if (Input.GetKeyDown(KeyCode.Q) && !ganchoActivo && InventoryManager.instance.HasItem("Gancho"))
         {
             LanzarGancho();
         }
@@ -46,6 +50,7 @@ public class Gancho : MonoBehaviour
                 movimientoScript.enabled = false;
                 ataqueScript.enabled = false;
                 arcoScript.enabled = false;
+                SelectorDeMagia.enabled = false;
                 ganchoActivo = true;
             }
         }
@@ -101,7 +106,8 @@ public class Gancho : MonoBehaviour
         ganchoActivo = false;
         movimientoScript.enabled = true;
         ataqueScript.enabled = true;
-        arcoScript.enabled = true;
+        arcoScript.enabled = true; 
+        SelectorDeMagia.enabled = true;
         Debug.Log("El gancho ha finalizado su acción.");
     }
 }

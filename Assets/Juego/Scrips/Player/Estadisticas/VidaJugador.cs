@@ -2,15 +2,43 @@ using UnityEngine;
 
 public class VidaJugador : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [Header("Configuración de vida")]
+    public int vidaMaxima; // 12 unidades de vida (3 corazones)
+    public int vidaActual; // Vida inicial en cuartos
+
+
+
+
+    private void Start()
     {
-        
     }
 
-    // Update is called once per frame
-    void Update()
+    public void CurarVida(int cantidad)
     {
-        
+        vidaActual = vidaActual + cantidad;
+
+    }
+
+    public void RecibirDano(int cantidad)
+    {
+        vidaActual = Mathf.Clamp(vidaActual - cantidad, 0, vidaMaxima);
+
+
+        if (vidaActual <= 0)
+        {
+            Muerte();
+        }
+    }
+
+    private void Muerte()
+    {
+        Debug.Log("El jugador ha muerto.");
+        // Implementa la lógica de muerte aquí
+    }
+
+    public void AumentarVidaMaxima(int cantidadCuartos)
+    {
+        vidaMaxima += cantidadCuartos;
+        vidaActual = vidaMaxima; // Restaurar la vida al máximo
     }
 }

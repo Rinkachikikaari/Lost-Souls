@@ -12,12 +12,14 @@ public class DisparoFlecha : MonoBehaviour
     public float estaminaPorDisparoMax = 20f;      // Estamina consumida en disparo al máximo
 
     private float tiempoCargando = 0f;
-    private bool cargandoDisparo = false;
-    private Movimiento movimientoScript;
+    private bool cargandoDisparo = false;    
     private Vector3 ultimaDireccion;
+
+    private Movimiento movimientoScript;
     private EstaminaJugador estaminaJugador;       // Referencia al script de estamina
     private Ataque AtaqueScript; 
     private Gancho GanchosScript;
+    private SelectorDeMagia SelectorDeMagia;
 
     void Start()
     {
@@ -25,6 +27,7 @@ public class DisparoFlecha : MonoBehaviour
         estaminaJugador = GetComponent<EstaminaJugador>();
         GanchosScript = GetComponent<Gancho>();
         AtaqueScript = GetComponent<Ataque>();
+        SelectorDeMagia = GetComponent<SelectorDeMagia>();
     }
 
     void Update()
@@ -34,17 +37,18 @@ public class DisparoFlecha : MonoBehaviour
             ultimaDireccion = movimientoScript.movement;
         }
 
-        if (Input.GetKey(KeyCode.L))
+        if (Input.GetKey(KeyCode.L) && InventoryManager.instance.HasItem("Arco"))
         {
             cargandoDisparo = true;
             tiempoCargando += Time.deltaTime;
             movimientoScript.enabled = false;
             AtaqueScript.enabled = false;
             GanchosScript.enabled = false;
+            SelectorDeMagia.enabled = false;
             tiempoCargando = Mathf.Clamp(tiempoCargando, 0, tiempoCargaMax);
         }
 
-        if (Input.GetKeyUp(KeyCode.L) && cargandoDisparo)
+        if (Input.GetKeyUp(KeyCode.L) && cargandoDisparo && InventoryManager.instance.HasItem("Arco"))
         {
             float estaminaNecesaria = tiempoCargando >= tiempoCargaMax ? estaminaPorDisparoMax : estaminaPorDisparo;
 
@@ -63,6 +67,7 @@ public class DisparoFlecha : MonoBehaviour
             movimientoScript.enabled = true;
             AtaqueScript.enabled=true;
             GanchosScript.enabled=true;
+            SelectorDeMagia.enabled=true;
         }
     }
 

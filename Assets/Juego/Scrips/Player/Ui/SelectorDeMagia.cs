@@ -12,7 +12,7 @@ public class SelectorDeMagia : MonoBehaviour
     public Sprite fuegoSprite; // Sprite para el fuego
     public Sprite aireSprite; // Sprite para el aire
 
-    private int magiaSeleccionada = 1;
+    private int magiaSeleccionada;
 
     void Start()
     {
@@ -25,17 +25,17 @@ public class SelectorDeMagia : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1) && InventoryManager.instance.IsAbilityUnlocked("Trueno"))
         {
             magiaSeleccionada = 1;
             ActualizarUI();
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha2) && InventoryManager.instance.IsAbilityUnlocked("Fuego"))
         {
             magiaSeleccionada = 2;
             ActualizarUI();
         }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+        if (Input.GetKeyDown(KeyCode.Alpha3) && InventoryManager.instance.IsAbilityUnlocked("Viento"))
         {
             magiaSeleccionada = 3;
             ActualizarUI();

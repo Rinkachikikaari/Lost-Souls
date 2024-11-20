@@ -10,6 +10,9 @@ public class Ataque : MonoBehaviour
     private DisparoFlecha ArcoScript;
     private Gancho GanchoScript;
     private EstaminaJugador estaminaJugador;
+    private SelectorDeMagia SelectorDeMagia;
+
+
     private bool isAttacking = false;
     private bool isChargingAttack = false;
 
@@ -32,6 +35,7 @@ public class Ataque : MonoBehaviour
         movimientoScript = GetComponent<Movimiento>();
         ArcoScript = GetComponent<DisparoFlecha>();
         GanchoScript = GetComponent<Gancho>();
+        SelectorDeMagia = GetComponent<SelectorDeMagia>();
     }
 
     private void Update()
@@ -48,7 +52,7 @@ public class Ataque : MonoBehaviour
         }
 
         // Ataque normal con la tecla "J"
-        if (Input.GetKeyDown(KeyCode.J) && atkCooldown && !isAttacking)
+        if (Input.GetKeyDown(KeyCode.J) && atkCooldown && !isAttacking && InventoryManager.instance.HasItem("Espada"))
         {
             anim.SetTrigger("Atk");
             atkCooldown = false;
@@ -57,6 +61,7 @@ public class Ataque : MonoBehaviour
             movimientoScript.enabled = false;
             ArcoScript.enabled = false;
             GanchoScript.enabled = false;
+            SelectorDeMagia.enabled = false;
         }
 
         // Ataque cargado con la tecla "K"
@@ -67,7 +72,7 @@ public class Ataque : MonoBehaviour
             tiempoCargando = Mathf.Clamp(tiempoCargando, 0, tiempoCargaMax);
         }
 
-        if (Input.GetKeyUp(KeyCode.K) && isChargingAttack)
+        if (Input.GetKeyUp(KeyCode.K) && isChargingAttack && InventoryManager.instance.HasItem("Espada") && InventoryManager.instance.IsAbilityUnlocked("Girar"))
         {
             float estaminaNecesaria = tiempoCargando >= tiempoCargaMax ? estaminaPorAtaqueMax : estaminaPorAtaque;
 
@@ -86,6 +91,7 @@ public class Ataque : MonoBehaviour
                 movimientoScript.enabled = false;
                 ArcoScript.enabled = false;
                 GanchoScript.enabled = false;
+                SelectorDeMagia.enabled = false;
 
                 tiempoCargando = 0;
 
@@ -119,5 +125,6 @@ public class Ataque : MonoBehaviour
         movimientoScript.enabled = true;
         ArcoScript.enabled = true;
         GanchoScript.enabled = true;
+        SelectorDeMagia.enabled = true;
     }
 }
