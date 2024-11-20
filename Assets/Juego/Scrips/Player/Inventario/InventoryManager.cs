@@ -5,9 +5,9 @@ public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager instance; // Singleton para acceso global
 
-    public List<Item> items = new List<Item>();  // Lista de objetos
+    public List<ItemData> items = new List<ItemData>();  // Lista de objetos
     public List<Equipment> equippedItems = new List<Equipment>();  // Equipados
-    public List<Ability> abilities = new List<Ability>(); // Habilidades desbloqueadas
+    public List<AbilityData> abilities = new List<AbilityData>(); // Habilidades desbloqueadas
 
     private void Awake()
     {
@@ -15,7 +15,7 @@ public class InventoryManager : MonoBehaviour
         else Destroy(gameObject);
     }
 
-    public void AddItem(Item newItem)
+    public void AddItem(ItemData newItem)
     {
         if (!items.Contains(newItem))
         {
@@ -33,7 +33,7 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    public void UnlockAbility(Ability ability)
+    public void UnlockAbility(AbilityData ability)
     {
         if (ability != null && !ability.isUnlocked)
         {

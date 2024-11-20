@@ -1,8 +1,12 @@
+using System;
+using System.Collections;
+using UnityEditor.Rendering;
 using UnityEngine;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class IAEnemigo : MonoBehaviour
 {
-    public Transform[] puntosPatrulla;
+    public UnityEngine.Transform[] puntosPatrulla;
     public float distanciaVision = 10f;
     public float distanciaAtaque = 2f;
     public float velocidadPatrulla = 2f;
@@ -10,7 +14,7 @@ public class IAEnemigo : MonoBehaviour
     public float cooldownAtaque = 3f;
     public float distanciaCelda = 1f;
 
-    private Transform jugador;
+    private UnityEngine.Transform jugador;
     private int indicePatrulla = 0;
     private bool persiguiendo = false;
     private Vector3 direccionMovimiento;
@@ -19,6 +23,9 @@ public class IAEnemigo : MonoBehaviour
 
     private float tiempoUltimoAtaque = -Mathf.Infinity;
     private Vector3 puntoInicioCelda;
+    bool isMoving = false;
+    float currentMove = 0;
+    Vector3 initialMovePosition = Vector3.zero;
 
     private void Start()
     {
@@ -91,7 +98,13 @@ public class IAEnemigo : MonoBehaviour
     private void PerseguirJugador()
     {
         persiguiendo = true;
-        destinoActual = jugador.position;
+        int random = (int)(UnityEngine.Random.Range(0,4));
+        destinoActual = jugador.position + (random == 0 ?
+                                           new Vector3(1, 0, 0) : random == 1 ?
+                                           new Vector3(-1, 0, 0) : random == 2 ?
+                                           new Vector3(0, 0, 1) : new Vector3(0, 0, -1)
+
+        );
 
         if (Vector3.Distance(transform.position, destinoActual) >= distanciaCelda)
         {
@@ -113,6 +126,7 @@ public class IAEnemigo : MonoBehaviour
         direccionMovimiento = Vector3.zero;
         anim.SetTrigger("Attack");
         Debug.Log("Atacando al jugador!");
+        
 
     }
 
@@ -132,7 +146,26 @@ public class IAEnemigo : MonoBehaviour
 
     private void MoverEn4Direcciones()
     {
-        transform.position += direccionMovimiento * (persiguiendo ? velocidadPersecucion : velocidadPatrulla) * Time.deltaTime;
+        if (isMoving == false && direccionMovimiento.magnitude > 0)
+        {
+            currentMove = 0;
+            initialMovePosition = transform.position;
+            StartCoroutine(MoveDirection(direccionMovimiento));
+        }
+    }
+
+    IEnumerator MoveDirection(Vector3 direccionMovimiento)
+    {
+        isMoving = true;
+
+        while (currentMove < 1)
+        {
+            yield return -1;
+            currentMove += direccionMovimiento.magnitude * (persiguiendo ? velocidadPersecucion : velocidadPatrulla) * Time.deltaTime;
+            transform.position += direccionMovimiento * (persiguiendo ? velocidadPersecucion : velocidadPatrulla) * Time.deltaTime;
+        }
+        transform.position = new Vector3(initialMovePosition.x, transform.position.y , initialMovePosition.z) + direccionMovimiento;
+        isMoving = false;
     }
 
     private void ActualizarAnimacionMovimiento()

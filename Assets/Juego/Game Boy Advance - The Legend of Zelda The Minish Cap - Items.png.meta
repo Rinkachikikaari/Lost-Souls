@@ -105,7 +105,7 @@ TextureImporter:
         width: 208
         height: 133
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -127,7 +127,7 @@ TextureImporter:
         width: 17
         height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -136,6 +136,50 @@ TextureImporter:
       bones: []
       spriteID: c9432cc25a78fd5499b1ed8575a21a89
       internalID: 814440683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuego
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 366
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc08f3d7150bb7f4592133e38dd0f86c
+      internalID: 1811712303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viento
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 366
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdec3735a96da244aa57917aa74bca94
+      internalID: -137779202
       vertices: []
       indices: 
       edges: []
@@ -155,7 +199,9 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Espada: 814440683
+      Fuego: 1811712303
       Menu: 487277322
+      Viento: -137779202
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

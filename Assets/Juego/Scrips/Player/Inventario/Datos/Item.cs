@@ -1,9 +1,8 @@
 using UnityEngine;
 
-[System.Serializable]
-public class Item
+public class Item : ScriptableObject
 {
-    public string itemName;  // Nombre del objeto
-    public Sprite icon;      // Ícono del objeto
-    public string description; // Descripción del objeto
+    public string itemName;
+    public Sprite icon;
+    public string category; // Categoría: "Equipment", "Item", "Ability"
 }

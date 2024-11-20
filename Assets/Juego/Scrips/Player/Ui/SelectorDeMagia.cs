@@ -72,7 +72,6 @@ public class SelectorDeMagia : MonoBehaviour
                 magiaUI.sprite = aireSprite;
                 break;
             default:
-                magiaUI.sprite = null; // Opcional: Limpia la imagen si no hay magia seleccionada
                 break;
         }
     }

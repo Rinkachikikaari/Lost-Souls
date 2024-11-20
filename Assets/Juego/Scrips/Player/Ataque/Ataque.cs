@@ -27,7 +27,7 @@ public class Ataque : MonoBehaviour
     private float tiempoCargando = 0f;
     private float duracionAtaqueBase = 1f;
     private float duracionAtaqueMax = 5f;
-
+    [SerializeField] string currentWeapon = "Espada";
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -52,7 +52,7 @@ public class Ataque : MonoBehaviour
         }
 
         // Ataque normal con la tecla "J"
-        if (Input.GetKeyDown(KeyCode.J) && atkCooldown && !isAttacking && InventoryManager.instance.HasItem("Espada"))
+        if (Input.GetKeyDown(KeyCode.J) && atkCooldown && !isAttacking && InventoryManager.instance.HasItem(currentWeapon))
         {
             anim.SetTrigger("Atk");
             atkCooldown = false;
@@ -72,7 +72,7 @@ public class Ataque : MonoBehaviour
             tiempoCargando = Mathf.Clamp(tiempoCargando, 0, tiempoCargaMax);
         }
 
-        if (Input.GetKeyUp(KeyCode.K) && isChargingAttack && InventoryManager.instance.HasItem("Espada") && InventoryManager.instance.IsAbilityUnlocked("Girar"))
+        if (Input.GetKeyUp(KeyCode.K) && isChargingAttack && InventoryManager.instance.HasItem(currentWeapon) && InventoryManager.instance.IsAbilityUnlocked("Girar"))
         {
             float estaminaNecesaria = tiempoCargando >= tiempoCargaMax ? estaminaPorAtaqueMax : estaminaPorAtaque;
 
