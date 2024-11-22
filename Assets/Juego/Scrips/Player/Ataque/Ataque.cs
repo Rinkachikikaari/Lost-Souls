@@ -16,18 +16,18 @@ public class Ataque : MonoBehaviour
     private bool isAttacking = false;
     private bool isChargingAttack = false;
 
-    public float estaminaPorAtaque = 20f;
-    public float estaminaPorAtaqueMax = 75f;
+    public int estaminaPorAtaque;
+    public int estaminaPorAtaqueMax;
 
 
     private Vector3 moveDirection;
 
     // Variables para el ataque cargado
-    public float tiempoCargaMax = 3f;
-    private float tiempoCargando = 0f;
-    private float duracionAtaqueBase = 1f;
-    private float duracionAtaqueMax = 5f;
-    [SerializeField] string currentWeapon = "Espada";
+    public int tiempoCargaMax;
+    private float tiempoCargando = 0;
+    public int duracionAtaqueBase;
+    public int duracionAtaqueMax;
+    [SerializeField] string currentWeapon;
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -36,6 +36,7 @@ public class Ataque : MonoBehaviour
         ArcoScript = GetComponent<DisparoFlecha>();
         GanchoScript = GetComponent<Gancho>();
         SelectorDeMagia = GetComponent<SelectorDeMagia>();
+
     }
 
     private void Update()
@@ -52,7 +53,7 @@ public class Ataque : MonoBehaviour
         }
 
         // Ataque normal con la tecla "J"
-        if (Input.GetKeyDown(KeyCode.J) && atkCooldown && !isAttacking && InventoryManager.instance.HasItem(currentWeapon))
+        if (Input.GetKeyDown(KeyCode.J) && atkCooldown && !isAttacking && InventoryManager.instance.HasEquip(currentWeapon))
         {
             anim.SetTrigger("Atk");
             atkCooldown = false;
@@ -65,7 +66,7 @@ public class Ataque : MonoBehaviour
         }
 
         // Ataque cargado con la tecla "K"
-        if (Input.GetKey(KeyCode.K) && atkCooldown && !isAttacking)
+        if (Input.GetKey(KeyCode.K) && atkCooldown && !isAttacking && InventoryManager.instance.HasItem(currentWeapon) && InventoryManager.instance.IsAbilityUnlocked("Girar"))
         {
             isChargingAttack = true;
             tiempoCargando += Time.deltaTime;
@@ -103,6 +104,25 @@ public class Ataque : MonoBehaviour
                 ResetCooldown();
             }
         }
+    }
+    public void UpdateCurrentWeapon()
+    {
+        if (PlayerStats.instance.espadaEquipada != null)
+        {
+            currentWeapon = PlayerStats.instance.espadaEquipada.EquipName;
+            estaminaPorAtaque = PlayerStats.instance.espadaEquipada.CostoDeStaminaMin;
+            estaminaPorAtaqueMax = PlayerStats.instance.espadaEquipada.CostoDeStaminaMax;
+            tiempoCargaMax = PlayerStats.instance.espadaEquipada.TiempoDeCarga;
+            duracionAtaqueBase = PlayerStats.instance.espadaEquipada.DuracionDeAtaqueBase;
+            duracionAtaqueMax = PlayerStats.instance.espadaEquipada.DuracionDeAtaqueMax;
+
+        }
+        else
+        {
+            currentWeapon = "Sin arma equipada";
+        }
+
+        Debug.Log($"Arma actualizada: {currentWeapon}");
     }
 
     // Corrutina para esperar la duración del ataque cargado antes de reactivar el movimiento y ataques

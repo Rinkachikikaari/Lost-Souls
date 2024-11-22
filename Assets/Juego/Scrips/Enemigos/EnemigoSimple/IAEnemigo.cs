@@ -1,8 +1,6 @@
 using System;
 using System.Collections;
-using UnityEditor.Rendering;
 using UnityEngine;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class IAEnemigo : MonoBehaviour
 {

@@ -5,6 +5,7 @@ public class VidaJugador : MonoBehaviour
     [Header("Configuración de vida")]
     public int vidaMaxima; // 12 unidades de vida (3 corazones)
     public int vidaActual; // Vida inicial en cuartos
+    public VidaCorazones VidaCorazones;
 
 
 
@@ -15,7 +16,15 @@ public class VidaJugador : MonoBehaviour
 
     public void CurarVida(int cantidad)
     {
-        vidaActual = vidaActual + cantidad;
+        if (vidaActual != vidaMaxima)
+        {
+            if (vidaActual + cantidad < vidaMaxima)
+            {
+                vidaActual = vidaActual + cantidad;
+
+            }
+
+        }
 
     }
 
@@ -39,6 +48,12 @@ public class VidaJugador : MonoBehaviour
     public void AumentarVidaMaxima(int cantidadCuartos)
     {
         vidaMaxima += cantidadCuartos;
-        vidaActual = vidaMaxima; // Restaurar la vida al máximo
+        VidaCorazones.GenerarCorazonesNuevos();
+
+        if (vidaActual < vidaMaxima)
+        {
+            vidaActual = vidaMaxima;
+
+        }
     }
 }

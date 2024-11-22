@@ -9,9 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 153cd3dd5df321d40bdb4183858f5701, type: 3}
-  m_Name: New Item
+  m_Script: {fileID: 11500000, guid: d311b0045068c264997a12fe1c060fdf, type: 3}
+  m_Name: Rayo
   m_EditorClassIdentifier: 
-  itemName: Espada
-  icon: {fileID: 814440683, guid: 3b61ec24044324243b3a2b8845dc07f5, type: 3}
-  description: Si
+  abilityName: Trueno
+  icon: {fileID: 21300000, guid: 5d27ff25fa1fcfc46ab4b83ae93c01c1, type: 3}
+  category: 0
+  subCategory: 0
+  description: 

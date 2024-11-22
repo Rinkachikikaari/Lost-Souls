@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d311b0045068c264997a12fe1c060fdf, type: 3}
+  m_Name: Girar
+  m_EditorClassIdentifier: 
+  abilityName: Girar
+  icon: {fileID: -824567094, guid: 4191161c61df4aa4a83a9b6b7e8feed0, type: 3}
+  category: 0
+  subCategory: 1
+  description: 

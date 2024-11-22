@@ -1,56 +1,102 @@
-using System;
 using System.Collections;
 using UnityEngine;
 
 public class Movimiento : MonoBehaviour
 {
-    public float speed = 5f;           // Velocidad de movimiento
-    public float dashSpeed = 15f;      // Velocidad durante el dash
-    public float dashDuration = 0.2f;  // Duración del dash en segundos
-    public float dashCooldown = 1f;    // Tiempo de recarga del dash en segundos
+    public float speed = 5f;
+    public float dashSpeed = 15f;
+    public float dashDuration = 0.2f;
+    public float dashCooldown = 1f;
 
     private Rigidbody rb;
+    private Animator animator;
     public Vector3 movement;
     private bool isDashing = false;
     [SerializeField] int dashTileMove = 2;
     private float lastDashTime = -Mathf.Infinity;
-    bool isMoving = false;
-    float currentMove = 0;
-    Vector3 initialMovePosition = Vector3.zero;
-    [SerializeField] Vector3 realOffset = Vector3.zero;
-    Coroutine moveC = null;
+    private bool isMovingLocked = false; // Indica si el movimiento está bloqueado
+    private KeyCode lockedKey;         // Tecla bloqueada para el movimiento
+    private Vector3 lockedDirection = Vector3.zero; // Dirección bloqueada
+
+    private float lastMoveX = 0;       // Última dirección en X
+    private float lastMoveY = 0;       // Última dirección en Y
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
-        // Obtener entrada del jugador en los ejes X y Z
+        // Detectar entrada de movimiento
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
-        // Establecer el vector de movimiento en el plano XZ
-        if (horizontal != 0)
+        // Determinar la tecla presionada y la dirección correspondiente
+        if (!isMovingLocked)
         {
-            movement = new Vector3(horizontal, 0, 0).normalized;
+            if (horizontal > 0)
+            {
+                lockedKey = KeyCode.D;
+                lockedDirection = Vector3.right;
+            }
+            else if (horizontal < 0)
+            {
+                lockedKey = KeyCode.A;
+                lockedDirection = Vector3.left;
+            }
+            else if (vertical > 0)
+            {
+                lockedKey = KeyCode.W;
+                lockedDirection = Vector3.forward;
+            }
+            else if (vertical < 0)
+            {
+                lockedKey = KeyCode.S;
+                lockedDirection = Vector3.back;
+            }
+
+            // Bloquear la dirección si hay movimiento
+            if (lockedDirection != Vector3.zero)
+            {
+                isMovingLocked = true;
+            }
+        }
+
+        // Desbloquear si la tecla bloqueada se libera
+        if (isMovingLocked && !Input.GetKey(lockedKey))
+        {
+            isMovingLocked = false;
+            lockedDirection = Vector3.zero;
+        }
+
+        // Establecer el movimiento solo en la dirección bloqueada
+        movement = isMovingLocked ? lockedDirection : Vector3.zero;
+
+        // Actualizar el Animator
+        if (movement.magnitude > 0)
+        {
+            lastMoveX = movement.x;
+            lastMoveY = movement.z;
+
+            animator.SetFloat("MoveX", movement.x);
+            animator.SetFloat("MoveZ", movement.z);
         }
         else
         {
-            movement = new Vector3(0, 0, vertical).normalized;
+            // Mantener la última dirección
+            animator.SetFloat("MoveX", lastMoveX);
+            animator.SetFloat("MoveZ", lastMoveY);
         }
 
-        // Verificar si el jugador inicia un dash
+        // Actualizar la velocidad en el Animator
+        animator.SetFloat("Speed", movement.magnitude);
+
+        // Detectar si el jugador intenta hacer dash
         if (Input.GetKeyDown(KeyCode.Space) && !isDashing && Time.time >= lastDashTime + dashCooldown && movement.magnitude > 0)
         {
-            if(moveC != null)
-            {
-                transform.position = new Vector3(initialMovePosition.x, transform.position.y, initialMovePosition.z) + movement;
-            }
-            
             isDashing = true;
-            // dashTime = dashDuration;
             lastDashTime = Time.time;
             DashEn4Direcciones();
         }
@@ -58,33 +104,9 @@ public class Movimiento : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Aplicar movimiento normal o de dash
-        if (isDashing)
+        if (!isDashing && movement.magnitude > 0)
         {
-            // rb.MovePosition(rb.position + movement * dashSpeed * Time.fixedDeltaTime);
-            // dashTime -= Time.fixedDeltaTime;
-
-            // Finalizar el dash cuando se acabe el tiempo
-            // if (dashTime <= 0)
-            // {
-            //     isDashing = false;
-            // }
-        }
-        else
-        {
-            // rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
-            MoverEn4Direcciones();
-        }
-    }
-
-
-    private void MoverEn4Direcciones()
-    {
-        if (isMoving == false && movement.magnitude > 0)
-        {
-            currentMove = 0;
-            initialMovePosition = transform.position;
-            moveC = StartCoroutine(MoveDirection(movement));
+            rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
         }
     }
 
@@ -92,58 +114,22 @@ public class Movimiento : MonoBehaviour
     {
         if (isDashing && movement.magnitude > 0)
         {
-            currentMove = 0;
-            initialMovePosition = transform.position;
             StartCoroutine(DashDirection(movement));
         }
     }
 
-    IEnumerator MoveDirection(Vector3 direccionMovimiento)
-    {
-        isMoving = true;
-
-        while (currentMove < 1)
-        {
-            yield return -1;
-            currentMove += direccionMovimiento.magnitude * speed * Time.deltaTime;
-            transform.position += direccionMovimiento * speed * Time.deltaTime;
-            
-        }
-        transform.position = new Vector3(initialMovePosition.x, transform.position.y, initialMovePosition.z) + direccionMovimiento;
-        isMoving = false;
-        moveC = null;
-    }
-
     IEnumerator DashDirection(Vector3 direccionMovimiento)
     {
-        if (moveC != null)
-        {
-            StopCoroutine(moveC);
-            isMoving = false;
-        }
-        
-
         isDashing = true;
-        float totalDashMove = dashTileMove;
+        float dashTime = 0f;
 
-
-        yield return -1;
-
-        
-        while (currentMove < totalDashMove)
+        while (dashTime < dashDuration)
         {
-            yield return -1;
-            currentMove += direccionMovimiento.magnitude * dashSpeed * Time.deltaTime;
-            transform.position += direccionMovimiento * dashSpeed * Time.deltaTime;
+            rb.MovePosition(rb.position + direccionMovimiento * dashSpeed * Time.fixedDeltaTime);
+            dashTime += Time.fixedDeltaTime;
+            yield return null;
         }
-        
-
-        Debug.Log(totalDashMove);
-        Debug.Log(new Vector3(initialMovePosition.x, transform.position.y, initialMovePosition.z) + ", " + (new Vector3(initialMovePosition.x, transform.position.y, initialMovePosition.z) + direccionMovimiento * totalDashMove));
-
-        transform.position = new Vector3(initialMovePosition.x, transform.position.y, initialMovePosition.z) + direccionMovimiento * totalDashMove;
 
         isDashing = false;
     }
-
 }

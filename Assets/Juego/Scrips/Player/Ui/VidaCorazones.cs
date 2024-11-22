@@ -26,6 +26,8 @@ public class VidaCorazones : MonoBehaviour
 
     private Image[] corazonesUI;
 
+    private int numCorazones;
+
     private void Start()
     {
         // Obtener referencia al sistema de Vida del jugador
@@ -47,8 +49,37 @@ public class VidaCorazones : MonoBehaviour
         vidaActual = uiCorazones.vidaActual;
         ActualizarCorazones();
     }
+    public void GenerarCorazonesNuevos()
+    {
+        foreach (Transform child in contenedorCorazones.transform)
+        {
+            Destroy(child.gameObject);
+        }
+        numCorazones ++;
+        corazonesUI = new Image[numCorazones];
 
-    private void GenerarCorazones()
+        for (int i = 0; i < numCorazones; i++)
+        {
+            GameObject nuevoCorazon = Instantiate(prefabCorazon, contenedorCorazones.transform);
+            if (nuevoCorazon != null)
+            {
+                corazonesUI[i] = nuevoCorazon.GetComponent<Image>();
+                if (corazonesUI[i] == null)
+                {
+                    Debug.LogError("El prefab del corazón no tiene un componente Image.");
+                }
+            }
+            else
+            {
+                Debug.LogError("No se pudo instanciar el prefab del corazón.");
+            }
+        }
+
+
+        // Mantiene intacta la lógica actual de actualización
+        ActualizarCorazones();
+    }
+    public void GenerarCorazones()
     {
         // Limpiar corazones anteriores
         foreach (Transform child in contenedorCorazones.transform)
@@ -56,7 +87,7 @@ public class VidaCorazones : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        int numCorazones = Mathf.CeilToInt((float)vidaMaxima / 4); // Corazones completos
+        numCorazones = (vidaMaxima / 4); // Corazones completos
         corazonesUI = new Image[numCorazones];
         Debug.Log($"Generando {numCorazones} corazones.");
 

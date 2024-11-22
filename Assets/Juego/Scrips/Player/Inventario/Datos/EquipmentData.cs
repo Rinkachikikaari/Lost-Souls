@@ -1,21 +1,24 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Item", menuName = "Inventory/Equipment")]
+public enum EquipmentCategory { Arma, Armadura, Herramientas }
+public enum EquipmentSubCategory { Espada, Arcos, Herramientas, Zapatos }
+
+[CreateAssetMenu(fileName = "NuevoEquipo", menuName = "Inventario/Equipamiento")]
 public class EquipmentData : ScriptableObject
 {
-    public string itemName;
+    public string EquipName;
     public Sprite icon;
-
-    public int defense;
-    public int attackBonus;
-    public EquipmentSlot slot; // Enum para indicar si es casco, armadura, etc.
+    public EquipmentCategory category;
+    public EquipmentSubCategory subCategory;
+    public int Daño;
+    public int CostoDeStaminaMin;
+    public int CostoDeStaminaMax;
+    public int DuracionDeAtaqueBase;
+    public int DuracionDeAtaqueMax;
+    public int TiempoDeCarga;
+    public int VelocidadMin;
+    public int VelocidadMax;
+    public bool SubManiro;
+    public bool TeHundes;
+    public bool cambiable; // Indica si el objeto puede ser cambiado
 }
-
-public enum EquipmentSlot
-{
-    Head,
-    Body,
-    Legs,
-    Weapon
-}
-

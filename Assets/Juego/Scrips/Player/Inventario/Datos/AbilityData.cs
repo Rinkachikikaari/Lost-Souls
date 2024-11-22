@@ -1,11 +1,14 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Item", menuName = "Inventory/Ability")]
+public enum AbilityCategory {Habilidad}
+public enum AbilitySubCategory { Magia, Tecnica }
+
+[CreateAssetMenu(fileName = "NuevaHabilidad", menuName = "Inventario/Habilidad")]
 public class AbilityData : ScriptableObject
 {
-    public string itemName;
+    public string abilityName;
     public Sprite icon;
+    public AbilityCategory category;
+    public AbilitySubCategory subCategory;
     public string description;
-    public bool isUnlocked;   // Si la habilidad está desbloqueada
-    public int manaCost;
 }

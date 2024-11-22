@@ -13,6 +13,7 @@ public class Gancho : MonoBehaviour
     private SelectorDeMagia SelectorDeMagia;
 
 
+
     private bool ganchoActivo = false;
     private Vector3 ultimaDireccion;
 
@@ -31,7 +32,7 @@ public class Gancho : MonoBehaviour
             ultimaDireccion = movimientoScript.movement;
         }
 
-        if (Input.GetKeyDown(KeyCode.Q) && !ganchoActivo && InventoryManager.instance.HasItem("Gancho"))
+        if (Input.GetKeyDown(KeyCode.Q) && !ganchoActivo && InventoryManager.instance.HasEquip("Gancho"))
         {
             LanzarGancho();
         }

@@ -20,6 +20,8 @@ public class DisparoFlecha : MonoBehaviour
     private Ataque AtaqueScript; 
     private Gancho GanchosScript;
     private SelectorDeMagia SelectorDeMagia;
+    [SerializeField] string currentWeapon;
+
 
     void Start()
     {
@@ -37,7 +39,7 @@ public class DisparoFlecha : MonoBehaviour
             ultimaDireccion = movimientoScript.movement;
         }
 
-        if (Input.GetKey(KeyCode.L) && InventoryManager.instance.HasItem("Arco"))
+        if (Input.GetKey(KeyCode.L) && InventoryManager.instance.HasEquip(currentWeapon))
         {
             cargandoDisparo = true;
             tiempoCargando += Time.deltaTime;
@@ -48,7 +50,7 @@ public class DisparoFlecha : MonoBehaviour
             tiempoCargando = Mathf.Clamp(tiempoCargando, 0, tiempoCargaMax);
         }
 
-        if (Input.GetKeyUp(KeyCode.L) && cargandoDisparo && InventoryManager.instance.HasItem("Arco"))
+        if (Input.GetKeyUp(KeyCode.L) && cargandoDisparo && InventoryManager.instance.HasEquip(currentWeapon))
         {
             float estaminaNecesaria = tiempoCargando >= tiempoCargaMax ? estaminaPorDisparoMax : estaminaPorDisparo;
 
@@ -69,6 +71,19 @@ public class DisparoFlecha : MonoBehaviour
             GanchosScript.enabled=true;
             SelectorDeMagia.enabled=true;
         }
+    }
+    public void UpdateCurrentWeapon()
+    {
+        if (PlayerStats.instance.espadaEquipada != null)
+        {
+            currentWeapon = PlayerStats.instance.espadaEquipada.EquipName;
+        }
+        else
+        {
+            currentWeapon = "Sin arma equipada";
+        }
+
+        Debug.Log($"Arma actualizada: {currentWeapon}");
     }
 
     void DispararFlecha()

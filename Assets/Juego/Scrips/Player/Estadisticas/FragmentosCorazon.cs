@@ -14,22 +14,21 @@ public class FragmentosCorazon : MonoBehaviour
         vidaJugador = GetComponent<VidaJugador>();
     }
 
-    public void AgregarFragmento()
+    public void AgregarFragmento(int cantidad)
     {
-        fragmentosActuales++;
+        fragmentosActuales += cantidad;
         Debug.Log($"Fragmento obtenido. Total: {fragmentosActuales}/{fragmentosNecesarios}");
 
-        if (fragmentosActuales >= fragmentosNecesarios)
+        while (fragmentosActuales >= fragmentosNecesarios)
         {
             AumentarVidaMaxima();
-            fragmentosActuales = 0; // Reiniciar contador de fragmentos
+            fragmentosActuales -= fragmentosNecesarios; // Reducir fragmentos restantes
         }
     }
 
     private void AumentarVidaMaxima()
     {
-        vidaJugador.vidaMaxima += 4; // Un corazón completo equivale a 2 unidades de vida
-        vidaJugador.CurarVida(vidaJugador.vidaMaxima); // Restaurar toda la vida
+        vidaJugador.AumentarVidaMaxima(4); // Un corazón completo equivale a 2 unidades de vida
         Debug.Log("¡Vida máxima aumentada!");
     }
 }
