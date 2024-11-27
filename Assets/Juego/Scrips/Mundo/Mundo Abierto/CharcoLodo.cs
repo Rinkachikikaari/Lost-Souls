@@ -8,7 +8,7 @@ public class CharcoLodo : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Movimiento movimientoJugador = other.GetComponent<Movimiento>();
+            Movimiento movimientoJugador = other.GetComponentInParent<Movimiento>();
             if (movimientoJugador != null)
             {
                 movimientoJugador.speed *= reduccionVelocidad;
@@ -20,7 +20,7 @@ public class CharcoLodo : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Movimiento movimientoJugador = other.GetComponent<Movimiento>();
+            Movimiento movimientoJugador = other.GetComponentInParent<Movimiento>();
             if (movimientoJugador != null)
             {
                 movimientoJugador.speed /= reduccionVelocidad;

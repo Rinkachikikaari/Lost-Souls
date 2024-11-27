@@ -15,6 +15,9 @@ public class PlayerStats : MonoBehaviour
     public EquipmentData arcoEquipado;
     public EquipmentData zapatosEquipados;
 
+    [Header("Equipamientos Actuales")]
+    public ItemData HerramientaActiva;
+
     [Header("Herramientas Disponibles")]
     public List<EquipmentData> herramientasDisponibles = new List<EquipmentData>();
 
