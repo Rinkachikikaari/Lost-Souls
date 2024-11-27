@@ -27,7 +27,7 @@ public class InventoryManager : MonoBehaviour
     }
     public void UsarItem(ItemData item)
     {
-        if (item.esAcumulable && item.cantidad > 0)
+        if (PuedoUsarItem(item))
         {
             item.cantidad--;
             Debug.Log($"Usaste {item.itemName}. Cantidad restante: {item.cantidad}");
@@ -38,6 +38,12 @@ public class InventoryManager : MonoBehaviour
             Debug.Log($"No puedes usar {item.itemName}.");
         }
     }
+
+    public bool PuedoUsarItem(ItemData item)
+    {
+        return item.esAcumulable && item.cantidad > 0;
+    }
+
     public void AddItem(ItemData newItem, int cantidad)
     {
         if (newItem.esAcumulable)

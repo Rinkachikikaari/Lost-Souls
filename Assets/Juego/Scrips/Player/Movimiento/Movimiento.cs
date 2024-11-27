@@ -20,11 +20,12 @@ public class Movimiento : MonoBehaviour
 
     private float lastMoveX = 0;       // Última dirección en X
     private float lastMoveY = 0;       // Última dirección en Y
-
+    JugadorInteraccion ji;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
+        ji = GetComponent<JugadorInteraccion>();
     }
 
     void Update()
@@ -106,7 +107,18 @@ public class Movimiento : MonoBehaviour
     {
         if (!isDashing && movement.magnitude > 0)
         {
-            rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+
+            if (ji.agarrando)
+            {
+                Vector3 movimiento = movement * (speed / ji.PesoObjeto()) * Time.fixedDeltaTime ;
+                
+
+                ji.MoveInteraction(movimiento);
+                rb.MovePosition(rb.position + movimiento);
+            }
+            else { 
+                rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+            }
         }
     }
 

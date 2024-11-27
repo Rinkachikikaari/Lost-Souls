@@ -107,7 +107,7 @@ MonoBehaviour:
   "da\xF1o": 2
   capasAfectadas:
     serializedVersion: 2
-    m_Bits: 136
+    m_Bits: 1160
 --- !u!65 &7057117612523084089
 BoxCollider:
   m_ObjectHideFlags: 0

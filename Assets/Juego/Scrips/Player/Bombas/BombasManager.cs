@@ -51,7 +51,7 @@ public class BombasManager : MonoBehaviour
 
     private void InstanciarBomba()
     {
-        if (InventoryManager.instance.HasItem("Bomba")) // Verificar si hay bombas en el inventario
+        if (InventoryManager.instance.HasItem("Bomba") && InventoryManager.instance.PuedoUsarItem(InventoryManager.instance.items.Find(i => i.itemName == "Bomba"))) // Verificar si hay bombas en el inventario
         {
             InventoryManager.instance.UsarItem(InventoryManager.instance.items.Find(i => i.itemName == "Bomba")); // Reducir cantidad
             Vector3 posicionBomba = transform.position; // Instanciar en los pies del jugador
@@ -78,6 +78,7 @@ public class BombasManager : MonoBehaviour
                 bombaActual.transform.SetParent(posicionSostener); // Fijar la bomba al jugador
                 bombaActual.transform.localPosition = Vector3.zero; // Centrarla en la posición de sostener
                 bombaActual.GetComponent<Rigidbody>().isKinematic = true; // Desactivar la física
+                bombaActual.GetComponent<Collider>().enabled = false; // Desactivar la física
                 sosteniendoBomba = true;
                 Debug.Log("Bomba agarrada.");
                 break;
@@ -95,6 +96,7 @@ public class BombasManager : MonoBehaviour
             if (rb != null)
             {
                 rb.isKinematic = false; // Reactivar la física
+                bombaActual.GetComponent<Collider>().enabled = true; // Desactivar la física
                 rb.AddForce(ultimaDireccion * fuerzaLanzamiento, ForceMode.Impulse); // Lanzar hacia la última dirección
             }
             bombaActual = null;

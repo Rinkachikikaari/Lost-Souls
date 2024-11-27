@@ -1,8 +1,10 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class ObjetoInteractivo : MonoBehaviour
 {
     [Header("Propiedades")]
+    public float peso = 1.0f;
     public bool esEmpujable = true; // Si el objeto puede ser empujado
     public bool esArrastrable = true; // Si el objeto puede ser arrastrado
 
@@ -21,7 +23,17 @@ public class ObjetoInteractivo : MonoBehaviour
     {
         if (rb != null)
         {
-            rb.linearVelocity = direccion; // Mueve el objeto en la dirección especificada
+            Debug.Log(direccion);
+            rb.MovePosition(rb.position + direccion);
         }
+    }
+
+    public void Tomar()
+    {
+        rb.isKinematic = false;
+    }
+    public void Soltar()
+    {
+        rb.isKinematic = true;
     }
 }

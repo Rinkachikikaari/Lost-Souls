@@ -30,7 +30,7 @@ public class Bombas : MonoBehaviour
         foreach (var objeto in objetosAfectados)
         {
             // Aplicar daño a enemigos o jugador
-            VidaJugador vida = objeto.GetComponent<VidaJugador>();
+            VidaJugador vida = objeto.GetComponentInParent<VidaJugador>();
             if (vida != null)
             {
                 vida.RecibirDano(daño);
