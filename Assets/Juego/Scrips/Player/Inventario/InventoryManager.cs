@@ -1,6 +1,7 @@
 
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -24,16 +25,44 @@ public class InventoryManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-
-
-    public void AddItem(ItemData newItem)
+    public void UsarItem(ItemData item)
     {
-        if (!items.Contains(newItem))
+        if (item.esAcumulable && item.cantidad > 0)
+        {
+            item.cantidad--;
+            Debug.Log($"Usaste {item.itemName}. Cantidad restante: {item.cantidad}");
+            InventoryUI.instance.UpdateInventoryUI(); // Actualiza la UI inmediatamente
+        }
+        else
+        {
+            Debug.Log($"No puedes usar {item.itemName}.");
+        }
+    }
+    public void AddItem(ItemData newItem, int cantidad)
+    {
+        if (newItem.esAcumulable)
+        {
+            ItemData itemExistente = items.Find(i => i.itemName == newItem.itemName);
+            if (itemExistente != null)
+            {
+                itemExistente.cantidad += cantidad;
+                InventoryUI.instance.UpdateInventoryUI(); // Actualiza la UI inmediatamente
+
+            }
+            else
+            {
+                newItem.cantidad = cantidad;
+                items.Add(newItem);
+                InventoryUI.instance.UpdateInventoryUI(); // Actualiza la UI inmediatamente
+
+            }
+        }
+        else if (!items.Contains(newItem))
         {
             items.Add(newItem);
             Debug.Log($"Añadido: {newItem.itemName}");
             InventoryUI.instance.UpdateInventoryUI(); // Actualiza la UI inmediatamente
+
         }
     }
 
@@ -43,6 +72,8 @@ public class InventoryManager : MonoBehaviour
         {
             equipment.Add(equip);
             Debug.Log($"Equipamiento agregado: {equip.EquipName}");
+            InventoryUI.instance.UpdateInventoryUI(); // Actualiza la UI inmediatamente
+
 
             // Verificar si no hay un objeto equipado de esta subcategoría
             if (!IsSubCategoryEquipped(equip.subCategory))
@@ -75,6 +106,8 @@ public class InventoryManager : MonoBehaviour
         {
             abilities.Add(ability);
             Debug.Log($"Habilidad desbloqueada: {ability.abilityName}");
+            InventoryUI.instance.UpdateInventoryUI(); // Actualiza la UI inmediatamente
+
         }
     }
 

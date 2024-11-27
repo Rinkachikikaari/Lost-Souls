@@ -66,14 +66,14 @@ public class Ataque : MonoBehaviour
         }
 
         // Ataque cargado con la tecla "K"
-        if (Input.GetKey(KeyCode.K) && atkCooldown && !isAttacking && InventoryManager.instance.HasItem(currentWeapon) && InventoryManager.instance.IsAbilityUnlocked("Girar"))
+        if (Input.GetKey(KeyCode.K) && atkCooldown && !isAttacking && InventoryManager.instance.HasEquip(currentWeapon) && InventoryManager.instance.IsAbilityUnlocked("Girar"))
         {
             isChargingAttack = true;
             tiempoCargando += Time.deltaTime;
             tiempoCargando = Mathf.Clamp(tiempoCargando, 0, tiempoCargaMax);
         }
 
-        if (Input.GetKeyUp(KeyCode.K) && isChargingAttack && InventoryManager.instance.HasItem(currentWeapon) && InventoryManager.instance.IsAbilityUnlocked("Girar"))
+        if (Input.GetKeyUp(KeyCode.K) && isChargingAttack && InventoryManager.instance.HasEquip(currentWeapon) && InventoryManager.instance.IsAbilityUnlocked("Girar"))
         {
             float estaminaNecesaria = tiempoCargando >= tiempoCargaMax ? estaminaPorAtaqueMax : estaminaPorAtaque;
 

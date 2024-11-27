@@ -7,11 +7,13 @@ public class VidaJugador : MonoBehaviour
     public int vidaActual; // Vida inicial en cuartos
     public VidaCorazones VidaCorazones;
 
-
-
+    [Header("Inmunidad al Daño")]
+    public float duracionInmunidad = 0.5f; // Duración de la inmunidad en segundos
+    private bool esInmune = false; // Indica si el jugador está en estado de inmunidad
 
     private void Start()
     {
+        vidaActual = vidaMaxima; // Asegura que la vida esté completa al inicio
     }
 
     public void CurarVida(int cantidad)
@@ -21,22 +23,48 @@ public class VidaJugador : MonoBehaviour
             if (vidaActual + cantidad < vidaMaxima)
             {
                 vidaActual = vidaActual + cantidad;
-
             }
-
         }
-
     }
 
     public void RecibirDano(int cantidad)
     {
-        vidaActual = Mathf.Clamp(vidaActual - cantidad, 0, vidaMaxima);
+        if (esInmune)
+        {
+            Debug.Log("El jugador es inmune al daño.");
+            return; // Ignorar el daño si está en estado inmune
+        }
 
+        Debug.Log($"Recibiendo daño: {cantidad}");
+        if (vidaActual - cantidad >= 0)
+        {
+            vidaActual -= cantidad;
+        }
+        else
+        {
+            vidaActual = 0;
+        }
 
         if (vidaActual <= 0)
         {
             Muerte();
         }
+        else
+        {
+            IniciarInmunidad(); // Activar la inmunidad tras recibir daño
+        }
+    }
+
+    private void IniciarInmunidad()
+    {
+        esInmune = true;
+        Invoke(nameof(TerminarInmunidad), duracionInmunidad); // Terminar la inmunidad después de 0.5 segundos
+    }
+
+    private void TerminarInmunidad()
+    {
+        esInmune = false;
+        Debug.Log("El jugador ya no es inmune.");
     }
 
     private void Muerte()
@@ -53,7 +81,6 @@ public class VidaJugador : MonoBehaviour
         if (vidaActual < vidaMaxima)
         {
             vidaActual = vidaMaxima;
-
         }
     }
 }

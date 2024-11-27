@@ -8,6 +8,8 @@ TagManager:
   - Superficie
   - Enemigo
   - Suelo
+  - FuegoAlmas
+  - Alma
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - Enemigo
   - 'Superficie '
   - Suelo
-  - 
+  - Destruible
   - 
   - 
   - 
