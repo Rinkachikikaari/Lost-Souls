@@ -20,6 +20,8 @@ public class CambioAlmas : MonoBehaviour
     public Gancho GanchoScript;
     public SelectorDeMagia SelectorDeMagia;
 
+    [SerializeField] string HerramientaActiva;
+
     private bool cercaDelFuego = false;
     private bool cambioPermitido = false;
     private bool controlAlmaActual = true;
@@ -31,12 +33,12 @@ public class CambioAlmas : MonoBehaviour
 
     private void Update()
     {
-        if (cercaDelFuego && Input.GetKeyDown(teclaActivar))
+        if (cercaDelFuego && Input.GetKeyDown(teclaActivar) && HerramientaActiva == "Lampara De Almas")
         {
             cambioPermitido = true;
         }
 
-        if (cambioPermitido && Input.GetKeyDown(teclaCambio))
+        if (cambioPermitido && Input.GetKeyDown(teclaCambio) && HerramientaActiva == "Lampara De Almas")
         {
             if (controlAlmaActual)
             {
@@ -98,5 +100,18 @@ public class CambioAlmas : MonoBehaviour
             cercaDelFuego = false;
             cambioPermitido = false;
         }
+    }
+    public void UpdateCurrentWeapon()
+    {
+        if (PlayerStats.instance.HerramientaActiva != null)
+        {
+            HerramientaActiva = PlayerStats.instance.HerramientaActiva.itemName;
+        }
+        else
+        {
+            HerramientaActiva = "Sin Herramienta equipada";
+        }
+
+        Debug.Log($"Herramienta actualizada: {HerramientaActiva}");
     }
 }

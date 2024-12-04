@@ -1,5 +1,6 @@
 
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEditor.Progress;
 
@@ -12,6 +13,8 @@ public class InventoryManager : MonoBehaviour
     public List<AbilityData> abilities = new List<AbilityData>();
     private Dictionary<EquipmentCategory, EquipmentData> equippedItems = new Dictionary<EquipmentCategory, EquipmentData>();
     private HashSet<EquipmentSubCategory> equippedCategories = new HashSet<EquipmentSubCategory>(); // Usado para asegurar que un equipo se equipe automáticamente solo la primera vez.
+    private Dictionary<ItemCategory, ItemData> ItemsEquip = new Dictionary<ItemCategory, ItemData>();
+    private HashSet<ItemSubCategory> itemCategory = new HashSet<ItemSubCategory>();
 
     private void Awake()
     {
@@ -62,12 +65,50 @@ public class InventoryManager : MonoBehaviour
                 InventoryUI.instance.UpdateInventoryUI(); // Actualiza la UI inmediatamente
 
             }
+            if (!IsSubCategoryItem(newItem.subCategory) && newItem.subCategory != ItemSubCategory.Moneda && newItem.subCategory != ItemSubCategory.Llave && newItem.subCategory != ItemSubCategory.Otro)
+            {
+                ItemEquip(newItem);
+                Debug.Log($"Equipamiento automático: {newItem.itemName}");
+
+                // Llamar al método adecuado en PlayerStats para actualizar el equipo actual
+                if (newItem.subCategory == ItemSubCategory.Pocion)
+                {
+                    PlayerStats.instance.EquiparHerramienta(newItem);
+                }
+                else if (newItem.subCategory == ItemSubCategory.Bombas)
+                {
+                    PlayerStats.instance.EquiparHerramienta(newItem);
+                }
+                else if (newItem.subCategory == ItemSubCategory.ObjetoEspecial)
+                {
+                    PlayerStats.instance.EquiparHerramienta(newItem);
+                }
+            }
         }
         else if (!items.Contains(newItem))
         {
             items.Add(newItem);
             Debug.Log($"Añadido: {newItem.itemName}");
             InventoryUI.instance.UpdateInventoryUI(); // Actualiza la UI inmediatamente
+            if (!IsSubCategoryItem(newItem.subCategory) && newItem.subCategory != ItemSubCategory.Moneda && newItem.subCategory != ItemSubCategory.Llave && newItem.subCategory != ItemSubCategory.Otro)
+            {
+                ItemEquip(newItem);
+                Debug.Log($"Equipamiento automático: {newItem.itemName}");
+
+                // Llamar al método adecuado en PlayerStats para actualizar el equipo actual
+                if (newItem.subCategory == ItemSubCategory.Pocion)
+                {
+                    PlayerStats.instance.EquiparHerramienta(newItem);
+                }
+                else if (newItem.subCategory == ItemSubCategory.Bombas)
+                {
+                    PlayerStats.instance.EquiparHerramienta(newItem);
+                }
+                else if (newItem.subCategory == ItemSubCategory.ObjetoEspecial)
+                {
+                    PlayerStats.instance.EquiparHerramienta(newItem);
+                }
+            }
 
         }
     }
@@ -130,6 +171,19 @@ public class InventoryManager : MonoBehaviour
         return true;
     }
 
+    public bool ItemEquip(ItemData NewItemEquip)
+    {
+        if (!NewItemEquip.esCambiale)
+        {
+            Debug.LogWarning($"{NewItemEquip.itemName} no se puede equipar.");
+            return false;
+        }
+
+        ItemsEquip[NewItemEquip.category] = NewItemEquip;
+        Debug.Log($"Equipado: {NewItemEquip.itemName} en categoría {NewItemEquip.category}");
+        return true;
+    }
+
     public void UnequipItem(EquipmentCategory category)
     {
         if (equippedItems.ContainsKey(category))
@@ -166,6 +220,15 @@ public class InventoryManager : MonoBehaviour
         foreach (var equipped in equippedItems.Values)
         {
             if (equipped.subCategory == subCategory)
+                return true;
+        }
+        return false;
+    }
+    private bool IsSubCategoryItem(ItemSubCategory subCategory)
+    {
+        foreach (var Item in ItemsEquip.Values)
+        {
+            if (Item.subCategory == subCategory)
                 return true;
         }
         return false;

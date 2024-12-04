@@ -10,6 +10,9 @@ public class BombasManager : MonoBehaviour
     public KeyCode teclaInteractuar = KeyCode.E; // Tecla para interactuar con la bomba
     public KeyCode teclaColocar = KeyCode.Q; // Tecla para instanciar la bomba
 
+    [SerializeField] string HerramientaActiva;
+
+
     private Bombas bombaActual; // Referencia a la bomba actual
     private Vector3 ultimaDireccion; // Última dirección de movimiento
     private bool sosteniendoBomba = false;
@@ -20,13 +23,13 @@ public class BombasManager : MonoBehaviour
         CapturarDireccionMovimiento();
 
         // Instanciar una nueva bomba
-        if (Input.GetKeyDown(teclaColocar))
+        if (Input.GetKeyDown(teclaColocar) && HerramientaActiva == "Bomba")
         {
             InstanciarBomba();
         }
 
         // Interactuar con bombas existentes
-        if (Input.GetKeyDown(teclaInteractuar))
+        if (Input.GetKeyDown(teclaInteractuar) && HerramientaActiva == "Bomba")
         {
             if (sosteniendoBomba)
             {
@@ -113,5 +116,19 @@ public class BombasManager : MonoBehaviour
             bombaActual = null;
             sosteniendoBomba = false;
         }
+    }
+
+    public void UpdateCurrentWeapon()
+    {
+        if (PlayerStats.instance.HerramientaActiva != null)
+        {
+            HerramientaActiva = PlayerStats.instance.HerramientaActiva.itemName;
+        }
+        else
+        {
+            HerramientaActiva = "Sin Herramienta equipada";
+        }
+
+        Debug.Log($"Herramienta actualizada: {HerramientaActiva}");
     }
 }

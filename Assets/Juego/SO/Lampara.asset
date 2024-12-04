@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153cd3dd5df321d40bdb4183858f5701, type: 3}
-  m_Name: Moneda
+  m_Name: Lampara
   m_EditorClassIdentifier: 
-  itemName: Moneda
-  icon: {fileID: 189993039, guid: c0ecc78aca37e124c80288e1f17be75d, type: 3}
+  itemName: Lampara De Almas
+  icon: {fileID: -997158470, guid: 3b61ec24044324243b3a2b8845dc07f5, type: 3}
   category: 0
-  subCategory: 4
-  cantidad: 800
-  esAcumulable: 1
-  esCambiale: 0
+  subCategory: 2
+  cantidad: 0
+  esAcumulable: 0
+  esCambiale: 1
   Curacion: 0
   precio: 0
   description: 

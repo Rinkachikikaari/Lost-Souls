@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153cd3dd5df321d40bdb4183858f5701, type: 3}
-  m_Name: Moneda
+  m_Name: PocionDeVidaMayor
   m_EditorClassIdentifier: 
-  itemName: Moneda
-  icon: {fileID: 189993039, guid: c0ecc78aca37e124c80288e1f17be75d, type: 3}
+  itemName: Pocion Mayor
+  icon: {fileID: 1152193179, guid: 6749ee001d18e7147bb722824367ea9b, type: 3}
   category: 0
-  subCategory: 4
-  cantidad: 800
+  subCategory: 0
+  cantidad: 0
   esAcumulable: 1
-  esCambiale: 0
-  Curacion: 0
-  precio: 0
+  esCambiale: 1
+  Curacion: 1
+  precio: 120
   description: 

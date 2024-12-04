@@ -20,8 +20,8 @@ MonoBehaviour:
   CostoDeStaminaMin: 20
   CostoDeStaminaMax: 75
   DuracionDeAtaqueBase: 1
-  DuracionDeAtaqueMax: 3
-  TiempoDeCarga: 3
+  DuracionDeAtaqueMax: 0
+  TiempoDeCarga: 2
   VelocidadMin: 0
   VelocidadMax: 0
   SubManiro: 0

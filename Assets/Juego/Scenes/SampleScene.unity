@@ -3085,6 +3085,10 @@ MonoBehaviour:
   - {fileID: 4174701998469481321, guid: e2d2633f4ace211429a69e9585a9ff5f, type: 3}
   - {fileID: 2709945298463662979, guid: 779c4d981a495ca40b5c98652a593cfa, type: 3}
   - {fileID: 4769127129928548393, guid: e05bf88308e29754682049657dfe19b8, type: 3}
+  - {fileID: 3774268820181132243, guid: fa6553b23eba9d6488c99340712a747a, type: 3}
+  - {fileID: 6059878444574241814, guid: c1818739d878edb4ebc1d8a7130faff8, type: 3}
+  - {fileID: 1661519384145536086, guid: 8511a26a2e0a281459f1fd38d1b61bfe, type: 3}
+  - {fileID: 1805367352999330020, guid: 6a1fa7dde7ac6db43b3b0e9a03cdbe16, type: 3}
   tiempoRevision: 10
 --- !u!212 &762536472
 SpriteRenderer:
@@ -3346,7 +3350,7 @@ GameObject:
   - component: {fileID: 882796667}
   - component: {fileID: 882796666}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Collider Espada
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3395,7 +3399,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882796662}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -3839,6 +3843,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponManager: {fileID: 2128803927}
   ArcosManager: {fileID: 2128803930}
+  BombasManager: {fileID: 2128803943}
+  CambioAlmas: {fileID: 2128803941}
+  PocionCurativa: {fileID: 2128803944}
   espadaEquipada: {fileID: 0}
   arcoEquipado: {fileID: 0}
   zapatosEquipados: {fileID: 0}
@@ -5069,7 +5076,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1663932123
 Transform:
   m_ObjectHideFlags: 0
@@ -6700,6 +6707,93 @@ Transform:
   m_Children: []
   m_Father: {fileID: 260149181}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2062319801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2062319802}
+  - component: {fileID: 2062319803}
+  m_Layer: 3
+  m_Name: Espada
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2062319802
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062319801}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.4922954, y: -0, z: -0, w: 0.8704282}
+  m_LocalPosition: {x: -0.114, y: -0.335, z: -0.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 2128803924}
+  m_LocalEulerAnglesHint: {x: 58.983, y: 0, z: 0}
+--- !u!212 &2062319803
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062319801}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &2078201513
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6774,6 +6868,7 @@ GameObject:
   - component: {fileID: 2128803923}
   - component: {fileID: 2128803941}
   - component: {fileID: 2128803939}
+  - component: {fileID: 2128803944}
   - component: {fileID: 2128803937}
   - component: {fileID: 2128803938}
   - component: {fileID: 2128803931}
@@ -6789,8 +6884,6 @@ GameObject:
   - component: {fileID: 2128803922}
   - component: {fileID: 2128803940}
   - component: {fileID: 2128803926}
-  - component: {fileID: 2128803925}
-  - component: {fileID: 2128803932}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -6890,29 +6983,9 @@ Transform:
   - {fileID: 40618096}
   - {fileID: 697661602}
   - {fileID: 1991547466}
+  - {fileID: 2062319802}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 12, y: 0, z: 0}
---- !u!65 &2128803925
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2128803919}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1.4134277, z: 1}
-  m_Center: {x: 0, y: 0.004619539, z: 0}
 --- !u!54 &2128803926
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7031,27 +7104,6 @@ MonoBehaviour:
   estaminaMaxima: 100
   tiempoRecarga: 7
   tiempoRecargaCompleta: 3
---- !u!65 &2128803932
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2128803919}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1.4141688, z: 1}
-  m_Center: {x: 0, y: 0.0042488575, z: 0}
 --- !u!114 &2128803933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7065,7 +7117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   costoMana: 25
-  radio: 8
+  radio: 5
   fuerzaEmpuje: 10
   enemigosLayer:
     serializedVersion: 2
@@ -7083,7 +7135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   costoMana: 30
-  radio: 5
+  radio: 2
   dano: 50
   enemigosLayer:
     serializedVersion: 2
@@ -7102,7 +7154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   costoMana: 20
   duracionAturdimiento: 2
-  rango: 5
+  rango: 3
   enemigosLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -7203,6 +7255,7 @@ MonoBehaviour:
   ArcoScript: {fileID: 2128803930}
   GanchoScript: {fileID: 2128803929}
   SelectorDeMagia: {fileID: 2128803936}
+  HerramientaActiva: 
 --- !u!114 &2128803942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7238,6 +7291,20 @@ MonoBehaviour:
   radioDeteccion: 1.5
   teclaInteractuar: 101
   teclaColocar: 102
+  HerramientaActiva: 
+--- !u!114 &2128803944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128803919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26cb59496b72908439b59c1139e8d046, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VidaJugador: {fileID: 2128803938}
 --- !u!1 &2136116939
 GameObject:
   m_ObjectHideFlags: 0

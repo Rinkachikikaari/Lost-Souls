@@ -68,7 +68,7 @@ public class TiendaObjeto : MonoBehaviour
 
         // Acceder a las monedas desde el InventoryManager
         ItemData monedaItem = InventoryManager.instance.items.Find(i => i.subCategory == ItemSubCategory.Moneda);
-        if (monedaItem != null && monedaItem.cantidad >= item.precio)
+        if (monedaItem != null && monedaItem.cantidad >= item.precio*Cantidad)
         {
             monedaItem.cantidad -= item.precio * Cantidad;
             InventoryManager.instance.AddItem(item, Cantidad);

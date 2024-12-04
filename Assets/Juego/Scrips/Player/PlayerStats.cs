@@ -7,6 +7,11 @@ public class PlayerStats : MonoBehaviour
     [Header("Referencias")]
     [SerializeField] private Ataque weaponManager;
     [SerializeField] private DisparoFlecha ArcosManager;
+    [SerializeField] private BombasManager BombasManager;
+    [SerializeField] private CambioAlmas CambioAlmas;
+    [SerializeField] private PocionCurativa PocionCurativa;
+
+
 
     public static PlayerStats instance;
 
@@ -50,7 +55,39 @@ public class PlayerStats : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    public void EquiparHerramienta(ItemData item)
+    {
+        if (item.subCategory == ItemSubCategory.ObjetoEspecial && item.esCambiale)
+        {
+            HerramientaActiva = item;
+            ActualizarStats();
+            // Llamar al método para actualizar currentWeapon
+            if (HerramientaActiva != null)
+            {
+                CambioAlmas.UpdateCurrentWeapon();
+            }
+        }
+        if (item.subCategory == ItemSubCategory.Bombas && item.esCambiale)
+        {
+            HerramientaActiva = item;
+            ActualizarStats();
+            // Llamar al método para actualizar currentWeapon
+            if (HerramientaActiva != null)
+            {
+                BombasManager.UpdateCurrentWeapon();
+            }
+        }
+        if (item.subCategory == ItemSubCategory.Pocion && item.esCambiale)
+        {
+            HerramientaActiva = item;
+            ActualizarStats();
+            if (HerramientaActiva != null)
+            {
+                PocionCurativa.UpdateCurrentWeapon();
+            }
+        }
 
+    }
     public void EquiparEspada(EquipmentData espada)
     {
         if (espada.subCategory == EquipmentSubCategory.Espada && espada.cambiable)

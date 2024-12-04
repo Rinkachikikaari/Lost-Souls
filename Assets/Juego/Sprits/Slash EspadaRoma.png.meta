@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4191161c61df4aa4a83a9b6b7e8feed0
+guid: dcdb958635b44764881b3545976c327b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,34 +97,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Slash_0
+      name: Slash EspadaRoma_0
       rect:
         serializedVersion: 2
-        x: 11
+        x: 8
         y: 179
-        width: 15
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 302494983164ed24b88e8a026447c952
-      internalID: 1415282213
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slash_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 177
-        width: 14
+        width: 18
         height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -134,19 +112,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c2d7e9cf0229f74abeb6ad105891a04
-      internalID: -480571621
+      spriteID: 7c7c55b0619e91c4bb98372ba56563d4
+      internalID: 2110504624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash_2
+      name: Slash EspadaRoma_1
       rect:
         serializedVersion: 2
-        x: 56
-        y: 169
-        width: 18
+        x: 31
+        y: 175
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0a65e4a6d62764d85dbdfa9911907d
+      internalID: 931779969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaRoma_2
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 167
+        width: 21
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0ec3c7dbc490954d8b840cdb6213c1c
-      internalID: -824567094
+      spriteID: 2472dfc4fa2f81041b871e7c79cd4127
+      internalID: 1657846231
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash_3
+      name: Slash EspadaRoma_3
       rect:
         serializedVersion: 2
-        x: 78
-        y: 171
-        width: 16
-        height: 14
+        x: 76
+        y: 168
+        width: 20
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b758635c74fddf445b3dfb2aaa669c81
-      internalID: -2135590301
+      spriteID: 1e32f5523979af94ea77093136f3cd86
+      internalID: -869582517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash_4
+      name: Slash EspadaRoma_4
       rect:
         serializedVersion: 2
         x: 98
-        y: 170
+        y: 167
         width: 19
-        height: 15
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 842cf35d3f58f8d468c78fbcd346a715
-      internalID: 714644088
+      spriteID: 46cb0009b1e61444eb03beac58516694
+      internalID: 1602273756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash_5
+      name: Slash EspadaRoma_5
       rect:
         serializedVersion: 2
         x: 126
-        y: 171
+        y: 167
         width: 18
-        height: 14
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da76991f9371d1a4abe32ffb9d69cb2d
-      internalID: -685432741
+      spriteID: ef2752f61101c1847b051a3161ed9f2e
+      internalID: -242991206
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash_6
+      name: Slash EspadaRoma_6
       rect:
         serializedVersion: 2
-        x: 156
-        y: 170
-        width: 14
-        height: 15
+        x: 151
+        y: 168
+        width: 18
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7957bde5ea746b943bd1c3a74e43458b
-      internalID: -1730885970
+      spriteID: 08cf6c59cd4f3e94aa2298a567819dc9
+      internalID: -1973479624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash_7
+      name: Slash EspadaRoma_7
       rect:
         serializedVersion: 2
         x: 174
-        y: 170
-        width: 14
-        height: 14
+        y: 169
+        width: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,19 +266,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f38df1de778c37140bd47c4e7840ce36
-      internalID: 1158755059
+      spriteID: effd0cc29f6eed34292f9a4a7ce73860
+      internalID: 1080534730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash_8
+      name: Slash EspadaRoma_8
       rect:
         serializedVersion: 2
         x: 194
         y: 173
-        width: 15
+        width: 18
         height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7edfd935d43c02840987740c209d57ec
-      internalID: -1665399404
+      spriteID: 6bdde8741577fff46b557e837b74d519
+      internalID: 713555878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash_9
+      name: Slash EspadaRoma_9
       rect:
         serializedVersion: 2
         x: 10
         y: 143
-        width: 6
-        height: 15
+        width: 7
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,218 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ddf8bb43d9190a43b9c22afd5d9a602
-      internalID: -545955290
+      spriteID: ae381a0eeb45ff244bf60e0375c6eca6
+      internalID: -1438946961
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash_10
+      name: Slash EspadaRoma_10
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 142
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f47739a25582d4ab7983c7cb95de40
+      internalID: -576140708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaRoma_11
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 134
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad87a164b58e5984593d7777e00fe98f
+      internalID: 2111701038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaRoma_12
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 134
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a39f3a7be672c34899b4807ac1ea724
+      internalID: -12063842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaRoma_13
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 140
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5f0d41ec8f1dd4e89c74c9da777187
+      internalID: -1184623781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaRoma_14
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 141
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe89018d62d70b4783e0dafbd8040b0
+      internalID: -363861481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaRoma_15
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 139
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 709ce2a2d10d11941a5686e43e47906c
+      internalID: -956018048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaRoma_16
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 142
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0456738c645fc2c4e8879d4ee84a77c6
+      internalID: 945843022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaRoma_17
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 141
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a770e2645a61fe48ae732abe88b9cb3
+      internalID: 1021521959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaRoma_18
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 108
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7ea02b856887546bfdb4b15dbd5ddb
+      internalID: -1686187912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaRoma_19
       rect:
         serializedVersion: 2
         x: 22
-        y: 143
-        width: 7
-        height: 14
+        y: 107
+        width: 10
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +530,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25874a26bd9523544856c615710e971b
-      internalID: -2147127694
+      spriteID: 0205775921136b3409684e50eabbd2d4
+      internalID: -1488456836
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash_11
+      name: Slash EspadaRoma_20
       rect:
         serializedVersion: 2
-        x: 34
-        y: 135
+        x: 38
+        y: 100
         width: 15
-        height: 18
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +552,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21b02ab3314cae14c9849c2b304037b2
-      internalID: 1582476006
+      spriteID: 4ec09020ce3e5c24ba891ba9feded525
+      internalID: -1422335880
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash_12
+      name: Slash EspadaRoma_21
       rect:
         serializedVersion: 2
         x: 56
-        y: 135
-        width: 14
-        height: 17
+        y: 98
+        width: 17
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,19 +574,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac003630fa6eb1a4bb65925f6f877291
-      internalID: 838412668
+      spriteID: c62a01688c2550b44a73552c20348a55
+      internalID: 584796290
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash_13
+      name: Slash EspadaRoma_22
       rect:
         serializedVersion: 2
         x: 75
-        y: 140
-        width: 15
+        y: 104
+        width: 18
         height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -398,217 +596,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2250f3a348753249aab7fc23dc0b299
-      internalID: -1562943998
+      spriteID: 725ac97444c425c4cba76b15c8620de2
+      internalID: -435294769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash_14
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 141
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 652dfebb6f62ba243b9f31502a2adb0d
-      internalID: 620952029
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slash_15
-      rect:
-        serializedVersion: 2
-        x: 115
-        y: 144
-        width: 15
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9268a4dad80e0e94cb57bf91a2b30018
-      internalID: 556683422
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slash_16
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 145
-        width: 14
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e49a5977add64ac47b9702adbbd71432
-      internalID: -1656689356
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slash_17
-      rect:
-        serializedVersion: 2
-        x: 158
-        y: 144
-        width: 10
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22538e4942dce9a4da20e54a50070527
-      internalID: -2007987158
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slash_18
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 108
-        width: 6
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c53214c4306a68c4e8e0a2772b0ee323
-      internalID: -355051717
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slash_19
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 108
-        width: 7
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6b1c0eb3b5d9e149ab4b8afdf1a5654
-      internalID: -1501442599
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slash_20
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 100
-        width: 15
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c4995841f22be474b82dcf092e31ced0
-      internalID: 256314190
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slash_21
-      rect:
-        serializedVersion: 2
-        x: 54
-        y: 100
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6863a6031f43b4f4393b73588d07a466
-      internalID: 582308472
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slash_22
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 105
-        width: 15
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87e5a9158e4dda44a95ac160125cd97a
-      internalID: -1046493821
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slash_23
+      name: Slash EspadaRoma_23
       rect:
         serializedVersion: 2
         x: 94
         y: 106
-        width: 14
+        width: 19
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -618,20 +618,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff6b27e4a4378be45af9640cc4644ffb
-      internalID: -1587299188
+      spriteID: 43a948017cc2f6e4b9dfa8dce9c01f5a
+      internalID: -2107819534
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash_24
+      name: Slash EspadaRoma_24
       rect:
         serializedVersion: 2
-        x: 114
-        y: 109
-        width: 15
-        height: 13
+        x: 116
+        y: 102
+        width: 19
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -640,20 +640,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffc82e95a8d97c84fb4868f84db383e9
-      internalID: 855713030
+      spriteID: 019402efd45ec0c4d9775a69266059c7
+      internalID: -1264059402
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash_25
+      name: Slash EspadaRoma_25
       rect:
         serializedVersion: 2
-        x: 135
-        y: 110
-        width: 14
-        height: 14
+        x: 140
+        y: 106
+        width: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -662,20 +662,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1ccc3b32e275e74394c66f410561d22
-      internalID: 2129312090
+      spriteID: 9618ab520c953764e9eb9e5abcee63fc
+      internalID: 996563336
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash_26
+      name: Slash EspadaRoma_26
       rect:
         serializedVersion: 2
-        x: 156
-        y: 109
-        width: 10
-        height: 15
+        x: 161
+        y: 106
+        width: 11
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -684,41 +684,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c5fd2d85e6f6b847a7c82c39891e235
-      internalID: 60612036
+      spriteID: 76425886c8d569043b8e59cd156c4151
+      internalID: 1950917065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash_27
+      name: Slash EspadaRoma_27
       rect:
         serializedVersion: 2
         x: 10
-        y: 74
-        width: 15
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6806023503165324eaad365478b908ad
-      internalID: 2097171247
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slash_28
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 75
-        width: 14
+        y: 73
+        width: 18
         height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -728,19 +706,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46b8b1ff85601324caedda13192395bc
-      internalID: 1502011937
+      spriteID: 1a4fc3bac19cb5840b6acaad5794862e
+      internalID: -1382423396
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash_29
+      name: Slash EspadaRoma_28
       rect:
         serializedVersion: 2
-        x: 50
-        y: 75
-        width: 18
+        x: 30
+        y: 74
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e574ab25ee161c944835a3758b9d5771
+      internalID: -1926994780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaRoma_29
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 78
+        width: 21
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -750,20 +750,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4ac2d8c3e040ae4aa09574057069540
-      internalID: 1562432778
+      spriteID: 10936fefd9207cc4e8dce796ebf2db7f
+      internalID: -1567207048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash_30
+      name: Slash EspadaRoma_30
       rect:
         serializedVersion: 2
-        x: 78
+        x: 77
         y: 74
-        width: 16
-        height: 14
+        width: 20
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -772,20 +772,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b945ed007c4c5549af41b4328ac9a5a
-      internalID: 1973065180
+      spriteID: 82a59963ff325ab47a0f3dd79b8e295e
+      internalID: -1555525627
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash_31
+      name: Slash EspadaRoma_31
       rect:
         serializedVersion: 2
         x: 103
         y: 74
         width: 19
-        height: 15
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -794,20 +794,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a82ab60d36ebbf24e8e56aaa03ebb714
-      internalID: -467839945
+      spriteID: 14b550a2c61431f4ab65843871076c8e
+      internalID: 769791164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash_32
+      name: Slash EspadaRoma_32
       rect:
         serializedVersion: 2
         x: 132
-        y: 74
+        y: 73
         width: 18
-        height: 14
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -816,20 +816,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fbc8214e8fa2994fb15b6804c45d440
-      internalID: -730542824
+      spriteID: 0e0537a11bf056945be8b2f4140c6990
+      internalID: 1816142537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash_33
+      name: Slash EspadaRoma_33
       rect:
         serializedVersion: 2
         x: 154
-        y: 74
-        width: 14
-        height: 15
+        y: 73
+        width: 18
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -838,20 +838,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc7f618315aeef541970fd184b21cb18
-      internalID: -157788927
+      spriteID: 61a3efa8202fcb848b3a3396b1b3aaad
+      internalID: 1288651231
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash_34
+      name: Slash EspadaRoma_34
       rect:
         serializedVersion: 2
-        x: 176
-        y: 75
-        width: 14
-        height: 14
+        x: 177
+        y: 74
+        width: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -860,19 +860,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c79043e60e5d5a4a8f3f69bc7ce530f
-      internalID: 377046955
+      spriteID: 2e00318bf75a326429bdcecc7945a2ef
+      internalID: -1145983712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash_35
+      name: Slash EspadaRoma_35
       rect:
         serializedVersion: 2
-        x: 195
+        x: 199
         y: 74
-        width: 15
+        width: 18
         height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -882,20 +882,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d019b4113053b74fb90ead2a2ce2796
-      internalID: 993687260
+      spriteID: 26a71c7bbb5cfee46b451c6f8fc9bc43
+      internalID: 381656647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash_36
+      name: Slash EspadaRoma_36
       rect:
         serializedVersion: 2
-        x: 0
-        y: 51
-        width: 33
-        height: 13
+        x: 2
+        y: 1
+        width: 224
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -904,8 +904,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6cd0050aa8d88847adbbf0b7b195023
-      internalID: 349549940
+      spriteID: 73731a45153fdc34e8dc82d6045eccf2
+      internalID: -1149183380
       vertices: []
       indices: 
       edges: []
@@ -914,7 +914,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a733aa68718f03242affea64e61d4b63
+    spriteID: f7b9fb11c7943bc4a831e00cb8f4e980
     internalID: 0
     vertices: []
     indices: 
@@ -924,43 +924,43 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Slash_0: 1415282213
-      Slash_1: -480571621
-      Slash_10: -2147127694
-      Slash_11: 1582476006
-      Slash_12: 838412668
-      Slash_13: -1562943998
-      Slash_14: 620952029
-      Slash_15: 556683422
-      Slash_16: -1656689356
-      Slash_17: -2007987158
-      Slash_18: -355051717
-      Slash_19: -1501442599
-      Slash_2: -824567094
-      Slash_20: 256314190
-      Slash_21: 582308472
-      Slash_22: -1046493821
-      Slash_23: -1587299188
-      Slash_24: 855713030
-      Slash_25: 2129312090
-      Slash_26: 60612036
-      Slash_27: 2097171247
-      Slash_28: 1502011937
-      Slash_29: 1562432778
-      Slash_3: -2135590301
-      Slash_30: 1973065180
-      Slash_31: -467839945
-      Slash_32: -730542824
-      Slash_33: -157788927
-      Slash_34: 377046955
-      Slash_35: 993687260
-      Slash_36: 349549940
-      Slash_4: 714644088
-      Slash_5: -685432741
-      Slash_6: -1730885970
-      Slash_7: 1158755059
-      Slash_8: -1665399404
-      Slash_9: -545955290
+      Slash EspadaRoma_0: 2110504624
+      Slash EspadaRoma_1: 931779969
+      Slash EspadaRoma_10: -576140708
+      Slash EspadaRoma_11: 2111701038
+      Slash EspadaRoma_12: -12063842
+      Slash EspadaRoma_13: -1184623781
+      Slash EspadaRoma_14: -363861481
+      Slash EspadaRoma_15: -956018048
+      Slash EspadaRoma_16: 945843022
+      Slash EspadaRoma_17: 1021521959
+      Slash EspadaRoma_18: -1686187912
+      Slash EspadaRoma_19: -1488456836
+      Slash EspadaRoma_2: 1657846231
+      Slash EspadaRoma_20: -1422335880
+      Slash EspadaRoma_21: 584796290
+      Slash EspadaRoma_22: -435294769
+      Slash EspadaRoma_23: -2107819534
+      Slash EspadaRoma_24: -1264059402
+      Slash EspadaRoma_25: 996563336
+      Slash EspadaRoma_26: 1950917065
+      Slash EspadaRoma_27: -1382423396
+      Slash EspadaRoma_28: -1926994780
+      Slash EspadaRoma_29: -1567207048
+      Slash EspadaRoma_3: -869582517
+      Slash EspadaRoma_30: -1555525627
+      Slash EspadaRoma_31: 769791164
+      Slash EspadaRoma_32: 1816142537
+      Slash EspadaRoma_33: 1288651231
+      Slash EspadaRoma_34: -1145983712
+      Slash EspadaRoma_35: 381656647
+      Slash EspadaRoma_36: -1149183380
+      Slash EspadaRoma_4: 1602273756
+      Slash EspadaRoma_5: -242991206
+      Slash EspadaRoma_6: -1973479624
+      Slash EspadaRoma_7: 1080534730
+      Slash EspadaRoma_8: 713555878
+      Slash EspadaRoma_9: -1438946961
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

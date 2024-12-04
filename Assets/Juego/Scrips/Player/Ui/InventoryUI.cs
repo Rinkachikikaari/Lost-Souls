@@ -1,4 +1,5 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -112,16 +113,19 @@ public class InventoryUI : MonoBehaviour
             switch (item.subCategory)
             {
                 case ItemSubCategory.Pocion:
-                    CreateItemSlot(pocionesGrid, item, null, itemSlotPrefab);
+                    CreateItemSlot(pocionesGrid, item, () => PlayerStats.instance.EquiparHerramienta(item), itemSlotPrefab);
                     break;
                 case ItemSubCategory.Llave:
                     CreateItemSlot(llavesGrid, item, null, itemSlotPrefab);
                     break;
                 case ItemSubCategory.Bombas:
-                    CreateItemSlot(otrosGrid, item, null, itemSlotPrefab);
+                    CreateItemSlot(otrosGrid, item, () => PlayerStats.instance.EquiparHerramienta(item), itemSlotPrefab);
                     break;
                 case ItemSubCategory.Moneda:
                     CreateItemSlot(monedasGrid, item, null, monedaSlotPrefab);
+                    break;
+                case ItemSubCategory.ObjetoEspecial:
+                    CreateItemSlot(otrosGrid, item, () => PlayerStats.instance.EquiparHerramienta(item), itemSlotPrefab);
                     break;
                 case ItemSubCategory.Otro:
                     CreateItemSlot(otrosGrid, item, null, itemSlotPrefab);

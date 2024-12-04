@@ -13,6 +13,8 @@ public class ItemData : ScriptableObject
     public ItemSubCategory subCategory;
     public int cantidad;         // Cantidad del ítem (si es acumulable)
     public bool esAcumulable;
+    public bool esCambiale;
+    public int Curacion;
     public int precio;
     public string description;
 }
