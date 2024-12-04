@@ -12,7 +12,7 @@ public class Fragmento : MonoBehaviour
         {
             if (!entre)
             {
-                FragmentosCorazon fragmentosCorazon = other.GetComponent<FragmentosCorazon>();
+                FragmentosCorazon fragmentosCorazon = other.GetComponentInParent<FragmentosCorazon>();
                 if (fragmentosCorazon != null)
                 {
                     fragmentosCorazon.AgregarFragmento(cantidadFragmentos);

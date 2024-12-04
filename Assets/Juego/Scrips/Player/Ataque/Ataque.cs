@@ -39,7 +39,7 @@ public class Ataque : MonoBehaviour
 
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         if (!isAttacking && !isChargingAttack)
         {

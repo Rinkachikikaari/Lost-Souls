@@ -20,12 +20,11 @@ public class Movimiento : MonoBehaviour
 
     private float lastMoveX = 0;       // Última dirección en X
     private float lastMoveY = 0;       // Última dirección en Y
-    JugadorInteraccion ji;
+    public JugadorInteraccion ji;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
-        ji = GetComponent<JugadorInteraccion>();
     }
 
     void Update()

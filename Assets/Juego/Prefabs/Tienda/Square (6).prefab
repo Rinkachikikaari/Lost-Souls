@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1835031822118684256}
   - component: {fileID: 2610477623696494164}
+  - component: {fileID: 728232124691205355}
   - component: {fileID: 9034318341176266336}
   - component: {fileID: 3452937158984604682}
   m_Layer: 0
@@ -90,6 +91,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &728232124691205355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661519384145536086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851d71bb5a1fda34f83e362b8b8fba15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &9034318341176266336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,15 +200,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -1149183380, guid: dcdb958635b44764881b3545976c327b, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

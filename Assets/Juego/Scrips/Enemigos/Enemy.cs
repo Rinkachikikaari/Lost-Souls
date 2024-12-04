@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 public class Enemy : MonoBehaviour
 {
@@ -82,12 +83,18 @@ public class Enemy : MonoBehaviour
     }
 
     // Método para ser empujado por la habilidad de aire
-    public void SerEmpujado(Vector3 direccionEmpuje, float fuerzaEmpuje)
+    public void SerEmpujado()
     {
-        if (!puedeSerEmpujado) return;
 
         Debug.Log($"{gameObject.name} está siendo empujado.");
-        rb.AddForce(direccionEmpuje.normalized * fuerzaEmpuje, ForceMode.Impulse);
+        iaScript.enabled = false;
+        Invoke("SI",2);
+
+
+    }
+    public void SI()
+    {
+        iaScript.enabled = true;
     }
 
     // Método de muerte

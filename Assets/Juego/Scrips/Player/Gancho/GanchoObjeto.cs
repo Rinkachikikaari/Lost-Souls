@@ -8,25 +8,46 @@ public class GanchoObjeto : MonoBehaviour
     private Vector3 direccion;
     private Transform jugador;
     private Gancho ganchoScript;
+    bool go = true;
+    public SpriteRenderer cadena;
 
     private void Update()
     {
-        // Mover el gancho hacia adelante
-        transform.position += direccion * velocidadGancho * Time.deltaTime;
-
-        // Verificar si alcanzó la distancia máxima
-        if (Vector3.Distance(transform.position, jugador.position) > distanciaMaxima)
+        if (go)
         {
-            Debug.Log("Gancho alcanzó su distancia máxima.");
-            ganchoScript.FinGancho();
-            Destroy(gameObject);
+            // Mover el gancho hacia adelante
+            transform.position += direccion * velocidadGancho * Time.deltaTime;
+            cadena.transform.position -= direccion * velocidadGancho * Time.deltaTime / 2;
+            cadena.size =  new Vector2(Vector3.Distance(transform.position, jugador.position), cadena.size.y);
+
+            // Verificar si alcanzó la distancia máxima
+            if (Vector3.Distance(transform.position, jugador.position) > distanciaMaxima)
+            {
+                Debug.Log("Gancho alcanzó su distancia máxima.");
+;
+                go = false;
+            }
         }
+        else
+        {
+            transform.position -= direccion * velocidadGancho * Time.deltaTime;
+            cadena.size = new Vector2(Vector3.Distance(transform.position, jugador.position), cadena.size.y);
+            cadena.transform.position += direccion * velocidadGancho * Time.deltaTime /2;
+            if (Vector3.Distance(transform.position, jugador.position) <= 0.5f)
+            {
+                ganchoScript.FinGancho();
+                Destroy(this.gameObject);
+                go = true;
+            }
+        }
+        
     }
     public void ConfigurarGancho(Vector3 dir, Transform jugadorRef, Gancho gancho)
     {
         direccion = dir.normalized;
         jugador = jugadorRef;
         ganchoScript = gancho;
+
     }
 
     private void OnTriggerEnter(Collider other)
