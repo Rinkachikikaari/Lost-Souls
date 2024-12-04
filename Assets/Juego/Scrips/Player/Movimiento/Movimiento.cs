@@ -133,12 +133,22 @@ public class Movimiento : MonoBehaviour
     IEnumerator DashDirection(Vector3 direccionMovimiento)
     {
         isDashing = true;
-        float dashTime = 0f;
 
-        while (dashTime < dashDuration)
+        animator.SetTrigger("Roll"); // Activar el trigger de animación
+
+        float elapsedTime = 0f;
+        Vector3 startPosition = rb.position;
+        Vector3 targetPosition = startPosition + direccionMovimiento * dashSpeed * dashDuration;
+
+        // Movimiento interpolado
+        while (elapsedTime < dashDuration)
         {
-            rb.MovePosition(rb.position + direccionMovimiento * dashSpeed * Time.fixedDeltaTime);
-            dashTime += Time.fixedDeltaTime;
+            elapsedTime += Time.deltaTime;
+            float t = elapsedTime / dashDuration;
+
+            Vector3 newPosition = Vector3.Lerp(startPosition, targetPosition, t);
+            rb.MovePosition(newPosition);
+
             yield return null;
         }
 

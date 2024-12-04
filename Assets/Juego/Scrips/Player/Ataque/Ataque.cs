@@ -39,7 +39,7 @@ public class Ataque : MonoBehaviour
 
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (!isAttacking && !isChargingAttack)
         {
@@ -55,7 +55,7 @@ public class Ataque : MonoBehaviour
         // Ataque normal con la tecla "J"
         if (Input.GetKeyDown(KeyCode.J) && atkCooldown && !isAttacking && InventoryManager.instance.HasEquip(currentWeapon))
         {
-            anim.SetTrigger("Atk");
+            anim.SetTrigger(currentWeapon);
             atkCooldown = false;
             isAttacking = true;
 
@@ -135,7 +135,7 @@ public class Ataque : MonoBehaviour
 
     public void ResetCooldown()
     {
-        anim.ResetTrigger("Atk");
+        anim.ResetTrigger(currentWeapon);
         anim.SetBool("DuracionAtaque", true);
 
         atkCooldown = true;

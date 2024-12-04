@@ -3089,7 +3089,7 @@ MonoBehaviour:
   - {fileID: 6059878444574241814, guid: c1818739d878edb4ebc1d8a7130faff8, type: 3}
   - {fileID: 1661519384145536086, guid: 8511a26a2e0a281459f1fd38d1b61bfe, type: 3}
   - {fileID: 1805367352999330020, guid: 6a1fa7dde7ac6db43b3b0e9a03cdbe16, type: 3}
-  tiempoRevision: 10
+  tiempoRevision: 300
 --- !u!212 &762536472
 SpriteRenderer:
   m_ObjectHideFlags: 0

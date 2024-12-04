@@ -1,4 +1,6 @@
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement; // Importar para manejo de escenas
 
 public class VidaJugador : MonoBehaviour
 {
@@ -11,9 +13,13 @@ public class VidaJugador : MonoBehaviour
     public float duracionInmunidad = 0.5f; // Duración de la inmunidad en segundos
     private bool esInmune = false; // Indica si el jugador está en estado de inmunidad
 
+
+    private Animator animator;
     private void Start()
     {
         vidaActual = vidaMaxima; // Asegura que la vida esté completa al inicio
+        animator = GetComponent<Animator>();    
+
     }
 
     public void CurarVida(int cantidad)
@@ -70,7 +76,7 @@ public class VidaJugador : MonoBehaviour
     private void Muerte()
     {
         Debug.Log("El jugador ha muerto.");
-        // Implementa la lógica de muerte aquí
+        animator.SetTrigger("Muerte");
     }
 
     public void AumentarVidaMaxima(int cantidadCuartos)
@@ -82,5 +88,10 @@ public class VidaJugador : MonoBehaviour
         {
             vidaActual = vidaMaxima;
         }
+    }
+    public void Destruirse()
+    {
+        Destroy(gameObject);
+        SceneManager.LoadScene("Muerte"); // Reemplaza "EscenaDeMuerte" con el nombre real de la escena
     }
 }

@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25e3e8030a01ecf4c9387e205f25c021, type: 3}
   m_Name: Espada1
   m_EditorClassIdentifier: 
-  EquipName: Espada1
-  icon: {fileID: 929744444, guid: 3b61ec24044324243b3a2b8845dc07f5, type: 3}
+  EquipName: EspadaPrincipal
+  icon: {fileID: 507686737, guid: 5cf6aa11f77d3ca489d13da2a2f174db, type: 3}
   category: 0
   subCategory: 0
   "Da\xF1o": 6
   CostoDeStaminaMin: 40
   CostoDeStaminaMax: 100
   DuracionDeAtaqueBase: 1
-  DuracionDeAtaqueMax: 3
+  DuracionDeAtaqueMax: 0
   TiempoDeCarga: 3
   VelocidadMin: 0
   VelocidadMax: 0
