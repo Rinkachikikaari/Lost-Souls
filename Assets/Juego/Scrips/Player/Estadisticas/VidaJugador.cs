@@ -91,7 +91,7 @@ public class VidaJugador : MonoBehaviour
     }
     public void Destruirse()
     {
-        Destroy(gameObject);
-        SceneManager.LoadScene("Muerte"); // Reemplaza "EscenaDeMuerte" con el nombre real de la escena
+        gameObject.SetActive(false);
+        SceneManager.LoadScene("Muerto"); // Reemplaza "EscenaDeMuerte" con el nombre real de la escena
     }
 }

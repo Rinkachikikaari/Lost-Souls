@@ -87,16 +87,10 @@ public class Enemy : MonoBehaviour
     {
 
         Debug.Log($"{gameObject.name} está siendo empujado.");
-        iaScript.enabled = false;
-        Invoke("SI",2);
+       
 
 
     }
-    public void SI()
-    {
-        iaScript.enabled = true;
-    }
-
     // Método de muerte
     private void Muerte()
     {

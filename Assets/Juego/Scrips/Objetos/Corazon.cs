@@ -11,7 +11,7 @@ public class Corazon : MonoBehaviour
     {
         if (other.CompareTag("Player") && !Recogido)
         {
-            VidaJugador vidaJugador = other.GetComponent<VidaJugador>();
+            VidaJugador vidaJugador = other.GetComponentInParent<VidaJugador>();
             if (vidaJugador != null)
             {
                 Recogido=true;

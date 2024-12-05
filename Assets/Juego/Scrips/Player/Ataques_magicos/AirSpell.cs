@@ -32,7 +32,8 @@ public class AirSpell : MonoBehaviour
                 Rigidbody rb = enemigo.GetComponent<Rigidbody>();
                 if (rb != null)
                 {
-                    enemyScript.SerEmpujado();
+                    enemyScript.SerEmpujado(); // Empujar al enemigo
+                    enemyScript.Aturdir(2f); // Detener la IA por 2 segundos
                     Vector3 direccionEmpuje = (enemigo.transform.position - transform.position).normalized;
                     rb.AddForce(direccionEmpuje * fuerzaEmpuje, ForceMode.Impulse);
                 }
