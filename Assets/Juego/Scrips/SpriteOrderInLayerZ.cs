@@ -6,7 +6,7 @@ public class SpriteOrderInLayerZ : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        sr = this.GetComponent<SpriteRenderer>();   
+        sr = this.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
