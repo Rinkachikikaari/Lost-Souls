@@ -1,3 +1,4 @@
+using SH;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,6 +9,13 @@ public class MainMenu : MonoBehaviour
     {
         // Cambiar a la escena principal del juego
         SceneManager.LoadScene("EscenaPrincipal"); // Reemplaza con el nombre de tu escena de juego
+    }
+
+    public void NewGame()
+    {
+        SH.Save saveConfig = new SH.Save() { encode = false, fileName = "GameData", onResources = false };
+        StaticSaveLoad.RemoveFile(saveConfig);
+        SceneManager.LoadScene("EscenaPrincipal");
     }
 
     // Método para abrir las opciones

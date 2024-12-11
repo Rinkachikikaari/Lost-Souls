@@ -23,15 +23,7 @@ public class InventoryUI : MonoBehaviour
     public GameObject itemSlotPrefab;
     private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        instance = this;
     }
     private void Start()
     {
