@@ -101,7 +101,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 8
-        y: 111
+        y: 307
         width: 18
         height: 7
       alignment: 0
@@ -123,7 +123,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 31
-        y: 107
+        y: 303
         width: 16
         height: 10
       alignment: 0
@@ -145,7 +145,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 53
-        y: 99
+        y: 295
         width: 21
         height: 15
       alignment: 0
@@ -167,7 +167,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 76
-        y: 100
+        y: 296
         width: 20
         height: 17
       alignment: 0
@@ -189,7 +189,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 98
-        y: 99
+        y: 295
         width: 19
         height: 18
       alignment: 0
@@ -211,7 +211,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 126
-        y: 99
+        y: 295
         width: 18
         height: 19
       alignment: 0
@@ -233,7 +233,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 151
-        y: 100
+        y: 296
         width: 18
         height: 19
       alignment: 0
@@ -255,7 +255,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 174
-        y: 101
+        y: 297
         width: 17
         height: 16
       alignment: 0
@@ -277,7 +277,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 194
-        y: 105
+        y: 301
         width: 18
         height: 12
       alignment: 0
@@ -299,7 +299,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 10
-        y: 75
+        y: 271
         width: 7
         height: 18
       alignment: 0
@@ -321,7 +321,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 20
-        y: 74
+        y: 270
         width: 10
         height: 16
       alignment: 0
@@ -343,7 +343,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 33
-        y: 66
+        y: 262
         width: 15
         height: 21
       alignment: 0
@@ -365,7 +365,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 53
-        y: 66
+        y: 262
         width: 17
         height: 20
       alignment: 0
@@ -387,7 +387,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 72
-        y: 72
+        y: 268
         width: 18
         height: 19
       alignment: 0
@@ -409,7 +409,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 93
-        y: 73
+        y: 269
         width: 19
         height: 18
       alignment: 0
@@ -431,7 +431,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 114
-        y: 71
+        y: 267
         width: 19
         height: 18
       alignment: 0
@@ -453,7 +453,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 138
-        y: 74
+        y: 270
         width: 16
         height: 17
       alignment: 0
@@ -475,7 +475,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 162
-        y: 73
+        y: 269
         width: 12
         height: 18
       alignment: 0
@@ -497,7 +497,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 11
-        y: 40
+        y: 236
         width: 7
         height: 18
       alignment: 0
@@ -519,7 +519,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 22
-        y: 39
+        y: 235
         width: 10
         height: 16
       alignment: 0
@@ -541,7 +541,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 38
-        y: 32
+        y: 228
         width: 15
         height: 21
       alignment: 0
@@ -563,7 +563,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 56
-        y: 30
+        y: 226
         width: 17
         height: 20
       alignment: 0
@@ -585,7 +585,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 75
-        y: 36
+        y: 232
         width: 18
         height: 19
       alignment: 0
@@ -607,7 +607,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 94
-        y: 38
+        y: 234
         width: 19
         height: 18
       alignment: 0
@@ -629,7 +629,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 116
-        y: 34
+        y: 230
         width: 19
         height: 18
       alignment: 0
@@ -651,7 +651,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 140
-        y: 38
+        y: 234
         width: 16
         height: 17
       alignment: 0
@@ -673,7 +673,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 161
-        y: 38
+        y: 234
         width: 11
         height: 18
       alignment: 0
@@ -695,7 +695,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 10
-        y: 5
+        y: 201
         width: 18
         height: 7
       alignment: 0
@@ -717,7 +717,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 30
-        y: 6
+        y: 202
         width: 16
         height: 10
       alignment: 0
@@ -739,7 +739,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 51
-        y: 10
+        y: 206
         width: 21
         height: 15
       alignment: 0
@@ -761,7 +761,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 77
-        y: 6
+        y: 202
         width: 20
         height: 17
       alignment: 0
@@ -783,7 +783,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 103
-        y: 6
+        y: 202
         width: 19
         height: 17
       alignment: 0
@@ -805,7 +805,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 132
-        y: 5
+        y: 201
         width: 18
         height: 19
       alignment: 0
@@ -827,7 +827,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 154
-        y: 5
+        y: 201
         width: 18
         height: 19
       alignment: 0
@@ -849,7 +849,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 177
-        y: 6
+        y: 202
         width: 17
         height: 16
       alignment: 0
@@ -871,7 +871,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 199
-        y: 6
+        y: 202
         width: 18
         height: 12
       alignment: 0
@@ -884,6 +884,270 @@ TextureImporter:
       bones: []
       spriteID: 5ebbaa952eb77db4188ec457e65dead4
       internalID: 785028800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaPrincipal_36
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 168
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0335cbb4763bcf4b94afed9fd29ce06
+      internalID: -1096547061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaPrincipal_37
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 167
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c791827df7b7e7d4ab62e46f6bb7bcbb
+      internalID: 2016999679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaPrincipal_38
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 168
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2875f7c530b97a041bdf3b8f5f5687e1
+      internalID: -792975727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaPrincipal_39
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 161
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ed2f0efa6fa2946a627d9fa7549d49
+      internalID: -1420407877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaPrincipal_40
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 164
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c3d6988c4728d6438690b2c075966ba
+      internalID: -1032581946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaPrincipal_41
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 165
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050c55d1dc2c98f4097d20c7bf009624
+      internalID: -1975603602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaPrincipal_42
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 164
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9448af9ea175c6e4485bfd51d6c90096
+      internalID: 1158547158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaPrincipal_43
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 164
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e049b8dee939cbe4293952a3f5dc3920
+      internalID: 1643669645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaPrincipal_44
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 163
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd0af65f40e69948885b018cd51c4c2
+      internalID: 1498925882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaPrincipal_45
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 141
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b1305794003814aa6b80839c54ab7f
+      internalID: -1678903456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaPrincipal_46
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 144
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0080874e9afe544bc82f2071e86482
+      internalID: 2146297069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaPrincipal_47
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 134
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b425963b69eff54b9ae0f8a0f3e5b67
+      internalID: -873109304
       vertices: []
       indices: 
       edges: []
@@ -932,7 +1196,19 @@ TextureImporter:
       Slash EspadaPrincipal_33: 1669200997
       Slash EspadaPrincipal_34: -1071768596
       Slash EspadaPrincipal_35: 785028800
+      Slash EspadaPrincipal_36: -1096547061
+      Slash EspadaPrincipal_37: 2016999679
+      Slash EspadaPrincipal_38: -792975727
+      Slash EspadaPrincipal_39: -1420407877
       Slash EspadaPrincipal_4: 374598522
+      Slash EspadaPrincipal_40: -1032581946
+      Slash EspadaPrincipal_41: -1975603602
+      Slash EspadaPrincipal_42: 1158547158
+      Slash EspadaPrincipal_43: 1643669645
+      Slash EspadaPrincipal_44: 1498925882
+      Slash EspadaPrincipal_45: -1678903456
+      Slash EspadaPrincipal_46: 2146297069
+      Slash EspadaPrincipal_47: -873109304
       Slash EspadaPrincipal_5: -1670764522
       Slash EspadaPrincipal_6: -664700537
       Slash EspadaPrincipal_7: -1112049148

@@ -68,25 +68,13 @@ public class Ataque : MonoBehaviour
         // Ataque cargado con la tecla "K"
         if (Input.GetKey(KeyCode.K) && atkCooldown && !isAttacking && InventoryManager.instance.HasEquip(currentWeapon) && InventoryManager.instance.IsAbilityUnlocked("Girar"))
         {
-            isChargingAttack = true;
-            tiempoCargando += Time.deltaTime;
-            tiempoCargando = Mathf.Clamp(tiempoCargando, 0, tiempoCargaMax);
-        }
-
-        if (Input.GetKeyUp(KeyCode.K) && isChargingAttack && InventoryManager.instance.HasEquip(currentWeapon) && InventoryManager.instance.IsAbilityUnlocked("Girar"))
-        {
-            float estaminaNecesaria = tiempoCargando >= tiempoCargaMax ? estaminaPorAtaqueMax : estaminaPorAtaque;
-
             // Verificar si hay suficiente estamina antes de disparar
-            if (estaminaJugador.UsarEstamina(estaminaNecesaria))
+            if (estaminaJugador.UsarEstamina(estaminaPorAtaqueMax))
             {
-                // Calcular la duración del ataque basado en el tiempo de carga
-                float duracionAtaque = Mathf.Lerp(duracionAtaqueBase, duracionAtaqueMax, tiempoCargando / tiempoCargaMax);
-                anim.SetBool("DuracionAtaque", false);
-                anim.SetTrigger("AtaqueCargado");
+                
+                anim.SetTrigger(currentWeapon + "Cargado");
 
                 atkCooldown = false;
-                isChargingAttack = false;
                 isAttacking = true;
 
                 movimientoScript.enabled = false;
@@ -94,10 +82,7 @@ public class Ataque : MonoBehaviour
                 GanchoScript.enabled = false;
                 SelectorDeMagia.enabled = false;
 
-                tiempoCargando = 0;
 
-                // Iniciar la corrutina para controlar la duración del ataque cargado
-                StartCoroutine(FinalizarAtaqueCargado(duracionAtaque));
             }
             else
             {
@@ -125,18 +110,9 @@ public class Ataque : MonoBehaviour
         Debug.Log($"Arma actualizada: {currentWeapon}");
     }
 
-    // Corrutina para esperar la duración del ataque cargado antes de reactivar el movimiento y ataques
-    private IEnumerator FinalizarAtaqueCargado(float duracionAtaque)
-    {
-        Debug.Log("se inicio la corrutina");
-        yield return new WaitForSeconds(duracionAtaque);
-        ResetCooldown();
-    }
-
     public void ResetCooldown()
     {
         anim.ResetTrigger(currentWeapon);
-        anim.SetBool("DuracionAtaque", true);
 
         atkCooldown = true;
         isAttacking = false;

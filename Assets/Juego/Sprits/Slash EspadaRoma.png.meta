@@ -100,8 +100,8 @@ TextureImporter:
       name: Slash EspadaRoma_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 179
+        x: 7
+        y: 343
         width: 18
         height: 7
       alignment: 0
@@ -122,8 +122,8 @@ TextureImporter:
       name: Slash EspadaRoma_1
       rect:
         serializedVersion: 2
-        x: 31
-        y: 175
+        x: 30
+        y: 339
         width: 16
         height: 10
       alignment: 0
@@ -144,8 +144,8 @@ TextureImporter:
       name: Slash EspadaRoma_2
       rect:
         serializedVersion: 2
-        x: 53
-        y: 167
+        x: 52
+        y: 331
         width: 21
         height: 15
       alignment: 0
@@ -166,8 +166,8 @@ TextureImporter:
       name: Slash EspadaRoma_3
       rect:
         serializedVersion: 2
-        x: 76
-        y: 168
+        x: 75
+        y: 332
         width: 20
         height: 17
       alignment: 0
@@ -188,8 +188,8 @@ TextureImporter:
       name: Slash EspadaRoma_4
       rect:
         serializedVersion: 2
-        x: 98
-        y: 167
+        x: 97
+        y: 331
         width: 19
         height: 18
       alignment: 0
@@ -210,8 +210,8 @@ TextureImporter:
       name: Slash EspadaRoma_5
       rect:
         serializedVersion: 2
-        x: 126
-        y: 167
+        x: 125
+        y: 331
         width: 18
         height: 19
       alignment: 0
@@ -232,8 +232,8 @@ TextureImporter:
       name: Slash EspadaRoma_6
       rect:
         serializedVersion: 2
-        x: 151
-        y: 168
+        x: 150
+        y: 332
         width: 18
         height: 19
       alignment: 0
@@ -254,8 +254,8 @@ TextureImporter:
       name: Slash EspadaRoma_7
       rect:
         serializedVersion: 2
-        x: 174
-        y: 169
+        x: 173
+        y: 333
         width: 17
         height: 16
       alignment: 0
@@ -276,8 +276,8 @@ TextureImporter:
       name: Slash EspadaRoma_8
       rect:
         serializedVersion: 2
-        x: 194
-        y: 173
+        x: 193
+        y: 337
         width: 18
         height: 12
       alignment: 0
@@ -298,8 +298,8 @@ TextureImporter:
       name: Slash EspadaRoma_9
       rect:
         serializedVersion: 2
-        x: 10
-        y: 143
+        x: 9
+        y: 307
         width: 7
         height: 18
       alignment: 0
@@ -320,8 +320,8 @@ TextureImporter:
       name: Slash EspadaRoma_10
       rect:
         serializedVersion: 2
-        x: 20
-        y: 142
+        x: 19
+        y: 306
         width: 10
         height: 16
       alignment: 0
@@ -342,8 +342,8 @@ TextureImporter:
       name: Slash EspadaRoma_11
       rect:
         serializedVersion: 2
-        x: 33
-        y: 134
+        x: 32
+        y: 298
         width: 15
         height: 21
       alignment: 0
@@ -364,8 +364,8 @@ TextureImporter:
       name: Slash EspadaRoma_12
       rect:
         serializedVersion: 2
-        x: 53
-        y: 134
+        x: 52
+        y: 298
         width: 17
         height: 20
       alignment: 0
@@ -386,8 +386,8 @@ TextureImporter:
       name: Slash EspadaRoma_13
       rect:
         serializedVersion: 2
-        x: 72
-        y: 140
+        x: 71
+        y: 304
         width: 18
         height: 19
       alignment: 0
@@ -408,8 +408,8 @@ TextureImporter:
       name: Slash EspadaRoma_14
       rect:
         serializedVersion: 2
-        x: 93
-        y: 141
+        x: 92
+        y: 305
         width: 19
         height: 18
       alignment: 0
@@ -430,8 +430,8 @@ TextureImporter:
       name: Slash EspadaRoma_15
       rect:
         serializedVersion: 2
-        x: 114
-        y: 139
+        x: 113
+        y: 303
         width: 19
         height: 18
       alignment: 0
@@ -452,8 +452,8 @@ TextureImporter:
       name: Slash EspadaRoma_16
       rect:
         serializedVersion: 2
-        x: 138
-        y: 142
+        x: 137
+        y: 306
         width: 16
         height: 17
       alignment: 0
@@ -474,8 +474,8 @@ TextureImporter:
       name: Slash EspadaRoma_17
       rect:
         serializedVersion: 2
-        x: 162
-        y: 141
+        x: 161
+        y: 305
         width: 12
         height: 18
       alignment: 0
@@ -496,8 +496,8 @@ TextureImporter:
       name: Slash EspadaRoma_18
       rect:
         serializedVersion: 2
-        x: 11
-        y: 108
+        x: 10
+        y: 272
         width: 7
         height: 18
       alignment: 0
@@ -518,8 +518,8 @@ TextureImporter:
       name: Slash EspadaRoma_19
       rect:
         serializedVersion: 2
-        x: 22
-        y: 107
+        x: 21
+        y: 271
         width: 10
         height: 16
       alignment: 0
@@ -540,8 +540,8 @@ TextureImporter:
       name: Slash EspadaRoma_20
       rect:
         serializedVersion: 2
-        x: 38
-        y: 100
+        x: 37
+        y: 264
         width: 15
         height: 21
       alignment: 0
@@ -562,8 +562,8 @@ TextureImporter:
       name: Slash EspadaRoma_21
       rect:
         serializedVersion: 2
-        x: 56
-        y: 98
+        x: 55
+        y: 262
         width: 17
         height: 20
       alignment: 0
@@ -584,8 +584,8 @@ TextureImporter:
       name: Slash EspadaRoma_22
       rect:
         serializedVersion: 2
-        x: 75
-        y: 104
+        x: 74
+        y: 268
         width: 18
         height: 19
       alignment: 0
@@ -606,8 +606,8 @@ TextureImporter:
       name: Slash EspadaRoma_23
       rect:
         serializedVersion: 2
-        x: 94
-        y: 106
+        x: 93
+        y: 270
         width: 19
         height: 18
       alignment: 0
@@ -628,8 +628,8 @@ TextureImporter:
       name: Slash EspadaRoma_24
       rect:
         serializedVersion: 2
-        x: 116
-        y: 102
+        x: 115
+        y: 266
         width: 19
         height: 18
       alignment: 0
@@ -650,8 +650,8 @@ TextureImporter:
       name: Slash EspadaRoma_25
       rect:
         serializedVersion: 2
-        x: 140
-        y: 106
+        x: 139
+        y: 270
         width: 16
         height: 17
       alignment: 0
@@ -672,8 +672,8 @@ TextureImporter:
       name: Slash EspadaRoma_26
       rect:
         serializedVersion: 2
-        x: 161
-        y: 106
+        x: 160
+        y: 270
         width: 11
         height: 18
       alignment: 0
@@ -694,8 +694,8 @@ TextureImporter:
       name: Slash EspadaRoma_27
       rect:
         serializedVersion: 2
-        x: 10
-        y: 73
+        x: 9
+        y: 237
         width: 18
         height: 7
       alignment: 0
@@ -716,8 +716,8 @@ TextureImporter:
       name: Slash EspadaRoma_28
       rect:
         serializedVersion: 2
-        x: 30
-        y: 74
+        x: 29
+        y: 238
         width: 16
         height: 10
       alignment: 0
@@ -738,8 +738,8 @@ TextureImporter:
       name: Slash EspadaRoma_29
       rect:
         serializedVersion: 2
-        x: 51
-        y: 78
+        x: 50
+        y: 242
         width: 21
         height: 15
       alignment: 0
@@ -760,8 +760,8 @@ TextureImporter:
       name: Slash EspadaRoma_30
       rect:
         serializedVersion: 2
-        x: 77
-        y: 74
+        x: 76
+        y: 238
         width: 20
         height: 17
       alignment: 0
@@ -782,8 +782,8 @@ TextureImporter:
       name: Slash EspadaRoma_31
       rect:
         serializedVersion: 2
-        x: 103
-        y: 74
+        x: 102
+        y: 238
         width: 19
         height: 17
       alignment: 0
@@ -804,8 +804,8 @@ TextureImporter:
       name: Slash EspadaRoma_32
       rect:
         serializedVersion: 2
-        x: 132
-        y: 73
+        x: 131
+        y: 237
         width: 18
         height: 19
       alignment: 0
@@ -826,8 +826,8 @@ TextureImporter:
       name: Slash EspadaRoma_33
       rect:
         serializedVersion: 2
-        x: 154
-        y: 73
+        x: 153
+        y: 237
         width: 18
         height: 19
       alignment: 0
@@ -848,8 +848,8 @@ TextureImporter:
       name: Slash EspadaRoma_34
       rect:
         serializedVersion: 2
-        x: 177
-        y: 74
+        x: 176
+        y: 238
         width: 17
         height: 16
       alignment: 0
@@ -870,8 +870,8 @@ TextureImporter:
       name: Slash EspadaRoma_35
       rect:
         serializedVersion: 2
-        x: 199
-        y: 74
+        x: 198
+        y: 238
         width: 18
         height: 12
       alignment: 0
@@ -892,10 +892,10 @@ TextureImporter:
       name: Slash EspadaRoma_36
       rect:
         serializedVersion: 2
-        x: 2
-        y: 1
-        width: 224
-        height: 48
+        x: 7
+        y: 203
+        width: 16
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -906,6 +906,270 @@ TextureImporter:
       bones: []
       spriteID: 73731a45153fdc34e8dc82d6045eccf2
       internalID: -1149183380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaRoma_37
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 202
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37c2b35a78306d40961ff0f41741780
+      internalID: 1025385240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaRoma_38
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 203
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf281e9666259a94888dc30dd0ae6a77
+      internalID: 716006308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaRoma_39
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 196
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d97a22312007e141b35c86b1c2b7074
+      internalID: -1212178216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaRoma_40
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 199
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14129a0861fe3c4ca5e6045ec6ad7e5
+      internalID: 689284726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaRoma_41
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 200
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5fc53c60fcfd14fb537b4ac6c0aabb
+      internalID: -627478990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaRoma_42
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 199
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f507c05d4fdacb241a63ea9207544c17
+      internalID: -490101534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaRoma_43
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 199
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a815807efbd4e4e8e9fe73ac35b858
+      internalID: -1447668603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaRoma_44
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 198
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc7d3b377070e24a835c0f096ad0d1b
+      internalID: -295979172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaRoma_45
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 176
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f20aca371941b4c86b8bb44b2d6ee6
+      internalID: 1777658352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaRoma_46
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 179
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55e25b6695cdd247826afb3b1f2ad1c
+      internalID: 563942762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaRoma_47
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 169
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1548505f90f6fd4e86689f68246470e
+      internalID: 1183355144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash EspadaRoma_48
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 224
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4599fe4fe1aac44b24b3245fad13e2
+      internalID: 1879776801
       vertices: []
       indices: 
       edges: []
@@ -955,7 +1219,19 @@ TextureImporter:
       Slash EspadaRoma_34: -1145983712
       Slash EspadaRoma_35: 381656647
       Slash EspadaRoma_36: -1149183380
+      Slash EspadaRoma_37: 1025385240
+      Slash EspadaRoma_38: 716006308
+      Slash EspadaRoma_39: -1212178216
       Slash EspadaRoma_4: 1602273756
+      Slash EspadaRoma_40: 689284726
+      Slash EspadaRoma_41: -627478990
+      Slash EspadaRoma_42: -490101534
+      Slash EspadaRoma_43: -1447668603
+      Slash EspadaRoma_44: -295979172
+      Slash EspadaRoma_45: 1777658352
+      Slash EspadaRoma_46: 563942762
+      Slash EspadaRoma_47: 1183355144
+      Slash EspadaRoma_48: 1879776801
       Slash EspadaRoma_5: -242991206
       Slash EspadaRoma_6: -1973479624
       Slash EspadaRoma_7: 1080534730
