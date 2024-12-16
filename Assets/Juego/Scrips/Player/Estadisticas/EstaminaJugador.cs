@@ -3,14 +3,22 @@ using System.Collections;
 
 public class EstaminaJugador : MonoBehaviour
 {
+    public static EstaminaJugador instance; // Singleton para acceso global
+
+
     public float estaminaMaxima = 100f;         // Máxima estamina del jugador
     public float tiempoRecarga = 7f;            // Tiempo sin usar estamina para comenzar la recarga
     public float tiempoRecargaCompleta = 3f;    // Tiempo para recargar estamina completamente
 
-    private float estaminaActual;
+    public float estaminaActual;
     private float ultimoUsoTiempo;
     private Coroutine recargaCoroutine = null;  // Referencia a la coroutine de recarga
 
+    private void Awake()
+    {
+        instance = this;
+
+    }
     void Start()
     {
         estaminaActual = estaminaMaxima;

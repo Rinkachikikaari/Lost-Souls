@@ -3,16 +3,19 @@ using System.Collections;
 
 public class Ataque : MonoBehaviour
 {
-    private Animator anim;
+
     public bool atkCooldown = true;
 
+    private Animator anim;
+    private AudioSource audioSource;
     private Movimiento movimientoScript;
     private DisparoFlecha ArcoScript;
     private Gancho GanchoScript;
     private EstaminaJugador estaminaJugador;
     private SelectorDeMagia SelectorDeMagia;
 
-
+    public AudioClip sonidoAtaqueG; // Sonido del ataque
+    public AudioClip sonidoAtaque; // Sonido del ataque
     private bool isAttacking = false;
     private bool isChargingAttack = false;
 
@@ -31,6 +34,7 @@ public class Ataque : MonoBehaviour
     private void Start()
     {
         anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
         estaminaJugador = GetComponent<EstaminaJugador>();
         movimientoScript = GetComponent<Movimiento>();
         ArcoScript = GetComponent<DisparoFlecha>();
@@ -56,6 +60,10 @@ public class Ataque : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.J) && atkCooldown && !isAttacking && InventoryManager.instance.HasEquip(currentWeapon))
         {
             anim.SetTrigger(currentWeapon);
+            if (sonidoAtaque != null)
+            {
+                audioSource.PlayOneShot(sonidoAtaque);
+            }
             atkCooldown = false;
             isAttacking = true;
 
@@ -63,6 +71,7 @@ public class Ataque : MonoBehaviour
             ArcoScript.enabled = false;
             GanchoScript.enabled = false;
             SelectorDeMagia.enabled = false;
+
         }
 
         // Ataque cargado con la tecla "K"
@@ -73,6 +82,10 @@ public class Ataque : MonoBehaviour
             {
                 
                 anim.SetTrigger(currentWeapon + "Cargado");
+                if (sonidoAtaque != null)
+                {
+                    audioSource.PlayOneShot(sonidoAtaqueG);
+                }
 
                 atkCooldown = false;
                 isAttacking = true;

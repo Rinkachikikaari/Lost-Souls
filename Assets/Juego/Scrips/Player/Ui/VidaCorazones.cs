@@ -20,8 +20,8 @@ public class VidaCorazones : MonoBehaviour
     public float reduccionEscala = 0.1f;
 
     [Header("Referencias al jugador")]
-    private int vidaMaxima; // En corazones completos
-    private int vidaActual; // En cuartos
+    private int vidaMaxima = 12; // En corazones completos
+    private int vidaActual = 12; // En cuartos
     public VidaJugador uiCorazones;
 
     private Image[] corazonesUI;
@@ -48,6 +48,10 @@ public class VidaCorazones : MonoBehaviour
         vidaMaxima = uiCorazones.vidaMaxima; // Convertir cuartos a corazones
         vidaActual = uiCorazones.vidaActual;
         ActualizarCorazones();
+        if (numCorazones != vidaMaxima / 4)
+        {
+            GenerarCorazones();
+        }
     }
     public void GenerarCorazonesNuevos()
     {
@@ -75,7 +79,7 @@ public class VidaCorazones : MonoBehaviour
             }
         }
 
-
+        AjustarEscalaYOrganizacion();
         // Mantiene intacta la lógica actual de actualización
         ActualizarCorazones();
     }

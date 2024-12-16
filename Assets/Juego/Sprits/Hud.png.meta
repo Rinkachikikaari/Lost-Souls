@@ -360,6 +360,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Hud_5
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 366
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e615d170371f8c84f8465f8d65583393
+      internalID: -1727919232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -384,6 +406,7 @@ TextureImporter:
       Hud_2: -484194251
       Hud_3: 1726550310
       Hud_4: -997158470
+      Hud_5: -1727919232
       Menu: 487277322
       Viento: -137779202
   mipmapLimitGroupName: 

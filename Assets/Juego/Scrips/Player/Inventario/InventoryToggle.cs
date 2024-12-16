@@ -3,11 +3,11 @@ using UnityEngine;
 public class InventoryToggle : MonoBehaviour
 {
     public GameObject inventoryUI; // Referencia al GameObject del inventario
-    private bool isInventoryOpen = false;
+    public static bool isInventoryOpen = false;
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (Input.GetKeyDown(KeyCode.Tab) && PauseMenu.GameIsPaused == false)
         {
             ToggleInventory();
         }

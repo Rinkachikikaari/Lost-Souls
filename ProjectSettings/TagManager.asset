@@ -10,6 +10,8 @@ TagManager:
   - Suelo
   - FuegoAlmas
   - Alma
+  - ZonaCubierta
+  - PlayerMain
   layers:
   - Default
   - TransparentFX

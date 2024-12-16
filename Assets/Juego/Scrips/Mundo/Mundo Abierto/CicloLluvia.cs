@@ -1,30 +1,36 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.UIElements;
 
 public class CicloLluvia : MonoBehaviour
 {
     public ParticleSystem lluviaParticulas;   // Sistema de partículas para la lluvia
-    public float intervaloLluviaMin = 30f;    // Tiempo mínimo entre lluvias en segundos
-    public float intervaloLluviaMax = 120f;   // Tiempo máximo entre lluvias en segundos
-    public float duracionLluvia = 20f;        // Duración de la lluvia en segundos
-    public float esperaEntreCharcos = 20f;        // Duración de la lluvia en segundos
+    public float intervaloLluviaMin = 30f;    // Tiempo mínimo entre lluvias
+    public float intervaloLluviaMax = 120f;   // Tiempo máximo entre lluvias
+    public float duracionLluvia = 20f;        // Duración de la lluvia
+    public float esperaEntreCharcos = 5f;     // Tiempo entre generación de charcos
 
-    public GameObject prefabCharcoLodo; // Asigna el prefab del charco de lodo
-
-    private List<GameObject> charcosInstanciados = new List<GameObject>();
+    public GameObject prefabCharcoLodo;       // Prefab de charcos
+    public int maxCharcosPorLluvia = 20;      // Máximo de charcos por lluvia
 
     private bool estaLloviendo = false;
-    private GameObject Player_;
+    private bool jugadorEnZonaCubierta = false; // Estado del jugador respecto a las zonas cubiertas
+    private GameObject player;
 
-    bool lluviaActiva = false;
+    private Coroutine corutinaGenerarCharcos;
 
     private void Start()
     {
- 
+        // Encontrar al jugador al inicio
+        player = GameObject.FindGameObjectWithTag("Player");
+        if (player == null)
+        {
+            Debug.LogError("No se encontró un objeto con la etiqueta 'Player'.");
+            return;
+        }
+
+        // Iniciar el ciclo de lluvia
         StartCoroutine(CicloDeLluvia());
-        StartCoroutine(GenerarCharcos());
     }
 
     private IEnumerator CicloDeLluvia()
@@ -37,75 +43,104 @@ public class CicloLluvia : MonoBehaviour
 
             // Iniciar la lluvia
             ComenzarLluvia();
-            lluviaActiva = true;
 
-            // Esperar a que termine la lluvia
+            // Esperar la duración de la lluvia
             yield return new WaitForSeconds(duracionLluvia);
 
             // Detener la lluvia
             DetenerLluvia();
-            lluviaActiva = false;
-        }
-    }
-
-    private IEnumerator GenerarCharcos()
-    {
-        while (true)
-        {
-            if (lluviaActiva)
-            {
-                yield return new WaitForSeconds(esperaEntreCharcos);
-                // LimpiarCharcosDeLodo();
-                GenerarCharcosDeLodo();
-            }
         }
     }
 
     private void ComenzarLluvia()
     {
-        estaLloviendo = true;
-        lluviaParticulas.Play();
+        if (!estaLloviendo)
+        {
+            estaLloviendo = true;
 
-        GenerarCharcosDeLodo();
+            // Solo mostrar partículas si el jugador no está en una zona cubierta
+            if (!jugadorEnZonaCubierta)
+            {
+                lluviaParticulas.Play();
+            }
+
+            // Iniciar la corutina para generar charcos
+            if (corutinaGenerarCharcos == null)
+            {
+                corutinaGenerarCharcos = StartCoroutine(GenerarCharcos());
+            }
+        }
     }
 
     private void DetenerLluvia()
     {
-        estaLloviendo = false;
-        lluviaParticulas.Stop();
-        LimpiarCharcosDeLodo();
+        if (estaLloviendo)
+        {
+            estaLloviendo = false;
+            lluviaParticulas.Stop();
+
+            // Detener la corutina de generación de charcos
+            if (corutinaGenerarCharcos != null)
+            {
+                StopCoroutine(corutinaGenerarCharcos);
+                corutinaGenerarCharcos = null;
+            }
+
+            // Limpia los charcos generados (si es necesario)
+        }
     }
 
-    private void GenerarCharcosDeLodo()
+    private IEnumerator GenerarCharcos()
     {
-        Player_ = GameObject.FindGameObjectWithTag("Player");
-        // Crear algunos charcos en posiciones aleatorias
-        for (int i = 0; i < 20; i++) // Por ejemplo, generar 5 charcos
+        int charcosGenerados = 0;
+
+        while (estaLloviendo && charcosGenerados < maxCharcosPorLluvia)
         {
+            // Esperar antes de intentar generar el siguiente charco
+            yield return new WaitForSeconds(esperaEntreCharcos);
+
+            // Si el jugador está en una zona cubierta, no generamos charcos
+            if (jugadorEnZonaCubierta) continue;
+
+            // Generar un charco cerca del jugador
             Vector3 posicionAleatoria = new Vector3(
-                Random.Range(Player_.transform.position.x -20f, Player_.transform.position.x + 20f),
-                -0.994f,  // Ajusta la altura si es necesario
-                Random.Range(Player_.transform.position.z- 20f, Player_.transform.position.z + 20f)
+                Random.Range(player.transform.position.x - 20f, player.transform.position.x + 20f),
+                -0.994f, // Altura del charco
+                Random.Range(player.transform.position.z - 20f, player.transform.position.z + 20f)
             );
 
-            // Instanciar el charco con una rotación de 90 grados en el eje X
-            GameObject charco = Instantiate(prefabCharcoLodo, posicionAleatoria, Quaternion.Euler(90, 0, 0));
-            charcosInstanciados.Add(charco);
+            Instantiate(prefabCharcoLodo, posicionAleatoria, Quaternion.Euler(90, 0, 0));
+            charcosGenerados++;
         }
     }
 
-    private void LimpiarCharcosDeLodo()
+    private void OnTriggerEnter(Collider other)
     {
-        // Eliminar o desactivar todos los charcos generados
-        foreach (GameObject charco in charcosInstanciados)
+        // Detectar si el jugador entra en una zona cubierta
+        if (other.CompareTag("ZonaCubierta"))
         {
-            Destroy(charco); // O charco.SetActive(false);
+            jugadorEnZonaCubierta = true;
+
+            // Detener las partículas de lluvia, pero no el contador ni los charcos
+            if (lluviaParticulas.isPlaying)
+            {
+                lluviaParticulas.Stop();
+            }
         }
-        charcosInstanciados.Clear();
     }
 
-    private void OnDestroy()
+    private void OnTriggerExit(Collider other)
     {
-        StopAllCoroutines();
+        // Detectar si el jugador sale de una zona cubierta
+        if (other.CompareTag("ZonaCubierta"))
+        {
+            jugadorEnZonaCubierta = false;
+
+            // Reanudar las partículas si está lloviendo
+            if (estaLloviendo && !lluviaParticulas.isPlaying)
+            {
+                lluviaParticulas.Play();
+            }
+        }
     }
 }

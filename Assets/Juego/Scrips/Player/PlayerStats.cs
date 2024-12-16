@@ -90,6 +90,7 @@ public class PlayerStats : MonoBehaviour
             if (weaponManager != null)
             {
                 weaponManager.UpdateCurrentWeapon();
+
             }
         }
     }

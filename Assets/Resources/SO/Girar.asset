@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Girar
   m_EditorClassIdentifier: 
   abilityName: Girar
-  icon: {fileID: -824567094, guid: 4191161c61df4aa4a83a9b6b7e8feed0, type: 3}
+  icon: {fileID: -1727919232, guid: 3b61ec24044324243b3a2b8845dc07f5, type: 3}
   category: 0
   subCategory: 1
   description: 

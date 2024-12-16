@@ -74,9 +74,9 @@ public class DisparoFlecha : MonoBehaviour
     }
     public void UpdateCurrentWeapon()
     {
-        if (PlayerStats.instance.espadaEquipada != null)
+        if (PlayerStats.instance.arcoEquipado != null)
         {
-            currentWeapon = PlayerStats.instance.espadaEquipada.EquipName;
+            currentWeapon = PlayerStats.instance.arcoEquipado.EquipName;
         }
         else
         {

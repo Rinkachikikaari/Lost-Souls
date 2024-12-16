@@ -6,7 +6,7 @@ public class CicloDiaNoche : MonoBehaviour
     public float duracionDia = 120f; // Duración total de un día en segundos (día completo)
 
     [Range(0, 1)]
-    public float tiempoActual = 0f; // Progreso actual del día (0 = medianoche, 0.5 = mediodía, 1 = medianoche)
+    public static float tiempoActual = 0f; // Progreso actual del día (0 = medianoche, 0.5 = mediodía, 1 = medianoche)
 
     private float velocidadCiclo;
 

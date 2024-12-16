@@ -2,12 +2,19 @@ using UnityEngine;
 
 public class FragmentosCorazon : MonoBehaviour
 {
+    public static FragmentosCorazon instance; // Singleton para acceso global
+
     [Header("Configuración")]
     public int fragmentosActuales = 0; // Cantidad de fragmentos recolectados
     public int fragmentosNecesarios = 4; // Fragmentos para obtener un corazón completo
 
     private VidaJugador vidaJugador;
 
+    private void Awake()
+    {
+        instance = this;
+
+    }
     private void Start()
     {
         // Obtener referencia al sistema de vida del jugador

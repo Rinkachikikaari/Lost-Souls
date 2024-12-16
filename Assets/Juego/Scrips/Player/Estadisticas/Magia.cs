@@ -2,13 +2,21 @@ using UnityEngine;
 
 public class Magia : MonoBehaviour
 {
+    public static Magia instance; // Singleton para acceso global
+
+
     public float manaMaxima = 100f;
     public float regeneracionPorSegundo = 5f;
     public float tiempoEsperaRegeneracion = 2f;
 
-    private float manaActual;
+    public float manaActual;
     private float tiempoUltimoGasto;
 
+    private void Awake()
+    {
+        instance = this;
+
+    }
     private void Start()
     {
         manaActual = manaMaxima; // Inicializa con el maná máximo

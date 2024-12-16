@@ -4,6 +4,13 @@ using UnityEngine.SceneManagement; // Importar para manejo de escenas
 
 public class VidaJugador : MonoBehaviour
 {
+    public static VidaJugador instance; // Singleton para acceso global
+    private AudioSource audioSource;
+
+
+    public AudioClip sonidoRecibirDanio; // Sonido al recibir daño
+
+
     [Header("Configuración de vida")]
     public int vidaMaxima; // 12 unidades de vida (3 corazones)
     public int vidaActual; // Vida inicial en cuartos
@@ -15,13 +22,19 @@ public class VidaJugador : MonoBehaviour
 
 
     private Animator animator;
+
     private void Start()
     {
         vidaActual = vidaMaxima; // Asegura que la vida esté completa al inicio
-        animator = GetComponent<Animator>();    
+        animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
 
     }
+    private void Awake()
+    {
+        instance = this;
 
+    }
     public void CurarVida(int cantidad)
     {
         if (vidaActual != vidaMaxima)
@@ -45,6 +58,10 @@ public class VidaJugador : MonoBehaviour
         if (vidaActual - cantidad >= 0)
         {
             vidaActual -= cantidad;
+            if (sonidoRecibirDanio != null)
+            {
+                audioSource.PlayOneShot(sonidoRecibirDanio);
+            }
         }
         else
         {
