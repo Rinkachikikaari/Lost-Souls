@@ -18,6 +18,7 @@ public class PlayerFallHandler : MonoBehaviour
     private DisparoFlecha arcoScript;
     private Gancho ganchoScript;
     private SelectorDeMagia selectorDeMagia;
+    public Transform piso;
 
     private void Start()
     {
@@ -46,15 +47,38 @@ public class PlayerFallHandler : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void Update()
     {
-        // Registrar última posición segura y el bloque al tocar un objeto con el Layer Suelo
-        if ((layerSuelo.value & (1 << collision.gameObject.layer)) > 0)
-        {
-            ultimoBloqueSeguro = collision.transform; // Guarda el bloque seguro
-            ultimaPosicionSegura = collision.transform.position; // Guarda la posición del bloque
+        RaycastHit ri;
+        Physics.Raycast(piso.position, Vector3.down, out ri, 10,  layerSuelo);
+
+        if(ri.collider != null) { 
+            ultimoBloqueSeguro = ri.collider.transform; // Guarda el bloque seguro
+            ultimaPosicionSegura = ri.collider.transform.position; // Guarda la posición del bloque
             Debug.Log($"Bloque seguro registrado: {ultimoBloqueSeguro.name} en posición {ultimaPosicionSegura}");
         }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        /*
+        // Registrar última posición segura y el bloque al tocar un objeto con el Layer Suelo
+        if ((layerSuelo.value & (1 << collision.gameObject.layer)) > 0 && !enCaida)
+        {
+            float ultimaDistancia = ultimoBloqueSeguro != null ?  Vector2.Distance(ultimoBloqueSeguro.transform.position, transform.position): 10000f;
+            float nuevaDistancia  =  Vector2.Distance(collision.transform.position, piso.position);
+
+            Debug.Log(ultimaDistancia + " " + nuevaDistancia);
+
+            if (ultimaDistancia > nuevaDistancia) { 
+                ultimoBloqueSeguro = collision.transform; // Guarda el bloque seguro
+                ultimaPosicionSegura = collision.transform.position; // Guarda la posición del bloque
+                Debug.Log($"Bloque seguro registrado: {ultimoBloqueSeguro.name} en posición {ultimaPosicionSegura}");
+            }
+
+
+        }
+        */
     }
 
     private void ActivarCaida(Vector3 posicionCaida)
