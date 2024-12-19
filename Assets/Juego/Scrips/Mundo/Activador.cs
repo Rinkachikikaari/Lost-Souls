@@ -25,7 +25,7 @@ public class Activador : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag(POA))
+        if (other.CompareTag("POA"))
         {
             jugadorCerca = true;
             Debug.Log("Jugador cerca del activador: " + gameObject.name);
@@ -41,7 +41,7 @@ public class Activador : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag(POA))
+        if (other.CompareTag("POA"))
         {
             jugadorCerca = false;
             Debug.Log("Jugador salió del activador: " + gameObject.name);
