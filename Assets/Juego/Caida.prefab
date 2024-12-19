@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6613571710086628352}
   - component: {fileID: 9007771173049341421}
   - component: {fileID: 6699792126764371642}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Caida
   m_TagString: Caida
   m_Icon: {fileID: 0}

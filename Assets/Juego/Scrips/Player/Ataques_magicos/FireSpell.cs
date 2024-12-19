@@ -4,7 +4,7 @@ public class FireSpell : MonoBehaviour
 {
     public float costoMana = 30f;
     public float radio = 5f;
-    public float dano = 50f;
+    public int dano = 50;
     public LayerMask enemigosLayer;
 
     private Magia manaSystem;

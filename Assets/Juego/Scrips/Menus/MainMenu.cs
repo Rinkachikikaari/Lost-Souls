@@ -48,7 +48,7 @@ public class MainMenu : MonoBehaviour
     {
         SH.Save saveConfig = new SH.Save() { encode = false, fileName = "GameData", onResources = false };
         StaticSaveLoad.RemoveFile(saveConfig);
-        SceneManager.LoadScene("EscenaPrincipal");
+        SceneManager.LoadScene("Tutorial");
     }
 
     // Método para abrir las opciones

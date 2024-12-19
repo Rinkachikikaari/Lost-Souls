@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c6a648aa313d1d44b31aa1c02aedee2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaMaxima: 100
+  vidaMaxima: 12
   puedeSerAturdido: 1
   puedeSerAtraido: 1
   puedeSerEmpujado: 1
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 3
-  puedePatrullar: 1
+  puedePatrullar: 0
   puedeAtacarEnMovimiento: 0
   puntosPatrulla:
   - {fileID: 937503647140959569}
@@ -163,7 +163,7 @@ MonoBehaviour:
   - {fileID: 6183982942508450214}
   tiempoEsperaEnPunto: 3
   objetivo: {fileID: 0}
-  rangoPersecucion: 10
+  rangoPersecucion: 5
   rangoAtaque: 1.5
   tiempoEntreAtaques: 1.5
   "da\xF1o": 10
@@ -186,8 +186,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 0.78, z: 1}
-  m_Center: {x: 0, y: 0.5, z: 0}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0.22, z: 0}
 --- !u!54 &6144506731912072849
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -273,7 +273,7 @@ Transform:
   m_GameObject: {fileID: 4295474724622779911}
   serializedVersion: 2
   m_LocalRotation: {x: 0.10452846, y: 0, z: 0, w: 0.9945219}
-  m_LocalPosition: {x: 0, y: 0.473, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.027}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -323,7 +323,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1440169139, guid: 60be9c9c47febd548b6c96d03a66aa02, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

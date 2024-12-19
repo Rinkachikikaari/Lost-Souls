@@ -2,20 +2,22 @@ using UnityEngine;
 
 public class NPCDialogo : MonoBehaviour
 {
-    [Header("Diálogo")]
+    [Header("Configuración de Diálogo")]
     public string[] lineasDialogo; // Líneas del diálogo del NPC
     public GameObject panelDialogo; // Panel del diálogo en la UI
     public UnityEngine.UI.Text textoDialogo; // Campo de texto donde se muestra el diálogo
+    public bool puedeRepetirDialogo = true; // Opción para permitir repetir el diálogo
 
     private int indiceActual = 0; // Índice de la línea actual del diálogo
     private bool enDialogo = false; // Si el diálogo está activo
     private bool cercaDelNPC = false; // Si el jugador está cerca del NPC
+    private bool dialogoCompletado = false; // Controla si el diálogo ya se completó
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (cercaDelNPC && !enDialogo)
+            if (cercaDelNPC && !enDialogo && (!dialogoCompletado || puedeRepetirDialogo))
             {
                 IniciarDialogo(); // Comienza el diálogo al presionar E
             }
@@ -54,6 +56,11 @@ public class NPCDialogo : MonoBehaviour
     {
         enDialogo = false;
         panelDialogo.SetActive(false);
+
+        if (!puedeRepetirDialogo)
+        {
+            dialogoCompletado = true; // Marca el diálogo como completado solo si no se puede repetir
+        }
     }
 
     private void OnTriggerEnter(Collider other)

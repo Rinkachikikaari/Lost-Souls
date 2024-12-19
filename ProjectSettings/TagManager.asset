@@ -14,6 +14,8 @@ TagManager:
   - PlayerMain
   - ObjetoMovible
   - Caida
+  - Espada
+  - Pared
   layers:
   - Default
   - TransparentFX
@@ -27,8 +29,8 @@ TagManager:
   - Suelo
   - Destruible
   - Pasado
-  - 
-  - 
+  - Caida
+  - Pared
   - 
   - 
   - 

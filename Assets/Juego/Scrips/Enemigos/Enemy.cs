@@ -4,7 +4,7 @@ using System;
 public class Enemy : MonoBehaviour
 {
     [Header("Atributos")]
-    public float vidaMaxima = 100f;
+    public int vidaMaxima = 100;
     public bool puedeSerAturdido = true;
     public bool puedeSerAtraido = true;
     public bool puedeSerEmpujado = true;
@@ -22,7 +22,7 @@ public class Enemy : MonoBehaviour
     }
 
     // Método para recibir daño
-    public void RecibirDano(float cantidad)
+    public void RecibirDano(int cantidad)
     {
         if (estaAturdido) return; // No recibir daño mientras está aturdido
 

@@ -87,6 +87,7 @@ public class Ataque : MonoBehaviour
                 }
 
                 atkCooldown = false;
+                DañoAtaque.Giratorio = true;
                 isAttacking = true;
 
                 movimientoScript.enabled = false;
@@ -129,6 +130,8 @@ public class Ataque : MonoBehaviour
         atkCooldown = true;
         isAttacking = false;
         isChargingAttack = false;
+
+        DañoAtaque.Giratorio = false;
 
         movimientoScript.enabled = true;
         ArcoScript.enabled = true;
