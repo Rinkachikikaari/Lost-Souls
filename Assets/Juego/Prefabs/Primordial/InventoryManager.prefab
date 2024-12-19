@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4009221540424044445
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7164893479499880180}
+  - component: {fileID: 2377738207855043304}
+  - component: {fileID: 8497331326856773741}
+  - component: {fileID: 8601414210664850694}
+  m_Layer: 0
+  m_Name: InventoryManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7164893479499880180
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4009221540424044445}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.077784, y: 1.4807739, z: 12.195357}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2377738207855043304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4009221540424044445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 176a6139be0f1874faedb8bcd6f2da1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items: []
+  equipment: []
+  abilities: []
+--- !u!114 &8497331326856773741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4009221540424044445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd4826eda9210a4a8fb72f4649a5f66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponManager: {fileID: 0}
+  ArcosManager: {fileID: 0}
+  BombasManager: {fileID: 0}
+  CambioAlmas: {fileID: 0}
+  PocionCurativa: {fileID: 0}
+  espadaEquipada: {fileID: 0}
+  arcoEquipado: {fileID: 0}
+  zapatosEquipados: {fileID: 0}
+  HerramientaActiva: {fileID: 0}
+  herramientasDisponibles: []
+  "Da\xF1oEspada": 0
+  "Da\xF1oArco": 0
+  CostoDeStaminaMinArco: 0
+  CostoDeStaminaMinEspada: 0
+  CostoDeStaminaMaxArco: 0
+  CostoDeStaminaMaxEspada: 0
+  DuracionDeAtaqueBaseEspada: 0
+  DuracionDeAtaqueMaxEspada: 0
+  TiempoDeCargaArco: 0
+  TiempoDeCargaEspada: 0
+  VelocidadMinArco: 0
+  VelocidadMaxArco: 0
+  VelocidadMaxZapatos: 0
+  SubManiroArco: 0
+  TeHundes: 0
+--- !u!114 &8601414210664850694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4009221540424044445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ededf4a9b8e68d41a2980601c24e890, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryUI: {fileID: 0}

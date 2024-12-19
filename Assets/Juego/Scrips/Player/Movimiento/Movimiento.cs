@@ -12,7 +12,6 @@ public class Movimiento : MonoBehaviour
     private Animator animator;
     public Vector3 movement;
     private bool isDashing = false;
-    [SerializeField] int dashTileMove = 2;
     private float lastDashTime = -Mathf.Infinity;
     private bool isMovingLocked = false; // Indica si el movimiento está bloqueado
     private KeyCode lockedKey;         // Tecla bloqueada para el movimiento
@@ -132,21 +131,29 @@ public class Movimiento : MonoBehaviour
     IEnumerator DashDirection(Vector3 direccionMovimiento)
     {
         isDashing = true;
-
         animator.SetTrigger("Roll"); // Activar el trigger de animación
 
         float elapsedTime = 0f;
         Vector3 startPosition = rb.position;
-        Vector3 targetPosition = startPosition + direccionMovimiento * dashSpeed * dashDuration;
 
-        // Movimiento interpolado
         while (elapsedTime < dashDuration)
         {
             elapsedTime += Time.deltaTime;
-            float t = elapsedTime / dashDuration;
 
-            Vector3 newPosition = Vector3.Lerp(startPosition, targetPosition, t);
-            rb.MovePosition(newPosition);
+            // Calcula la distancia a recorrer en este frame
+            float distanciaPaso = dashSpeed * Time.deltaTime;
+
+            // Realiza un raycast para detectar colisiones en la dirección del movimiento
+            RaycastHit hit;
+            if (Physics.Raycast(rb.position, direccionMovimiento, out hit, distanciaPaso))
+            {
+                // Si hay una colisión, posiciona el jugador justo antes del punto de impacto y detén el dash
+                rb.MovePosition(hit.point - direccionMovimiento.normalized * 0.1f);
+                break;
+            }
+
+            // Si no hay colisión, mueve al jugador normalmente
+            rb.MovePosition(rb.position + direccionMovimiento * distanciaPaso);
 
             yield return null;
         }

@@ -1,20 +1,24 @@
 using UnityEngine;
+using System;
 
 public class CambioAlmas : MonoBehaviour
 {
+    public static event Action<bool> OnCambioAlma; // Evento que notifica el cambio de alma
+
     [Header("Configuración de las Almas")]
-    public GameObject almaActual; // Representa al alma actual (cuerpo del personaje)
-    public GameObject almaPasada; // Representa al alma pasada
-    public KeyCode teclaCambio = KeyCode.F; // Tecla para cambiar entre almas
-    public KeyCode teclaActivar = KeyCode.E; // Tecla para activar el cambio cerca del fuego
+    public GameObject almaActual;
+    public GameObject almaPasada;
+    public KeyCode teclaCambio = KeyCode.F;
+    public KeyCode teclaActivar = KeyCode.E;
 
     [Header("Distancia Máxima")]
-    public float distanciaMaxima = 5f; // Distancia máxima permitida entre las almas
+    public float distanciaMaxima = 5f;
 
     [Header("Cámara")]
-    public CamarasAlmas camara; // Referencia al script de la cámara
+    public CamarasAlmas camara;
 
     [Header("Componentes")]
+    public GameObject Lampara;
     public Movimiento movimientoScript;
     public DisparoFlecha ArcoScript;
     public Gancho GanchoScript;
@@ -24,7 +28,7 @@ public class CambioAlmas : MonoBehaviour
 
     private bool cercaDelFuego = false;
     private bool cambioPermitido = false;
-    private bool controlAlmaActual = true;
+    public static bool controlAlmaActual = true;
 
     private void Start()
     {
@@ -33,6 +37,14 @@ public class CambioAlmas : MonoBehaviour
 
     private void Update()
     {
+        if (HerramientaActiva == "Lampara De Almas")
+        {
+            Lampara.SetActive(true);
+        }
+        else
+        {
+            Lampara.SetActive(false);
+        }
         if (cercaDelFuego && Input.GetKeyDown(teclaActivar) && HerramientaActiva == "Lampara De Almas")
         {
             cambioPermitido = true;
@@ -59,6 +71,7 @@ public class CambioAlmas : MonoBehaviour
     private void ActivarAlmaActual()
     {
         controlAlmaActual = true;
+        OnCambioAlma?.Invoke(controlAlmaActual); // Notifica el cambio
 
         movimientoScript.enabled = true;
         ArcoScript.enabled = true;
@@ -66,26 +79,33 @@ public class CambioAlmas : MonoBehaviour
         SelectorDeMagia.enabled = true;
 
         almaPasada.SetActive(false);
-        camara.CambiarCamara(true); // Cambia la cámara al alma actual
+        camara.CambiarCamara(true);
     }
 
     private void ActivarAlmaPasada()
     {
         controlAlmaActual = false;
+        OnCambioAlma?.Invoke(controlAlmaActual); // Notifica el cambio
+
 
         movimientoScript.enabled = false;
         ArcoScript.enabled = false;
         GanchoScript.enabled = false;
         SelectorDeMagia.enabled = false;
 
+
         almaPasada.SetActive(true);
-        camara.CambiarCamara(false); // Cambia la cámara al alma pasada
+        camara.CambiarCamara(false);
     }
 
     private void ReunirAlmaPasada()
     {
         almaPasada.transform.position = almaActual.transform.position;
     }
+
+
+
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("FuegoAlmas"))
@@ -93,6 +113,7 @@ public class CambioAlmas : MonoBehaviour
             cercaDelFuego = true;
         }
     }
+
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("FuegoAlmas"))
@@ -101,6 +122,7 @@ public class CambioAlmas : MonoBehaviour
             cambioPermitido = false;
         }
     }
+
     public void UpdateCurrentWeapon()
     {
         if (PlayerStats.instance.HerramientaActiva != null)

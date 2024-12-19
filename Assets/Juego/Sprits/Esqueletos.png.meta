@@ -1,0 +1,5154 @@
+fileFormatVersion: 2
+guid: 60be9c9c47febd548b6c96d03a66aa02
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Esqueletos_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 994
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 352430dbeefd3cc499ce43b8b4b9ddfc
+      internalID: 572028839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 994
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f740ac0e9e09e438701dc8f898f08f
+      internalID: 2095322298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 994
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac72e73f9281eb74cbcfacfa99c44c1f
+      internalID: 430814510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 992
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad17b60456c9064488cd0f2f3e149e0
+      internalID: 552815839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_4
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 996
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425e61cfcb84f0040b125ffb7cec5ed3
+      internalID: -1660264865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_5
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 994
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e39121aef5a6c4ca13e61c95fc67a1
+      internalID: 1645009965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_6
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 994
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e63fc81a624ba438b0c22d8f54bfe0
+      internalID: 1374384974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_7
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 996
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b4594bb360e394fbec109a56adfd7d
+      internalID: 27358758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_8
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 994
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee0aa9e45017df42881a2d341327610
+      internalID: 2084904111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_9
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 994
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68ff1faa142b1e459ef4b18e627ee97
+      internalID: -706809762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_10
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 961
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e6c80bad5f14448a421ea83e12e78e
+      internalID: -2110848741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_11
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 961
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2677e1c1d491ff4a94e313f02b83c3c
+      internalID: -483634150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_12
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 961
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56bf8b435fb1b444988215333cc4e086
+      internalID: -907750614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_13
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 963
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf8dbf4ff63b9845a1b4e396685eb3a
+      internalID: 70516771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_14
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 961
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef44bcaa43c935438a7deb2e327dbb4
+      internalID: -704140055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_15
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 961
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340f8c7d24b6b334391aba529538be0e
+      internalID: -456027757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_16
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 963
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbfec08311229a048a25fc6ca42704e0
+      internalID: 848283530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_17
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 928
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d2dc130a445fa04e9dbd5952f5cf16c
+      internalID: 2029601262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_18
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 928
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468aa346a5fb1f640860905b5fd48b0c
+      internalID: -1401553653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_19
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 928
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b9b7b13d3d8c44fb73789a8e7e5780
+      internalID: 128241297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_20
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 928
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d545dd6c015fbe4ca2d7a43b457761d
+      internalID: 1235785059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_21
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 892
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79fc5f3636e49e546ad853ea7bc2e1df
+      internalID: 925448193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_22
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 892
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69944cee2dc4e77409e95c70fa519239
+      internalID: -149322637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_23
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 892
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 757415426cb99af428ec331c9073ae63
+      internalID: 60272198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_24
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 889
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866f089d0805f654ba4433d0e2a38689
+      internalID: -569369079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_25
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 894
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de51eefbe14b5da4b98b4b9016cc3cad
+      internalID: 1047495313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_26
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 891
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5fc08572cd0c1a4b8fc46a170db478d
+      internalID: 1649227299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_27
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 893
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b55bc1d5a9bd464595bae5ebd57d095
+      internalID: -615248285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_28
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 893
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1abff92216ebb49a9e4159989d81d6
+      internalID: 141987624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_29
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 893
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c419a8fd7826914e9bb0537afeaaa72
+      internalID: -2088855868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_30
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 892
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eefecfd6a073cb4bba06da811d088bb
+      internalID: 1541542091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_31
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 859
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f585feced836d7745aec61c71598a050
+      internalID: -146112682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_32
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 858
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b31d303a96f17e14f9c3e139cc66ec48
+      internalID: -1720659007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_33
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 860
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1780473dcde01fb43b3d10e0c889b483
+      internalID: 809976650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_34
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 860
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8512d23a30af9647b7c26e841c6bff2
+      internalID: 13559057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_35
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 860
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8816962604ac54bb499c8e7b789738
+      internalID: -817125176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_36
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 859
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44c86a8243c5fc4c84ed38e1995d503
+      internalID: 389161692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_37
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 861
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b968334756b986f4fb30f4604e97eb71
+      internalID: -301455987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_38
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 824
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c2988d26777aff40be5ab36ee0ad2b0
+      internalID: -1885212980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_39
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 823
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9adb0b4d35d090344ad83a5145f3dc1e
+      internalID: -6103178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_40
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 823
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1148b295167ec747a0828468f68d5f9
+      internalID: 1457440482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_41
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 826
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 446a87daa39736e4aa1fe6b177f06dea
+      internalID: 162057947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_42
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 794
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e2f33907e647541a15d2df5ef1eb31
+      internalID: 812564145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_43
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 794
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd96b396f1fc384eab318abc02835a9
+      internalID: 1440169139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_44
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 794
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0e9649f02f15342b364fbd6471fb0c
+      internalID: -1727085717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_45
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 791
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d205b7671d9484d4daefae7c6a2a4ceb
+      internalID: -1137596233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_46
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 795
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a18e1a96d09ae419b6f6fc0eae5760
+      internalID: -1042591846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_47
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 790
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df49d350233d6349bf9ac6a7dab7f90
+      internalID: -707930492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_48
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 793
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9250301e3ef1b4fbc17d8ce469eb53
+      internalID: 473270414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_49
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 795
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a05d7071ea28b74680736ee9380aca8
+      internalID: -1748803844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_50
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 790
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea8d3c9977d4141419fcc6826a349547
+      internalID: -333598550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_51
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 793
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a2af223b637d747b2cf1eeba35e650
+      internalID: 1703552619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_52
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 761
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dac501b0f55cbe4485ffe225181a0a6
+      internalID: 391124737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_53
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 762
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e4b46984a10b942b0d6f36c8af64e3
+      internalID: -145712185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_54
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 757
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46718aaf1cae05b47b0e88441ec62959
+      internalID: 1155825231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_55
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 760
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcfdf4a402c05e34f98ad0779ca4f736
+      internalID: 641078833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_56
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 762
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb9f8d0bd4f8ab749a0cfc69ebf33354
+      internalID: -1253741392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_57
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 757
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8b29c7ba89c44241b5edef73c8bf55d
+      internalID: 1080250231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_58
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 760
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6dc0d172d590142897ecad380ebac9
+      internalID: -1212259868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_59
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 732
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d1314874d45834f95758e47becffb4
+      internalID: -1411804526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_60
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 726
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b8f59059668dc4798d9a6e3bc05add
+      internalID: 1773084213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_61
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 728
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68b841082c8fa04ab849dfafb76d3f1
+      internalID: 608498190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_62
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 728
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f78da58a957044d9a546905dd653fe
+      internalID: -1554144158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_63
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 696
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357eadf82f351794aaf06e8cf42c8bf6
+      internalID: -1411000480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_64
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 696
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2fad2be203fa094ba98e24bd19c89ee
+      internalID: -1611109708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_65
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 696
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cdaf769f5fda634abb26050a5fc3c28
+      internalID: 1769115681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_66
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 694
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49ab934af5f57a64e954d0b1f61ec04a
+      internalID: -1613232414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_67
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 698
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e13effa98be90041b56292c132669d1
+      internalID: 121873817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_68
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 696
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 620eb972067ef194188c5ddbfc491e5a
+      internalID: 1176592388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_69
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 696
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42af6d25bf335aa4eb6dc4e98eaeb223
+      internalID: 1718634193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_70
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 698
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007d9648b8128e84e856410c4f504ed2
+      internalID: -1646802823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_71
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 696
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa59dd07bc43df49b433bb48f56b1ae
+      internalID: -1401882656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_72
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 696
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b926bd5a3e3fbd04a893aaccc4a86fd9
+      internalID: -783307774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_73
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 663
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 149c7505adce6b4419f8877ade3f918f
+      internalID: -336049377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_74
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 663
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e469c793dd38d45459294594c8bf84fb
+      internalID: -854434434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_75
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 663
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f72e9acd47084545ae8a06aac1246e0
+      internalID: 88278202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_76
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 665
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f4c7e1a96fc9349920a665ab893742
+      internalID: 1623404497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_77
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 663
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 174e8c094eb3ca44b8efaea3dd75faff
+      internalID: -547298197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_78
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 663
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c776300f1128b014d9e2821cf898a273
+      internalID: -1094331173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_79
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 665
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9658aaf2ca4d9af419097ee711fb4c25
+      internalID: 1026576821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_80
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 630
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb3979a20ebc974f89679e23c32c108
+      internalID: -918575671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_81
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 630
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c7de10fccfc0d42866141615a8852d
+      internalID: 672443566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_82
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 630
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5db546a9f93eea49a9d6e5e5f0e186c
+      internalID: -1158840274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_83
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 630
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: badd4cd92d504bd45b2b2ac0f7e1d6f6
+      internalID: -1885580157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_84
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 594
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db6c7d28f2b20bb449ff4c3d1c2599c0
+      internalID: -1467385885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_85
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 594
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d2e6dd38acdcc468c4a86a73e7124e
+      internalID: -183197612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_86
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 594
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0288d4346b8fd354b95ed135a166e750
+      internalID: 1577637467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_87
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 591
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e32e7bd9ea2ece4f8bf5affe1b62e95
+      internalID: -67122463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_88
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 596
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f8b8be116080045b5fdd702437c6ec
+      internalID: -29310168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_89
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 593
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d654d606208efdb4881b377dd76eba20
+      internalID: 145425702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_90
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 595
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 699d7a651b054034191cb76a6e0405de
+      internalID: -1403318228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_91
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 595
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef144435651fb34bb9c24c1787d0ac0
+      internalID: 751726980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_92
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 595
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adab26670dc73814db675270a36a9368
+      internalID: -445165695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_93
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 594
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 788210310934bc54e9053f5327c71cde
+      internalID: 754406895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_94
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 561
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91218e61856f9924a981af24d167599a
+      internalID: 880882458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_95
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 560
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45196325e74171942a5ab86ac1454584
+      internalID: -315887348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_96
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 562
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc00edc1e93a2a4ab265c067667fa34
+      internalID: -1702931259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_97
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 562
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd0c18e4c67fce346bab7eac85d9bc95
+      internalID: 132752678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_98
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 562
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07df20a86fa61134dbeb5aefeb6a8a42
+      internalID: -1440674903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_99
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 561
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebff2b29c22436b4f8f1ac686488109f
+      internalID: 543798511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_100
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 563
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9e249e44b5f78a438c59320b7c970e4
+      internalID: -643185181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_101
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 544
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853dca360970a9a48b7f10cc6c458290
+      internalID: -1035861642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_102
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 526
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675bd1bd70a7b604a87e76483769fa3c
+      internalID: -1145475824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_103
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 525
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b211038de9a46f4e825acda5190f11b
+      internalID: 1762059430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_104
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 525
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a64250aa4c142f4e8b49afe0a772829
+      internalID: -248467175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_105
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 528
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c228316da90eed842918cb12e9c2a70c
+      internalID: -321136558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_106
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 515
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae01c3c4a4af6cd4da5eb0248e958310
+      internalID: -478658679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_107
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 515
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb43ffcba3d71e745abd97ec17731410
+      internalID: -1147856060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_108
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 515
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab5f5cbfae735b4f80ef4a988d45623
+      internalID: 930072997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_109
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 515
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca1bff41e0521249a2d512bc5421c42
+      internalID: 997879015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_110
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 496
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548927060a0c7914390954a9152eb168
+      internalID: -2018160009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_111
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 496
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b4e77cfc67c8b47b594ae7f0de8952
+      internalID: 1376085910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_112
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 496
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da5ac1080412874497567dafa53a002
+      internalID: 480444628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_113
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 493
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 892093a37269e4b4c956b46504fbcc53
+      internalID: 1041907715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_114
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 497
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 372a7d8d529223c4991aa17a5b089737
+      internalID: -1860022270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_115
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 492
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672e60c145f07094686f650921a8005a
+      internalID: -1952409146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_116
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 495
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b6ddd9ba3873564e9511eaae3620c14
+      internalID: -1539796097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_117
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 497
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79ce14ce840e4be46a79e8c08f148acd
+      internalID: 615490261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_118
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 492
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ea506419a4f024a8c1709667405988
+      internalID: 559092289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_119
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 495
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e97f715ca1086df4abdb90858df5a652
+      internalID: -718588410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_120
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 480
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48009ecccb559ef4ca21095009439cae
+      internalID: 1517757028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_121
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 479
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e52096e82968114aa38fc8ed4cfebf9
+      internalID: -91171720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_122
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 480
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5873418f0ccbf644aa98bbd2c11f36b
+      internalID: 1087151173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_123
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 479
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21cbe1403c738f478b206e38c91a450
+      internalID: 2065629207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_124
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 463
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 990f89f94e1211e408a8d13302a0d3b2
+      internalID: 844366569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_125
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 464
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 304b7a4ae5ed0a348816eea2ba3b548d
+      internalID: 1041746658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_126
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 459
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21242b7954828c545a5083d4943ff205
+      internalID: 247099207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_127
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 462
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50794453b93c781488a77ddf31491561
+      internalID: 1557669441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_128
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 464
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9248295d94363ee4e8e6c2e5f39b073d
+      internalID: -1505463547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_129
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 459
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c698f3e8f87dee4889b77396482b2f8
+      internalID: 665502806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_130
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 462
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd19c7052de78a4aad1a506ebf047b9
+      internalID: -1591494890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_131
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 447
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb94decea245f449b155a6a057618ea
+      internalID: -1637008115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_132
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 447
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5150ac3a058596741ac12b35c560ec22
+      internalID: 336596896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_133
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 447
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f9a9fe592c7624686b955c53b9b0ec
+      internalID: 1359577062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_134
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 447
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e01688df4f367a241abb58db301ecea8
+      internalID: -1178031044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_135
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 434
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0503625051266e47acf2d745596f515
+      internalID: -457281231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_136
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 428
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672db2994203320408f802b6704ccad2
+      internalID: -24924307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_137
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 430
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b6514643de90a4d8c5f72c139dc409
+      internalID: 860314779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_138
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 430
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4307d15247c0164daf5c9c46a725d4d
+      internalID: 1165139132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_139
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 427
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3f03df792257a43ad19897d74e3baf
+      internalID: 1296562695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_140
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 430
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403c0738119ab894aa0c9f0bfce49db1
+      internalID: -724464384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_141
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 435
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4289af6ee7d0b499ae7f8742f488c2
+      internalID: -549891840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_142
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 430
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f21dbd476cec84780daccc7e65a82d
+      internalID: -723216110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_143
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 409
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e6de55c0aac7a408d1384d465922fb
+      internalID: -412337889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_144
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 410
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a289c0cc973a554eac1dfb3fcce3f1e
+      internalID: -1510585480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_145
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 418
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45fd19cdf6a8aa4439db17d0bd120f2a
+      internalID: 1506723031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_146
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 410
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f08d0a8bbd7e647b6c942576d49c0e
+      internalID: 2008845076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_147
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 409
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f86b2775be202d408ce0bc5f9a41fbd
+      internalID: 53190415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_148
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 410
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71065f3b302a4394780c2768c0cd5e77
+      internalID: -1823963057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_149
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 410
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d640ed968cf07434fae697c8e24aba59
+      internalID: -1930102444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_150
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 410
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5661df1ac6e08ce46a1c7ac0751d68a9
+      internalID: 149310420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_151
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 409
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b06ec45f51f05bb49ab6bf3daa790279
+      internalID: -1158132843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_152
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 409
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a86cb7bd33f15448bef282939ebebf
+      internalID: 282466907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_153
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 410
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d17cc822ae076104ba0d95aa78c4cdb6
+      internalID: -1202429525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_154
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 409
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 490457a28be661440a2bdaf3ed419ac0
+      internalID: 92570722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_155
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 410
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5fb36c576a4507499b92a3bf2acc345
+      internalID: 1766548849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_156
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 382
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba9db33742ec8d849b78102cfeba3409
+      internalID: 1070420945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_157
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 382
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f041c6891708f4e825b0a6b51062f7
+      internalID: 1805473628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_158
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 382
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032afc8d4970f6b45811788f4428c707
+      internalID: -1891640039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_159
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 380
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2400d58c799c0e4da6fb2c24a25a46b
+      internalID: 1316785965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_160
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 384
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a618a9554d9e1aa428f2e7f2148e8e74
+      internalID: -1295199027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_161
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 382
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b7921af8748bc46b70a6c3c65f5e99
+      internalID: 1561960052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_162
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 382
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 892e38945f0b3f04a8931ee310c77248
+      internalID: 573464838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_163
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 384
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f615774dcf6acb428abf1769fa1fece
+      internalID: 1634822246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_164
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 382
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7080a3e1fb0b194458b0143c48faa703
+      internalID: 777775449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_165
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 382
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed0a9ccf231d4b4484429c30dbd2248
+      internalID: -1670536337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_166
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 349
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67528ff465a07d4438a8e8967d383d74
+      internalID: -1555357736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_167
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 349
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a08426fe7c3be44bc484788651bbaa
+      internalID: -1047999233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_168
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 349
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f55057d7de35b4da78288baf6bc23c
+      internalID: 997955030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_169
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 351
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5209309ed65baa346ab8a48cc8af13d4
+      internalID: -667971458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_170
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 349
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88bb4d8b88834924f81c0b55d00fdec2
+      internalID: -343391186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_171
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 349
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68db928151e785d4fafbd3d46c97c3ed
+      internalID: -1794950730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_172
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 351
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54db0cc6dc072904fa4c825306420f25
+      internalID: -771577673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_173
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 316
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e3a61675055344681fb88bedf5f77c
+      internalID: -1845989319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_174
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 316
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b521e568795e3fd43b3707f77069630f
+      internalID: -1931639272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_175
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 316
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d2a67273bb51745a4609c3907332da
+      internalID: -110259579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_176
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 316
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8180184afad464c8b6095323c73039
+      internalID: -394855034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_177
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 280
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64fb019cd8edd242b2e6685125f5732
+      internalID: -1538355860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_178
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 280
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4acaf606d48ac2940bff08a7d16d4f94
+      internalID: -1924821396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_179
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 280
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2abba38cdb60b9949acfd8d445ccf257
+      internalID: -1004722146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_180
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 277
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eabdcb5c60b5fa4d946e30d2800ab97
+      internalID: 702923791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_181
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 282
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b48124d0d39c44997d765e3b117122
+      internalID: -1917434645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_182
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 279
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f5f0098302c0f4c8b8258739038e8f
+      internalID: -76545429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_183
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 281
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12011394713675940b25925f33e438cc
+      internalID: 1081482089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_184
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 281
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c451bf74f30890448914d341f7340570
+      internalID: 1063017196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_185
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 281
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8794269d334634d8cb6268f93167c4
+      internalID: 532197776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_186
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 280
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81776e7bef8b6b746b3fda6d0ef5505e
+      internalID: -820561224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_187
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 247
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2fed6973d94e37488eb6164f38203dd
+      internalID: -1539584374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_188
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 246
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5b9a3ae26dfb041b1f21aadd28843f
+      internalID: -2112631366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_189
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 248
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6432ce0c8d6c04b43bde29262d99c8bb
+      internalID: 1681446747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_190
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 248
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c03aa232eb6714c9403e59df633eb2
+      internalID: -1893260692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_191
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 248
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ef5970ba78ed2a4b9a4b1ad218a3b5f
+      internalID: 2096721339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_192
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 247
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8420a6d8ff10b4a87692d466a51391
+      internalID: -49940633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_193
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 249
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6be9c39bb4dcc8488113f014a527d4a
+      internalID: 1963497684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_194
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 212
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9682a0988a8b17f4dbdc735ddd0e186e
+      internalID: 1425353161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_195
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 211
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 472a1b2fb7ac003499b070b7bd2f9d45
+      internalID: -1438731431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_196
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 211
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88dd91827664b7b4e8423bf66ed1748a
+      internalID: 1281879183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_197
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 214
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f19946e9a01ed9042815ae5e6ec62656
+      internalID: -1218002435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_198
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 182
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6e0fb7ddfbad34b8d927527b422306
+      internalID: 1987838901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_199
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 182
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c7d15dede0bba46b0675f3e9ddfdd6
+      internalID: 774101017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_200
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 182
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040b289cc5d165a438abd71b4f72b3b0
+      internalID: 1936717399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_201
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 179
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 631f9ca176941fb4d971137470eb5bc8
+      internalID: 1352122687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_202
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 183
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b08ec7c19bb88cb4a93d3491da9854bf
+      internalID: -562913031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_203
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 178
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6182236e981323a418d2705e33c45820
+      internalID: 1954862993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_204
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 181
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d3203a487b609c4a87f47c72258df90
+      internalID: 193395505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_205
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 183
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b86804f0d25248e45a9269b1909b0144
+      internalID: -1289119334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_206
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 178
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aff022d38ef61945ae5e16cf6321dab
+      internalID: 976876406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_207
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 181
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1252c49348be24faf6bd7099f2d72c
+      internalID: -120571458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_208
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 149
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3019fd3c4c7a72442bf0cfe4a92e48d3
+      internalID: 1642313899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_209
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 150
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6916a1fd24ae1549be60ad166151301
+      internalID: 992793492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_210
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 145
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc60d1352c0b84643a2a69f8c05a7ea4
+      internalID: 551229466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_211
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 148
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47e165ff38735cb49b4ffc7113bb6a62
+      internalID: 730860331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_212
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 150
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77bd6d394a5f891449821f09086344c6
+      internalID: -1044354037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_213
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 145
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e77c4be62cf9704bad4c40877fe1539
+      internalID: -36135237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_214
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 148
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f93b58056c9874fbb7f525813ca9e6
+      internalID: -1446895036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_215
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 120
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d8c00ca07801934e8ff6069be4d00d6
+      internalID: -973190253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_216
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 114
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356e8b15baf2e324c990c1d9bc4473a2
+      internalID: 1887483387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_217
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 116
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b719ccd5d15133c41a8a6c51e56b1bf3
+      internalID: 1108247297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueletos_218
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 116
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c7e0f0a507950246823e1b48b0e945d
+      internalID: -317134643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3363b468624aca04fb1bcbd875120ef1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Esqueletos_0: 572028839
+      Esqueletos_1: 2095322298
+      Esqueletos_10: -2110848741
+      Esqueletos_100: -643185181
+      Esqueletos_101: -1035861642
+      Esqueletos_102: -1145475824
+      Esqueletos_103: 1762059430
+      Esqueletos_104: -248467175
+      Esqueletos_105: -321136558
+      Esqueletos_106: -478658679
+      Esqueletos_107: -1147856060
+      Esqueletos_108: 930072997
+      Esqueletos_109: 997879015
+      Esqueletos_11: -483634150
+      Esqueletos_110: -2018160009
+      Esqueletos_111: 1376085910
+      Esqueletos_112: 480444628
+      Esqueletos_113: 1041907715
+      Esqueletos_114: -1860022270
+      Esqueletos_115: -1952409146
+      Esqueletos_116: -1539796097
+      Esqueletos_117: 615490261
+      Esqueletos_118: 559092289
+      Esqueletos_119: -718588410
+      Esqueletos_12: -907750614
+      Esqueletos_120: 1517757028
+      Esqueletos_121: -91171720
+      Esqueletos_122: 1087151173
+      Esqueletos_123: 2065629207
+      Esqueletos_124: 844366569
+      Esqueletos_125: 1041746658
+      Esqueletos_126: 247099207
+      Esqueletos_127: 1557669441
+      Esqueletos_128: -1505463547
+      Esqueletos_129: 665502806
+      Esqueletos_13: 70516771
+      Esqueletos_130: -1591494890
+      Esqueletos_131: -1637008115
+      Esqueletos_132: 336596896
+      Esqueletos_133: 1359577062
+      Esqueletos_134: -1178031044
+      Esqueletos_135: -457281231
+      Esqueletos_136: -24924307
+      Esqueletos_137: 860314779
+      Esqueletos_138: 1165139132
+      Esqueletos_139: 1296562695
+      Esqueletos_14: -704140055
+      Esqueletos_140: -724464384
+      Esqueletos_141: -549891840
+      Esqueletos_142: -723216110
+      Esqueletos_143: -412337889
+      Esqueletos_144: -1510585480
+      Esqueletos_145: 1506723031
+      Esqueletos_146: 2008845076
+      Esqueletos_147: 53190415
+      Esqueletos_148: -1823963057
+      Esqueletos_149: -1930102444
+      Esqueletos_15: -456027757
+      Esqueletos_150: 149310420
+      Esqueletos_151: -1158132843
+      Esqueletos_152: 282466907
+      Esqueletos_153: -1202429525
+      Esqueletos_154: 92570722
+      Esqueletos_155: 1766548849
+      Esqueletos_156: 1070420945
+      Esqueletos_157: 1805473628
+      Esqueletos_158: -1891640039
+      Esqueletos_159: 1316785965
+      Esqueletos_16: 848283530
+      Esqueletos_160: -1295199027
+      Esqueletos_161: 1561960052
+      Esqueletos_162: 573464838
+      Esqueletos_163: 1634822246
+      Esqueletos_164: 777775449
+      Esqueletos_165: -1670536337
+      Esqueletos_166: -1555357736
+      Esqueletos_167: -1047999233
+      Esqueletos_168: 997955030
+      Esqueletos_169: -667971458
+      Esqueletos_17: 2029601262
+      Esqueletos_170: -343391186
+      Esqueletos_171: -1794950730
+      Esqueletos_172: -771577673
+      Esqueletos_173: -1845989319
+      Esqueletos_174: -1931639272
+      Esqueletos_175: -110259579
+      Esqueletos_176: -394855034
+      Esqueletos_177: -1538355860
+      Esqueletos_178: -1924821396
+      Esqueletos_179: -1004722146
+      Esqueletos_18: -1401553653
+      Esqueletos_180: 702923791
+      Esqueletos_181: -1917434645
+      Esqueletos_182: -76545429
+      Esqueletos_183: 1081482089
+      Esqueletos_184: 1063017196
+      Esqueletos_185: 532197776
+      Esqueletos_186: -820561224
+      Esqueletos_187: -1539584374
+      Esqueletos_188: -2112631366
+      Esqueletos_189: 1681446747
+      Esqueletos_19: 128241297
+      Esqueletos_190: -1893260692
+      Esqueletos_191: 2096721339
+      Esqueletos_192: -49940633
+      Esqueletos_193: 1963497684
+      Esqueletos_194: 1425353161
+      Esqueletos_195: -1438731431
+      Esqueletos_196: 1281879183
+      Esqueletos_197: -1218002435
+      Esqueletos_198: 1987838901
+      Esqueletos_199: 774101017
+      Esqueletos_2: 430814510
+      Esqueletos_20: 1235785059
+      Esqueletos_200: 1936717399
+      Esqueletos_201: 1352122687
+      Esqueletos_202: -562913031
+      Esqueletos_203: 1954862993
+      Esqueletos_204: 193395505
+      Esqueletos_205: -1289119334
+      Esqueletos_206: 976876406
+      Esqueletos_207: -120571458
+      Esqueletos_208: 1642313899
+      Esqueletos_209: 992793492
+      Esqueletos_21: 925448193
+      Esqueletos_210: 551229466
+      Esqueletos_211: 730860331
+      Esqueletos_212: -1044354037
+      Esqueletos_213: -36135237
+      Esqueletos_214: -1446895036
+      Esqueletos_215: -973190253
+      Esqueletos_216: 1887483387
+      Esqueletos_217: 1108247297
+      Esqueletos_218: -317134643
+      Esqueletos_22: -149322637
+      Esqueletos_23: 60272198
+      Esqueletos_24: -569369079
+      Esqueletos_25: 1047495313
+      Esqueletos_26: 1649227299
+      Esqueletos_27: -615248285
+      Esqueletos_28: 141987624
+      Esqueletos_29: -2088855868
+      Esqueletos_3: 552815839
+      Esqueletos_30: 1541542091
+      Esqueletos_31: -146112682
+      Esqueletos_32: -1720659007
+      Esqueletos_33: 809976650
+      Esqueletos_34: 13559057
+      Esqueletos_35: -817125176
+      Esqueletos_36: 389161692
+      Esqueletos_37: -301455987
+      Esqueletos_38: -1885212980
+      Esqueletos_39: -6103178
+      Esqueletos_4: -1660264865
+      Esqueletos_40: 1457440482
+      Esqueletos_41: 162057947
+      Esqueletos_42: 812564145
+      Esqueletos_43: 1440169139
+      Esqueletos_44: -1727085717
+      Esqueletos_45: -1137596233
+      Esqueletos_46: -1042591846
+      Esqueletos_47: -707930492
+      Esqueletos_48: 473270414
+      Esqueletos_49: -1748803844
+      Esqueletos_5: 1645009965
+      Esqueletos_50: -333598550
+      Esqueletos_51: 1703552619
+      Esqueletos_52: 391124737
+      Esqueletos_53: -145712185
+      Esqueletos_54: 1155825231
+      Esqueletos_55: 641078833
+      Esqueletos_56: -1253741392
+      Esqueletos_57: 1080250231
+      Esqueletos_58: -1212259868
+      Esqueletos_59: -1411804526
+      Esqueletos_6: 1374384974
+      Esqueletos_60: 1773084213
+      Esqueletos_61: 608498190
+      Esqueletos_62: -1554144158
+      Esqueletos_63: -1411000480
+      Esqueletos_64: -1611109708
+      Esqueletos_65: 1769115681
+      Esqueletos_66: -1613232414
+      Esqueletos_67: 121873817
+      Esqueletos_68: 1176592388
+      Esqueletos_69: 1718634193
+      Esqueletos_7: 27358758
+      Esqueletos_70: -1646802823
+      Esqueletos_71: -1401882656
+      Esqueletos_72: -783307774
+      Esqueletos_73: -336049377
+      Esqueletos_74: -854434434
+      Esqueletos_75: 88278202
+      Esqueletos_76: 1623404497
+      Esqueletos_77: -547298197
+      Esqueletos_78: -1094331173
+      Esqueletos_79: 1026576821
+      Esqueletos_8: 2084904111
+      Esqueletos_80: -918575671
+      Esqueletos_81: 672443566
+      Esqueletos_82: -1158840274
+      Esqueletos_83: -1885580157
+      Esqueletos_84: -1467385885
+      Esqueletos_85: -183197612
+      Esqueletos_86: 1577637467
+      Esqueletos_87: -67122463
+      Esqueletos_88: -29310168
+      Esqueletos_89: 145425702
+      Esqueletos_9: -706809762
+      Esqueletos_90: -1403318228
+      Esqueletos_91: 751726980
+      Esqueletos_92: -445165695
+      Esqueletos_93: 754406895
+      Esqueletos_94: 880882458
+      Esqueletos_95: -315887348
+      Esqueletos_96: -1702931259
+      Esqueletos_97: 132752678
+      Esqueletos_98: -1440674903
+      Esqueletos_99: 543798511
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

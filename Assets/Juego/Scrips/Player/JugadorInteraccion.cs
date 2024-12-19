@@ -55,7 +55,6 @@ public class JugadorInteraccion : MonoBehaviour
 
         if(objetoActual != null  && Vector3.Distance(objetoActual.transform.position, this.transform.position) > distanciaInteraccion)
         {
-            Debug.Log("Soltar "+ Vector3.Distance(objetoActual.transform.position, this.transform.position));
             if (objetoActual.esEmpujable)
             {
                 objetoActual.Soltar();

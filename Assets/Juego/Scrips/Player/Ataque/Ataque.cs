@@ -27,7 +27,6 @@ public class Ataque : MonoBehaviour
 
     // Variables para el ataque cargado
     public int tiempoCargaMax;
-    private float tiempoCargando = 0;
     public int duracionAtaqueBase;
     public int duracionAtaqueMax;
     [SerializeField] string currentWeapon;

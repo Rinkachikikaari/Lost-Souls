@@ -43,8 +43,8 @@ public class CurrentGameData : AbstractType
 
 public class SaveTest : MonoBehaviour
 {
-    [SerializeField] bool saveTestNow;
-    [SerializeField] bool loadTestNow;
+    [SerializeField] public static bool saveTestNow;
+    [SerializeField] public static bool loadTestNow;
     [SerializeField] bool removeDataNow;
     public CurrentGameData testDataToSave = new CurrentGameData();
     private GameObject player;
