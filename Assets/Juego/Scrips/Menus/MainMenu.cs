@@ -29,12 +29,12 @@ public class MainMenu : MonoBehaviour
         if (string.IsNullOrEmpty(EscenaGuardada))
         {
             botonJugar.interactable = false; // Desactivar el botón
-            botonJugarI.color.WithAlpha(225); // Hacerlo semitransparente
+            // botonJugarI.color.WithAlpha(225); // Hacerlo semitransparente
         }
         else
         {
             botonJugar.interactable = true; // Activar el botón
-            botonJugarI.color.WithAlpha(100); // Hacerlo semitransparente
+            // botonJugarI.color.WithAlpha(100); // Hacerlo semitransparente
         }
     }
     // Método para iniciar el juego

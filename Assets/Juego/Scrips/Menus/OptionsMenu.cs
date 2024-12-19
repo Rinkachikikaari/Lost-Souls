@@ -97,6 +97,7 @@ public class OptionsMenu : MonoBehaviour
 
     private void ActualizarFPSValueText(int fps)
     {
+        /*
         if (fps == 30)
         {
             Ifps30Button.color.WithAlpha(225);
@@ -125,6 +126,7 @@ public class OptionsMenu : MonoBehaviour
             Ifps60Button.color.WithAlpha(100);
             IfpsUnlimitedButton.color.WithAlpha(225);
         }
+        */
     }
 
     public void SetVSync(bool vsync)
